@@ -252,7 +252,6 @@ class AdminController extends BaseController
 		} catch (\Exception $e) {
 			return $e->getMessage();
 		}
-	
 	}
 
 	public function addWarehouseDetail(Request $request)
@@ -283,17 +282,17 @@ class AdminController extends BaseController
 	}
 	public function updateProfileInfo(Request $request){
 		try {
-			if($request->hasFile('image'))
-			{
-				$file = $request->file('image');
-				$image = time().'.'.$file->getClientOriginalName();
-				$file->move(public_path('image'),$image);
+			// if($request->hasFile('image'))
+			// {
+			// 	$file = $request->file('image');
+			// 	$image = time().'.'.$file->getClientOriginalName();
+			// 	$file->move(public_path('image'),$image);
 
-				return response()->json(['status'=>422,'message' =>$request->file('image')]);
-			}
-			else{
-				return response()->json(['status'=>422,'message' =>$request->get('fields')]);
-			}
+			// 	return response()->json(['status'=>422,'message' =>$request->file('image')]);
+			// }
+			// else{
+			// 	return response()->json(['status'=>422,'message' =>$request->get('fields')]);
+			// }
 			$validator = Validator::make($request->all(), [
 				'email' => 'required|email',
 					'name' => 'required',
@@ -784,5 +783,43 @@ class AdminController extends BaseController
 			return $e->getMessage();
 		}
 	}
-
+	public function sendVerificationCode(Request $request){
+		try {
+			$id = Auth::guard('api')->user()->id;
+			$data['email'] = $request->email;
+			$user = User::find($id);
+			$key = md5(rand());
+			$data['code'] = $key;
+			$user->verification_code = $key;
+			$user->save();
+			if($user){
+				Mail::send([], [ 'content' => 'testmail'],    function ($m) use ($data){
+					$m->from('developer.techleadz@gmail.com', 'ABC'); 
+					$m->to($data['email'], 'XYZ')->subject('Email Verification Code!')
+					->setBody("Your Verification code is ".$data['code']);
+				});
+				// $user = ['name' => "Hi $user->name", 'info'=> "Your Verification code is $user->code"];
+				// Mail::to('developer.techleadz@gmail.com')->send(new NewMail($user));
+				return response()->json(['status'=>201,'message' => 'Verification code is sent to your mail. Please check your mail box']);
+			} else {
+				return response()->json(['status'=>422,'message' => 'User cannot be found!']);
+			}
+		} catch (\Exception $e) {
+			return $e->getMessage();
+		}
+	}
+	public function checkVerificationCode(Request $request){
+		try {
+			$id = Auth::guard('api')->user()->id;
+			$code = $request->code;
+			$user = User::where('id',$id)->where('verification_code',$code)->first();
+			if($user){
+				return response()->json(['status'=>true,'message' => 'Data is updating. Please wait a while!']);
+			} else {
+				return response()->json(['status'=>false,'message' => 'Invalid Code!']);
+			}
+		} catch (\Exception $e) {
+			return $e->getMessage();
+		}
+	}
 }

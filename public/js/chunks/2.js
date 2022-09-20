@@ -67,6 +67,24 @@ var admin = {
       errorCB(err.response.data);
     });
   },
+  checkVerificationCode: function checkVerificationCode(data, cb, errorCB) {
+    axios.post(window.API_URL + 'admin/checkVerificationCode', data).then(function (resp) {
+      if (resp.status == 200) {
+        cb(resp.data);
+      }
+    })["catch"](function (err) {
+      errorCB(err.response.data);
+    });
+  },
+  sendVerificationCode: function sendVerificationCode(data, cb, errorCB) {
+    axios.post(window.API_URL + 'admin/sendVerificationCode', data).then(function (resp) {
+      if (resp.status == 200) {
+        cb(resp.data);
+      }
+    })["catch"](function (err) {
+      errorCB(err.response.data);
+    });
+  },
   createUser: function createUser(data, cb, errorCB) {
     axios.post(window.API_URL + 'admin/createUser', data).then(function (resp) {
       if (resp.status == 200) {

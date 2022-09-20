@@ -45,6 +45,8 @@ Route::group(['prefix' => 'admin',  'middleware' => 'token'], function(){
     Route::get('getOrders/{user_id}/{user_level}', [API\AdminController::class, 'getOrders']);
    
     Route::post('UpdateUserInfo', [API\AdminController::class, 'UpdateUserInfo']);
+    Route::post('sendVerificationCode', [API\AdminController::class, 'sendVerificationCode']);
+    Route::post('checkVerificationCode', [API\AdminController::class, 'checkVerificationCode']);
     Route::get('getWarehouseDetail/{user_id}', [API\AdminController::class, 'getWarehouseDetail']);
     Route::post('addWarehouseDetail', [API\AdminController::class, 'addWarehouseDetail']);
     Route::post('addProductType', [API\AdminController::class, 'addProductType']);

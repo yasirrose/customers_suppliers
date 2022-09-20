@@ -29,6 +29,7 @@ class CreateUserTable extends Migration
             $table->tinyInteger('currency_id');
             $table->tinyInteger('user_level');
             $table->tinyInteger('status')->default(1);
+            $table->string('verification_code')->nullable();
             $table->tinyInteger('email_verified')->default(0);
             $table->string('email_hash');
             $table->rememberToken();

@@ -198,13 +198,40 @@
 
               <!-- submit button -->
               <b-col md="12">
-                <b-button variant="primary" type="submit" @click.prevent="validationForm">Submit</b-button>
+                <b-button variant="primary" :disabled="isDisabled" type="submit" @click.prevent="validationForm">Submit</b-button>
               </b-col>
             </b-row>
           </b-form>
         </validation-observer>
       </b-card-code>
     </b-col>
+      <b-modal
+        id="modal-prevent-closing"
+        ref="modal"
+        title="Verification Code For Email"
+        @show="resetModal"
+        @hidden="resetModal"
+        @ok="verifyCode"
+      >
+      <div v-if="codeStatus">
+        <span class="alert alert-info">{{ codeMessage }}</span>
+      </div>
+      <validation-observer ref="validatorForCode">
+        <form ref="form" @submit.stop.prevent="createItem">
+          <b-form-group>
+            <validation-provider #default="{ errors }" name="code" rules="required">
+              <b-form-input
+                v-model="code"
+                :state="errors.length > 0 ? false:null"
+                type="text"
+                placeholder="Enter verification code"
+              />
+              <small class="text-danger">{{ errors[0] }}</small>
+            </validation-provider>
+          </b-form-group>
+        </form>
+      </validation-observer>
+      </b-modal>
   </b-row>
 </template>
 <script>
@@ -268,9 +295,15 @@ export default {
       contact: "",
       currencyId: null,
       currency: [{ value: null, text: "Please select a currency" }],
+      previousEmail : '',
+      code : '',
+      isModalShow : false,
 
       validationErrors: "",
-      image:null
+      codeStatus: false,
+      codeMessage: false,
+      image:null,
+      isDisabled: false,
     };
   },
 
@@ -283,8 +316,6 @@ export default {
     {
       console.log(e);
       this.image = e.target.files[0];
-     
-
     },
     uploadFile()
     {
@@ -326,6 +357,7 @@ export default {
           this.name = res.data.name;
           //this.last_name = res.data.last_name;
           this.email = res.data.email;
+          this.previousEmail = res.data.email;
           this.country = res.data.country;
           this.province = res.data.province;
           this.city = res.data.city;
@@ -340,31 +372,97 @@ export default {
         }
       );
     },
+    resetModal() {
+      this.code = ''
+    },
+    createItem(){
+      this.$refs.validatorForCode.validate().then(success => {
+        if (success) {
+          AdminApi.checkVerificationCode(
+            this.info = {
+                code : this.code
+              },
+            data => {
+              if (data.status) {
+                this.updateProfileData();
+                this.$toast({
+                  component: ToastificationContent,
+                  props: {
+                    title: "Failed",
+                    text: data.message,
+                    icon: "UserIcon",
+                    variant: "outline-success"
+                  }
+                });
+              } else {
+                this.$toast({
+                  component: ToastificationContent,
+                  props: {
+                    title: "Failed",
+                    text: data.message,
+                    icon: "errorIcon",
+                    variant: "outline-danger"
+                  }
+                });
+              }
+            },
+            err => {
+              console.log(err);
+            }
+          );
+        }
+      })
+    },
+    verifyCode(bvModalEvent){
+        bvModalEvent.preventDefault()
+        this.createItem()
+    },
     validationForm() {
+      this.isDisabled = true;
       this.$refs.simpleRules.validate().then(success => {
         if (success) {
-          this.validationErrors = "";
+          if(this.email != this.previousEmail){
+            this.isModalShow = true;
+            AdminApi.sendVerificationCode(
+              this.info = {
+                email : this.email
+              },
+              data => {
+                console.log(data.status)
+                if(data.status == 201){
+                  this.$bvModal.show('modal-prevent-closing')
+                  this.codeMessage = data.message;
+                  this.codeStatus = true;
+                }
+              },
+              err => {
+                console.log(err);
+              }
+            );
+          } else {
+            this.updateProfileData();
+          }
+        } else {
+          this.isDisabled = false;
+        }
+      });
+    },
+    updateProfileData(){
+      this.validationErrors = "";
           var fd = new FormData();
-          //alert(this.image.name);
-          var info = {
-              name: this.name,
-              //last_name: this.last_name,
-              email: this.email,
-              country: this.country,
-              province: this.province,
-              city: this.city,
-              address: this.address,
-              postcode: this.postcode,
-              phone: this.phone,
-              contact: this.contact,
-              currency_id: this.currencyId,
-              
-            };
-            if(this.image !=null)
-            {
-              fd.append('image', this.image, this.image.name);
-            }
-          fd.append('fields', info);
+          if(this.image !=null){
+            fd.append('image', this.image, this.image.name);
+          }
+          fd.append('name', this.name);
+          fd.append('email', this.email);
+          fd.append('country', this.country);
+          fd.append('province', this.province);
+          fd.append('city', this.city);
+          fd.append('address', this.address);
+          fd.append('postcode', this.postcode);
+          fd.append('phone', this.phone);
+          fd.append('contact', this.contact);
+          fd.append('currency_id', this.currencyId);
           AdminApi.updateProfileInfo(
             fd
             ,
@@ -380,12 +478,14 @@ export default {
                   }
                 });
                 router.push({ name: "user-accounts" });
+                this.isDisabled = false;
               } else {
+                this.isDisabled = false;
                 if (data.status == 422) {
-                  this.validationErrors = data.message;
+                  // this.validationErrors = data.message;
                 } else {
                   if (data.status == 422) {
-                    this.validationErrors = data.message;
+                    // this.validationErrors = data.message;
                   } else {
                     this.$toast({
                       component: ToastificationContent,
@@ -401,11 +501,10 @@ export default {
               }
             },
             err => {
+              this.isDisabled = false;
               console.log(err);
             }
           );
-        }
-      });
     }
   }
 };

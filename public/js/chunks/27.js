@@ -83,10 +83,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/manage-products/UpdateProducts.vue?vue&type=script&lang=js&":
-/*!****************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/manage-products/UpdateProducts.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/manage-orders/UpdateOrders.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/manage-orders/UpdateOrders.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -108,12 +108,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -232,24 +226,37 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      required: _validations__WEBPACK_IMPORTED_MODULE_6__["required"],
-      validationErrors: "",
-      productName: "",
-      length: "",
-      width: "",
-      weight: "",
+      productId: null,
+      orderTitle: "",
+      quantity: "",
+      orderType: null,
+      createdFor: null,
       description: "",
-      productType: null,
-      product_type: [{
+      created_for: [{
         value: null,
-        text: "Select a type"
+        text: "Please select a User"
       }],
-      productId: this.$route.params.id
+      order_type: [{
+        value: null,
+        text: "Please select Order Type"
+      }, {
+        value: "3",
+        text: "Sales Order"
+      }, {
+        value: "2",
+        text: "Purchase Order"
+      }],
+      all_products: [{
+        value: null,
+        text: "Select a product"
+      }],
+      validationErrors: '',
+      orderId: this.$route.params.id
     };
   },
   created: function created() {
-    this.getProductTypes();
-    this.getSingleProduct(this.productId);
+    this.getAllProducts();
+    this.getSingleOrder(this.orderId);
   },
   methods: {
     validationForm: function validationForm() {
@@ -258,14 +265,16 @@ __webpack_require__.r(__webpack_exports__);
       this.$refs.simpleRules.validate().then(function (success) {
         if (success) {
           _this.validationErrors = "";
-          _api_admin__WEBPACK_IMPORTED_MODULE_7__["default"].updateProduct(_this.info = {
-            name: _this.productName,
-            length: _this.length,
-            width: _this.width,
-            weight: _this.weight,
+          _api_admin__WEBPACK_IMPORTED_MODULE_7__["default"].updateOrder(_this.info = {
+            title: _this.orderTitle,
             description: _this.description,
-            type_id: _this.productType,
-            id: _this.productId
+            quantity: _this.quantity,
+            type: _this.orderType,
+            //status:1,
+            //created_by:user.id,
+            created_for: _this.createdFor,
+            product_id: _this.productId,
+            id: _this.orderId
           }, function (data) {
             if (data.success) {
               _this.$toast({
@@ -299,28 +308,52 @@ __webpack_require__.r(__webpack_exports__);
         }
       });
     },
-    getProductTypes: function getProductTypes() {
+    getRelUsers: function getRelUsers(event) {
       var _this2 = this;
 
-      _api_admin__WEBPACK_IMPORTED_MODULE_7__["default"].getData('getProductTypes', function (res) {
-        console.log("the getProductTypes response is ", res.data);
+      console.log("the user type is", event);
+      this.createdFor = null; //  this.created_for = null;
+
+      this.created_for = [{
+        value: null,
+        text: "Please select a User"
+      }];
+      _api_admin__WEBPACK_IMPORTED_MODULE_7__["default"].getRelUsers(function (res) {
+        console.log("the getRelUsers response is ", res.data);
 
         for (var i = 0; i < res.data.length; i++) {
-          _this2.product_type.push({
+          _this2.created_for.push({
             value: res.data[i].id,
-            text: res.data[i].type
+            text: res.data[i].name
+          });
+        }
+      }, function (err) {
+        console.log(err);
+      }, event);
+    },
+    getAllProducts: function getAllProducts() {
+      var _this3 = this;
+
+      _api_admin__WEBPACK_IMPORTED_MODULE_7__["default"].getData('getAllProducts', function (res) {
+        for (var i = 0; i < res.data.length; i++) {
+          _this3.all_products.push({
+            value: res.data[i].id,
+            text: res.data[i].name
           });
         }
       }, function (err) {
         console.log(err);
       });
     },
-    getSingleProduct: function getSingleProduct(productId) {
-      var _this3 = this;
+    getSingleOrder: function getSingleOrder(orderId) {
+      var _this4 = this;
 
-      _api_admin__WEBPACK_IMPORTED_MODULE_7__["default"].getRow('getSingleProduct', productId, function (res) {
-        console.log('the getsingle product response is', res.data);
-        _this3.productName = res.data.name, _this3.length = res.data.length, _this3.width = res.data.width, _this3.weight = res.data.weight, _this3.description = res.data.description, _this3.productType = res.data.type_id;
+      _api_admin__WEBPACK_IMPORTED_MODULE_7__["default"].getRow('getSingleOrder', orderId, function (res) {
+        _this4.orderTitle = res.data.title, _this4.description = res.data.description, _this4.productId = res.data.product_id, _this4.quantity = res.data.quantity, _this4.orderType = res.data.type, _this4.createdFor = res.data.created_for, _this4.created_for.push({
+          'value': res.data.created_for,
+          'text': res.data.name
+        });
+        console.log('the getSingleOrder response is', res.data);
       }, function (err) {
         console.log(err);
       });
@@ -459,10 +492,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/manage-products/UpdateProducts.vue?vue&type=template&id=3b107e9a&":
-/*!********************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/manage-products/UpdateProducts.vue?vue&type=template&id=3b107e9a& ***!
-  \********************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/manage-orders/UpdateOrders.vue?vue&type=template&id=3099323a&":
+/*!****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/manage-orders/UpdateOrders.vue?vue&type=template&id=3099323a& ***!
+  \****************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -483,7 +516,7 @@ var render = function () {
         [
           _c(
             "b-card-code",
-            { attrs: { title: "Update Product" } },
+            { attrs: { title: "Update Order" } },
             [
               _vm.validationErrors
                 ? _c("div", [
@@ -520,7 +553,7 @@ var render = function () {
                                 [
                                   _c("validation-provider", {
                                     attrs: {
-                                      name: "Product Type",
+                                      name: "Order Type",
                                       rules: "required",
                                     },
                                     scopedSlots: _vm._u([
@@ -531,14 +564,19 @@ var render = function () {
                                           return [
                                             _c("b-form-select", {
                                               attrs: {
-                                                options: _vm.product_type,
+                                                options: _vm.order_type,
+                                              },
+                                              on: {
+                                                change: function ($event) {
+                                                  return _vm.getRelUsers($event)
+                                                },
                                               },
                                               model: {
-                                                value: _vm.productType,
+                                                value: _vm.orderType,
                                                 callback: function ($$v) {
-                                                  _vm.productType = $$v
+                                                  _vm.orderType = $$v
                                                 },
-                                                expression: "productType",
+                                                expression: "orderType",
                                               },
                                             }),
                                             _vm._v(" "),
@@ -568,7 +606,7 @@ var render = function () {
                                 [
                                   _c("validation-provider", {
                                     attrs: {
-                                      name: "Product Name",
+                                      name: "Order For",
                                       rules: "required",
                                     },
                                     scopedSlots: _vm._u([
@@ -577,71 +615,16 @@ var render = function () {
                                         fn: function (ref) {
                                           var errors = ref.errors
                                           return [
-                                            _c("b-form-input", {
+                                            _c("b-form-select", {
                                               attrs: {
-                                                state:
-                                                  errors.length > 0
-                                                    ? false
-                                                    : null,
-                                                type: "text",
-                                                placeholder: "Product Name",
+                                                options: _vm.created_for,
                                               },
                                               model: {
-                                                value: _vm.productName,
+                                                value: _vm.createdFor,
                                                 callback: function ($$v) {
-                                                  _vm.productName = $$v
+                                                  _vm.createdFor = $$v
                                                 },
-                                                expression: "productName",
-                                              },
-                                            }),
-                                            _vm._v(" "),
-                                            _c(
-                                              "small",
-                                              { staticClass: "text-danger" },
-                                              [_vm._v(_vm._s(errors[0]))]
-                                            ),
-                                          ]
-                                        },
-                                      },
-                                    ]),
-                                  }),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-col",
-                            { attrs: { md: "6" } },
-                            [
-                              _c(
-                                "b-form-group",
-                                [
-                                  _c("validation-provider", {
-                                    attrs: { name: "Width", rules: "required" },
-                                    scopedSlots: _vm._u([
-                                      {
-                                        key: "default",
-                                        fn: function (ref) {
-                                          var errors = ref.errors
-                                          return [
-                                            _c("b-form-input", {
-                                              attrs: {
-                                                type: "text",
-                                                state:
-                                                  errors.length > 0
-                                                    ? false
-                                                    : null,
-                                                placeholder: "Product Width",
-                                              },
-                                              model: {
-                                                value: _vm.width,
-                                                callback: function ($$v) {
-                                                  _vm.width = $$v
-                                                },
-                                                expression: "width",
+                                                expression: "createdFor",
                                               },
                                             }),
                                             _vm._v(" "),
@@ -671,7 +654,7 @@ var render = function () {
                                 [
                                   _c("validation-provider", {
                                     attrs: {
-                                      name: "Length",
+                                      name: "Order Title",
                                       rules: "required",
                                     },
                                     scopedSlots: _vm._u([
@@ -682,19 +665,19 @@ var render = function () {
                                           return [
                                             _c("b-form-input", {
                                               attrs: {
-                                                type: "text",
                                                 state:
                                                   errors.length > 0
                                                     ? false
                                                     : null,
-                                                placeholder: "Product Length",
+                                                type: "text",
+                                                placeholder: "Order Title",
                                               },
                                               model: {
-                                                value: _vm.length,
+                                                value: _vm.orderTitle,
                                                 callback: function ($$v) {
-                                                  _vm.length = $$v
+                                                  _vm.orderTitle = $$v
                                                 },
-                                                expression: "length",
+                                                expression: "orderTitle",
                                               },
                                             }),
                                             _vm._v(" "),
@@ -724,7 +707,55 @@ var render = function () {
                                 [
                                   _c("validation-provider", {
                                     attrs: {
-                                      name: "Weight",
+                                      name: "Product",
+                                      rules: "required",
+                                    },
+                                    scopedSlots: _vm._u([
+                                      {
+                                        key: "default",
+                                        fn: function (ref) {
+                                          var errors = ref.errors
+                                          return [
+                                            _c("b-form-select", {
+                                              attrs: {
+                                                options: _vm.all_products,
+                                              },
+                                              model: {
+                                                value: _vm.productId,
+                                                callback: function ($$v) {
+                                                  _vm.productId = $$v
+                                                },
+                                                expression: "productId",
+                                              },
+                                            }),
+                                            _vm._v(" "),
+                                            _c(
+                                              "small",
+                                              { staticClass: "text-danger" },
+                                              [_vm._v(_vm._s(errors[0]))]
+                                            ),
+                                          ]
+                                        },
+                                      },
+                                    ]),
+                                  }),
+                                ],
+                                1
+                              ),
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "b-col",
+                            { attrs: { md: "6" } },
+                            [
+                              _c(
+                                "b-form-group",
+                                [
+                                  _c("validation-provider", {
+                                    attrs: {
+                                      name: "Quantity",
                                       rules: "required",
                                     },
                                     scopedSlots: _vm._u([
@@ -740,14 +771,14 @@ var render = function () {
                                                   errors.length > 0
                                                     ? false
                                                     : null,
-                                                placeholder: "Product Weight",
+                                                placeholder: "Quantity",
                                               },
                                               model: {
-                                                value: _vm.weight,
+                                                value: _vm.quantity,
                                                 callback: function ($$v) {
-                                                  _vm.weight = $$v
+                                                  _vm.quantity = $$v
                                                 },
-                                                expression: "weight",
+                                                expression: "quantity",
                                               },
                                             }),
                                             _vm._v(" "),
@@ -790,7 +821,7 @@ var render = function () {
                                               attrs: {
                                                 id: "textarea",
                                                 placeholder:
-                                                  "Add Description...",
+                                                  "Enter something...",
                                                 rows: "2",
                                                 "max-rows": "6",
                                               },
@@ -1183,17 +1214,17 @@ var validatorUrlValidator = function validatorUrlValidator(val) {
 
 /***/ }),
 
-/***/ "./resources/js/src/views/manage-products/UpdateProducts.vue":
-/*!*******************************************************************!*\
-  !*** ./resources/js/src/views/manage-products/UpdateProducts.vue ***!
-  \*******************************************************************/
+/***/ "./resources/js/src/views/manage-orders/UpdateOrders.vue":
+/*!***************************************************************!*\
+  !*** ./resources/js/src/views/manage-orders/UpdateOrders.vue ***!
+  \***************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _UpdateProducts_vue_vue_type_template_id_3b107e9a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./UpdateProducts.vue?vue&type=template&id=3b107e9a& */ "./resources/js/src/views/manage-products/UpdateProducts.vue?vue&type=template&id=3b107e9a&");
-/* harmony import */ var _UpdateProducts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./UpdateProducts.vue?vue&type=script&lang=js& */ "./resources/js/src/views/manage-products/UpdateProducts.vue?vue&type=script&lang=js&");
+/* harmony import */ var _UpdateOrders_vue_vue_type_template_id_3099323a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./UpdateOrders.vue?vue&type=template&id=3099323a& */ "./resources/js/src/views/manage-orders/UpdateOrders.vue?vue&type=template&id=3099323a&");
+/* harmony import */ var _UpdateOrders_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./UpdateOrders.vue?vue&type=script&lang=js& */ "./resources/js/src/views/manage-orders/UpdateOrders.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -1203,9 +1234,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _UpdateProducts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _UpdateProducts_vue_vue_type_template_id_3b107e9a___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _UpdateProducts_vue_vue_type_template_id_3b107e9a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _UpdateOrders_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _UpdateOrders_vue_vue_type_template_id_3099323a___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _UpdateOrders_vue_vue_type_template_id_3099323a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -1215,38 +1246,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/src/views/manage-products/UpdateProducts.vue"
+component.options.__file = "resources/js/src/views/manage-orders/UpdateOrders.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/src/views/manage-products/UpdateProducts.vue?vue&type=script&lang=js&":
-/*!********************************************************************************************!*\
-  !*** ./resources/js/src/views/manage-products/UpdateProducts.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************************/
+/***/ "./resources/js/src/views/manage-orders/UpdateOrders.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/src/views/manage-orders/UpdateOrders.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_UpdateProducts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./UpdateProducts.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/manage-products/UpdateProducts.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_UpdateProducts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_UpdateOrders_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./UpdateOrders.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/manage-orders/UpdateOrders.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_UpdateOrders_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/src/views/manage-products/UpdateProducts.vue?vue&type=template&id=3b107e9a&":
-/*!**************************************************************************************************!*\
-  !*** ./resources/js/src/views/manage-products/UpdateProducts.vue?vue&type=template&id=3b107e9a& ***!
-  \**************************************************************************************************/
+/***/ "./resources/js/src/views/manage-orders/UpdateOrders.vue?vue&type=template&id=3099323a&":
+/*!**********************************************************************************************!*\
+  !*** ./resources/js/src/views/manage-orders/UpdateOrders.vue?vue&type=template&id=3099323a& ***!
+  \**********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UpdateProducts_vue_vue_type_template_id_3b107e9a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./UpdateProducts.vue?vue&type=template&id=3b107e9a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/manage-products/UpdateProducts.vue?vue&type=template&id=3b107e9a&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UpdateProducts_vue_vue_type_template_id_3b107e9a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UpdateOrders_vue_vue_type_template_id_3099323a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./UpdateOrders.vue?vue&type=template&id=3099323a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/manage-orders/UpdateOrders.vue?vue&type=template&id=3099323a&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UpdateOrders_vue_vue_type_template_id_3099323a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UpdateProducts_vue_vue_type_template_id_3b107e9a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UpdateOrders_vue_vue_type_template_id_3099323a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

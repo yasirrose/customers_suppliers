@@ -77,6 +77,32 @@ const admin = {
                 errorCB(err.response.data)
             })
     },
+    checkVerificationCode(data, cb, errorCB) {
+        axios
+            .post(window.API_URL + 'admin/checkVerificationCode', data)
+            .then(resp => {
+
+                if (resp.status == 200) {
+                    cb(resp.data)
+                }
+            })
+            .catch(err => {
+                errorCB(err.response.data)
+            })
+    },
+    sendVerificationCode(data, cb, errorCB) {
+        axios
+            .post(window.API_URL + 'admin/sendVerificationCode', data)
+            .then(resp => {
+
+                if (resp.status == 200) {
+                    cb(resp.data)
+                }
+            })
+            .catch(err => {
+                errorCB(err.response.data)
+            })
+    },
     createUser(data, cb, errorCB) {
         axios
             .post(window.API_URL + 'admin/createUser', data)
