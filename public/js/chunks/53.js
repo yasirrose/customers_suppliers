@@ -1,21 +1,17 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[53],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/Leaflet.vue?vue&type=script&lang=js&":
-/*!**********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/charts-and-maps/maps/leaflet/Leaflet.vue?vue&type=script&lang=js& ***!
-  \**********************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/account-setting/AccountSetting.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/account-setting/AccountSetting.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap-vue */ "./node_modules/bootstrap-vue/esm/index.js");
-/* harmony import */ var _LeafletBasic_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LeafletBasic.vue */ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletBasic.vue");
-/* harmony import */ var _LeafletMarkerCirclePolygon_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LeafletMarkerCirclePolygon.vue */ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletMarkerCirclePolygon.vue");
-/* harmony import */ var _LeafletPopup_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./LeafletPopup.vue */ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletPopup.vue");
-/* harmony import */ var _LeafletGeoJSON_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./LeafletGeoJSON.vue */ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGeoJSON.vue");
-/* harmony import */ var _LeafletGroup_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./LeafletGroup.vue */ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGroup.vue");
-/* harmony import */ var _LeafletCustomIcon_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./LeafletCustomIcon.vue */ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletCustomIcon.vue");
+/* harmony import */ var _AccountSettingGeneral_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AccountSettingGeneral.vue */ "./resources/js/src/views/account-setting/AccountSettingGeneral.vue");
+/* harmony import */ var _AccountSettingPassword_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AccountSettingPassword.vue */ "./resources/js/src/views/account-setting/AccountSettingPassword.vue");
 //
 //
 //
@@ -29,105 +25,191 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-
-
-
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    BRow: bootstrap_vue__WEBPACK_IMPORTED_MODULE_0__["BRow"],
-    BCol: bootstrap_vue__WEBPACK_IMPORTED_MODULE_0__["BCol"],
-    LeafletBasic: _LeafletBasic_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
-    LeafletMarkerCirclePolygon: _LeafletMarkerCirclePolygon_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
-    LeafletPopup: _LeafletPopup_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
-    LeafletGeoJSON: _LeafletGeoJSON_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
-    LeafletGroup: _LeafletGroup_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
-    LeafletCustomIcon: _LeafletCustomIcon_vue__WEBPACK_IMPORTED_MODULE_6__["default"]
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletBasic.vue?vue&type=script&lang=js&":
-/*!***************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletBasic.vue?vue&type=script&lang=js& ***!
-  \***************************************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _core_components_b_card_code_BCardCode_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @core/components/b-card-code/BCardCode.vue */ "./resources/js/src/@core/components/b-card-code/BCardCode.vue");
-/* harmony import */ var vue2_leaflet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue2-leaflet */ "./node_modules/vue2-leaflet/dist/vue2-leaflet.es.js");
-/* harmony import */ var leaflet_dist_leaflet_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! leaflet/dist/leaflet.css */ "./node_modules/leaflet/dist/leaflet.css");
-/* harmony import */ var leaflet_dist_leaflet_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(leaflet_dist_leaflet_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _code__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./code */ "./resources/js/src/views/charts-and-maps/maps/leaflet/code.js");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  components: {
-    LMap: vue2_leaflet__WEBPACK_IMPORTED_MODULE_1__["LMap"],
-    LTileLayer: vue2_leaflet__WEBPACK_IMPORTED_MODULE_1__["LTileLayer"],
-    LCircle: vue2_leaflet__WEBPACK_IMPORTED_MODULE_1__["LCircle"],
-    BCardCode: _core_components_b_card_code_BCardCode_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+    BTabs: bootstrap_vue__WEBPACK_IMPORTED_MODULE_0__["BTabs"],
+    BTab: bootstrap_vue__WEBPACK_IMPORTED_MODULE_0__["BTab"],
+    AccountSettingGeneral: _AccountSettingGeneral_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
+    AccountSettingPassword: _AccountSettingPassword_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
   },
   data: function data() {
     return {
-      url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-      zoom: 8,
-      center: [47.313220, -1.319482],
-      circle: {
-        center: [47.413220, -1.0482],
-        radius: 4500,
-        color: '#EA5455'
-      },
-      codeBasic: _code__WEBPACK_IMPORTED_MODULE_3__["codeBasic"]
+      options: {}
     };
-  }
+  } // beforeCreate() {
+  //   this.$http.get('/data').then(res => { this.options = res.data })
+  // },
+
 });
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletCustomIcon.vue?vue&type=script&lang=js&":
-/*!********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletCustomIcon.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/account-setting/AccountSettingGeneral.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/account-setting/AccountSettingGeneral.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var bootstrap_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap-vue */ "./node_modules/bootstrap-vue/esm/index.js");
-/* harmony import */ var _core_components_b_card_code_BCardCode_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/@core/components/b-card-code/BCardCode.vue */ "./resources/js/src/@core/components/b-card-code/BCardCode.vue");
-/* harmony import */ var vue2_leaflet__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue2-leaflet */ "./node_modules/vue2-leaflet/dist/vue2-leaflet.es.js");
-/* harmony import */ var leaflet__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! leaflet */ "./node_modules/leaflet/dist/leaflet-src.js");
-/* harmony import */ var leaflet__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(leaflet__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _code__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./code */ "./resources/js/src/views/charts-and-maps/maps/leaflet/code.js");
+/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.function.name.js */ "./node_modules/core-js/modules/es.function.name.js");
+/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var vee_validate__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vee-validate */ "./node_modules/vee-validate/dist/vee-validate.esm.js");
+/* harmony import */ var _validations__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @validations */ "./resources/js/src/@core/utils/validations/validations.js");
+/* harmony import */ var bootstrap_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! bootstrap-vue */ "./node_modules/bootstrap-vue/esm/index.js");
+/* harmony import */ var vue_ripple_directive__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue-ripple-directive */ "./node_modules/vue-ripple-directive/src/ripple.js");
+/* harmony import */ var _core_comp_functions_forms_form_utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @core/comp-functions/forms/form-utils */ "./resources/js/src/@core/comp-functions/forms/form-utils.js");
+/* harmony import */ var _vue_composition_api__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @vue/composition-api */ "./node_modules/@vue/composition-api/dist/vue-composition-api.mjs");
+/* harmony import */ var _core_components_toastification_ToastificationContent_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @core/components/toastification/ToastificationContent.vue */ "./resources/js/src/@core/components/toastification/ToastificationContent.vue");
+/* harmony import */ var _api_admin__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../api/admin */ "./resources/js/api/admin.js");
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -166,1093 +248,493 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
-/* eslint-disable global-require */
 
 
 
 
- // eslint-disable-next-line no-underscore-dangle
 
-delete leaflet__WEBPACK_IMPORTED_MODULE_3__["Icon"].Default.prototype._getIconUrl;
-leaflet__WEBPACK_IMPORTED_MODULE_3__["Icon"].Default.mergeOptions({
-  iconRetinaUrl: __webpack_require__(/*! leaflet/dist/images/marker-icon-2x.png */ "./node_modules/leaflet/dist/images/marker-icon-2x.png"),
-  iconUrl: __webpack_require__(/*! leaflet/dist/images/marker-icon.png */ "./node_modules/leaflet/dist/images/marker-icon.png"),
-  shadowUrl: __webpack_require__(/*! leaflet/dist/images/marker-shadow.png */ "./node_modules/leaflet/dist/images/marker-shadow.png")
-});
+
+
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'Icon',
   components: {
-    BImg: bootstrap_vue__WEBPACK_IMPORTED_MODULE_0__["BImg"],
-    BCardCode: _core_components_b_card_code_BCardCode_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
-    LMap: vue2_leaflet__WEBPACK_IMPORTED_MODULE_2__["LMap"],
-    LTileLayer: vue2_leaflet__WEBPACK_IMPORTED_MODULE_2__["LTileLayer"],
-    LMarker: vue2_leaflet__WEBPACK_IMPORTED_MODULE_2__["LMarker"],
-    LIcon: vue2_leaflet__WEBPACK_IMPORTED_MODULE_2__["LIcon"]
+    BButton: bootstrap_vue__WEBPACK_IMPORTED_MODULE_3__["BButton"],
+    BForm: bootstrap_vue__WEBPACK_IMPORTED_MODULE_3__["BForm"],
+    BImg: bootstrap_vue__WEBPACK_IMPORTED_MODULE_3__["BImg"],
+    BFormFile: bootstrap_vue__WEBPACK_IMPORTED_MODULE_3__["BFormFile"],
+    BFormGroup: bootstrap_vue__WEBPACK_IMPORTED_MODULE_3__["BFormGroup"],
+    BFormInput: bootstrap_vue__WEBPACK_IMPORTED_MODULE_3__["BFormInput"],
+    BRow: bootstrap_vue__WEBPACK_IMPORTED_MODULE_3__["BRow"],
+    BCol: bootstrap_vue__WEBPACK_IMPORTED_MODULE_3__["BCol"],
+    BAlert: bootstrap_vue__WEBPACK_IMPORTED_MODULE_3__["BAlert"],
+    BCard: bootstrap_vue__WEBPACK_IMPORTED_MODULE_3__["BCard"],
+    BCardText: bootstrap_vue__WEBPACK_IMPORTED_MODULE_3__["BCardText"],
+    BMedia: bootstrap_vue__WEBPACK_IMPORTED_MODULE_3__["BMedia"],
+    BMediaAside: bootstrap_vue__WEBPACK_IMPORTED_MODULE_3__["BMediaAside"],
+    BMediaBody: bootstrap_vue__WEBPACK_IMPORTED_MODULE_3__["BMediaBody"],
+    BLink: bootstrap_vue__WEBPACK_IMPORTED_MODULE_3__["BLink"],
+    ValidationProvider: vee_validate__WEBPACK_IMPORTED_MODULE_1__["ValidationProvider"],
+    ValidationObserver: vee_validate__WEBPACK_IMPORTED_MODULE_1__["ValidationObserver"]
+  },
+  directives: {
+    Ripple: vue_ripple_directive__WEBPACK_IMPORTED_MODULE_4__["default"]
   },
   data: function data() {
     return {
-      zoom: 13,
-      center: Object(leaflet__WEBPACK_IMPORTED_MODULE_3__["latLng"])(47.41322, -1.219482),
-      url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-      attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-      icon: Object(leaflet__WEBPACK_IMPORTED_MODULE_3__["icon"])({
-        iconUrl: __webpack_require__(/*! @/assets/images/misc/leaf-green.png */ "./resources/js/src/assets/images/misc/leaf-green.png"),
-        iconSize: [50, 50],
-        iconAnchor: [16, 37]
-      }),
-      codeCustomIcon: _code__WEBPACK_IMPORTED_MODULE_4__["codeCustomIcon"]
-    };
-  }
-});
-/* eslint-disable global-require */
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGeoJSON.vue?vue&type=script&lang=js&":
-/*!*****************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGeoJSON.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var C_xampp_htdocs_enterprice_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ "./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
-/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var vue2_leaflet__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue2-leaflet */ "./node_modules/vue2-leaflet/dist/vue2-leaflet.es.js");
-/* harmony import */ var _core_components_b_card_code_BCardCode_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/@core/components/b-card-code/BCardCode.vue */ "./resources/js/src/@core/components/b-card-code/BCardCode.vue");
-/* harmony import */ var _code__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./code */ "./resources/js/src/views/charts-and-maps/maps/leaflet/code.js");
-
-
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  components: {
-    LMap: vue2_leaflet__WEBPACK_IMPORTED_MODULE_3__["LMap"],
-    LTileLayer: vue2_leaflet__WEBPACK_IMPORTED_MODULE_3__["LTileLayer"],
-    LGeoJson: vue2_leaflet__WEBPACK_IMPORTED_MODULE_3__["LGeoJson"],
-    BCardCode: _core_components_b_card_code_BCardCode_vue__WEBPACK_IMPORTED_MODULE_4__["default"]
-  },
-  data: function data() {
-    return {
-      url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-      zoom: 8,
-      center: [47.313220, -1.319482],
-      geojson: null,
-      codeGeoJSON: _code__WEBPACK_IMPORTED_MODULE_5__["codeGeoJSON"]
+      // optionsLocal: JSON.parse(JSON.stringify(this.generalData)),
+      profileFile: null,
+      profileInfo: {},
+      status: '',
+      // validation rules
+      required: _validations__WEBPACK_IMPORTED_MODULE_2__["required"],
+      email: _validations__WEBPACK_IMPORTED_MODULE_2__["email"]
     };
   },
   created: function created() {
-    var _this = this;
+    this.getProfileInfo();
+  },
+  methods: {
+    getProfileInfo: function getProfileInfo() {
+      var _this = this;
 
-    return Object(C_xampp_htdocs_enterprice_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee() {
-      var response;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee$(_context) {
-        while (1) {
-          switch (_context.prev = _context.next) {
-            case 0:
-              _context.next = 2;
-              return fetch('https://rawgit.com/gregoiredavid/france-geojson/master/regions/pays-de-la-loire/communes-pays-de-la-loire.geojson');
+      _api_admin__WEBPACK_IMPORTED_MODULE_8__["default"].getAdminInfo(function (data) {
+        if (data.success) {
+          _this.profileInfo = data.data;
+        } else {
+          _this.$toast({
+            component: _core_components_toastification_ToastificationContent_vue__WEBPACK_IMPORTED_MODULE_7__["default"],
+            props: {
+              title: 'You are not authorized to view this page',
+              message: 'You are not authorized to view this page',
+              icon: 'errorIcon',
+              variant: 'error'
+            }
+          });
 
-            case 2:
-              response = _context.sent;
-              _context.next = 5;
-              return response.json();
-
-            case 5:
-              _this.geojson = _context.sent;
-
-            case 6:
-            case "end":
-              return _context.stop();
-          }
+          _this.$router.push({
+            name: 'home'
+          });
         }
-      }, _callee);
-    }))();
+      }, function (err) {
+        console.log(err);
+      });
+    },
+    validationForm: function validationForm() {
+      var _this2 = this;
+
+      this.$refs.updateInfoValidate.validate().then(function (success) {
+        if (success) {
+          var info = {
+            "email": _this2.profileInfo.email,
+            "name": _this2.profileInfo.name,
+            "username": _this2.profileInfo.username
+          };
+          _api_admin__WEBPACK_IMPORTED_MODULE_8__["default"].updateAdminInfo(info, function (data) {
+            if (data.success) {
+              _this2.$toast({
+                component: _core_components_toastification_ToastificationContent_vue__WEBPACK_IMPORTED_MODULE_7__["default"],
+                props: {
+                  title: 'Success!',
+                  text: data.message,
+                  icon: 'UserIcon',
+                  variant: 'success'
+                }
+              });
+            } else {
+              _this2.$toast({
+                component: _core_components_toastification_ToastificationContent_vue__WEBPACK_IMPORTED_MODULE_7__["default"],
+                props: {
+                  title: 'Error!',
+                  text: 'Cannot update profile.',
+                  icon: 'UserIcon',
+                  variant: 'danger'
+                }
+              });
+            }
+          }, function (err) {
+            _this2.$toast({
+              component: _core_components_toastification_ToastificationContent_vue__WEBPACK_IMPORTED_MODULE_7__["default"],
+              props: {
+                title: 'Error!',
+                text: err,
+                icon: 'UserIcon',
+                variant: 'danger'
+              }
+            });
+          });
+        }
+      });
+    },
+    resetForm: function resetForm() {
+      this.profileInfo = "";
+    }
+  },
+  setup: function setup() {
+    var refInputEl = Object(_vue_composition_api__WEBPACK_IMPORTED_MODULE_6__["ref"])(null);
+    var previewEl = Object(_vue_composition_api__WEBPACK_IMPORTED_MODULE_6__["ref"])(null);
+
+    var _useInputImageRendere = Object(_core_comp_functions_forms_form_utils__WEBPACK_IMPORTED_MODULE_5__["useInputImageRenderer"])(refInputEl, previewEl),
+        inputImageRenderer = _useInputImageRendere.inputImageRenderer;
+
+    return {
+      refInputEl: refInputEl,
+      previewEl: previewEl,
+      inputImageRenderer: inputImageRenderer
+    };
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGroup.vue?vue&type=script&lang=js&":
-/*!***************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGroup.vue?vue&type=script&lang=js& ***!
-  \***************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/account-setting/AccountSettingPassword.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/account-setting/AccountSettingPassword.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
-/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var core_js_modules_es_regexp_to_string_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.regexp.to-string.js */ "./node_modules/core-js/modules/es.regexp.to-string.js");
-/* harmony import */ var core_js_modules_es_regexp_to_string_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_regexp_to_string_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var core_js_modules_es_json_stringify_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.json.stringify.js */ "./node_modules/core-js/modules/es.json.stringify.js");
-/* harmony import */ var core_js_modules_es_json_stringify_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_json_stringify_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var core_js_modules_es_array_splice_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es.array.splice.js */ "./node_modules/core-js/modules/es.array.splice.js");
-/* harmony import */ var core_js_modules_es_array_splice_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_splice_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var core_js_modules_es_array_map_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es.array.map.js */ "./node_modules/core-js/modules/es.array.map.js");
-/* harmony import */ var core_js_modules_es_array_map_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_map_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _core_components_b_card_code_BCardCode_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/@core/components/b-card-code/BCardCode.vue */ "./resources/js/src/@core/components/b-card-code/BCardCode.vue");
-/* harmony import */ var bootstrap_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! bootstrap-vue */ "./node_modules/bootstrap-vue/esm/index.js");
-/* harmony import */ var vue2_leaflet__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vue2-leaflet */ "./node_modules/vue2-leaflet/dist/vue2-leaflet.es.js");
-/* harmony import */ var leaflet__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! leaflet */ "./node_modules/leaflet/dist/leaflet-src.js");
-/* harmony import */ var leaflet__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(leaflet__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _code__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./code */ "./resources/js/src/views/charts-and-maps/maps/leaflet/code.js");
+/* harmony import */ var vee_validate__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vee-validate */ "./node_modules/vee-validate/dist/vee-validate.esm.js");
+/* harmony import */ var _validations__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @validations */ "./resources/js/src/@core/utils/validations/validations.js");
+/* harmony import */ var bootstrap_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap-vue */ "./node_modules/bootstrap-vue/esm/index.js");
+/* harmony import */ var vue_ripple_directive__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-ripple-directive */ "./node_modules/vue-ripple-directive/src/ripple.js");
+/* harmony import */ var _core_components_toastification_ToastificationContent_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @core/components/toastification/ToastificationContent.vue */ "./resources/js/src/@core/components/toastification/ToastificationContent.vue");
+/* harmony import */ var _api_admin__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../api/admin */ "./resources/js/api/admin.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
 
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
-/* eslint-disable global-require */
-
-
-
-
- // eslint-disable-next-line no-underscore-dangle
-
-delete leaflet__WEBPACK_IMPORTED_MODULE_8__["Icon"].Default.prototype._getIconUrl;
-leaflet__WEBPACK_IMPORTED_MODULE_8__["Icon"].Default.mergeOptions({
-  iconRetinaUrl: __webpack_require__(/*! leaflet/dist/images/marker-icon-2x.png */ "./node_modules/leaflet/dist/images/marker-icon-2x.png"),
-  iconUrl: __webpack_require__(/*! leaflet/dist/images/marker-icon.png */ "./node_modules/leaflet/dist/images/marker-icon.png"),
-  shadowUrl: __webpack_require__(/*! leaflet/dist/images/marker-shadow.png */ "./node_modules/leaflet/dist/images/marker-shadow.png")
-});
-/* eslint-disable global-require */
-
-var markers1 = [{
-  position: {
-    lng: -1.219482,
-    lat: 47.41322
-  },
-  visible: true,
-  draggable: true
-}, {
-  position: {
-    lng: -1.571045,
-    lat: 47.457809
-  }
-}, {
-  position: {
-    lng: -1.560059,
-    lat: 47.739323
-  }
-}, {
-  position: {
-    lng: -0.922852,
-    lat: 47.886881
-  }
-}, {
-  position: {
-    lng: -0.769043,
-    lat: 48.231991
-  }
-}, {
-  position: {
-    lng: 0.395508,
-    lat: 48.268569
-  }
-}, {
-  position: {
-    lng: 0.604248,
-    lat: 48.026672
-  }
-}, {
-  position: {
-    lng: 1.2854,
-    lat: 47.982568
-  }
-}, {
-  position: {
-    lng: 1.318359,
-    lat: 47.894248
-  }
-}, {
-  position: {
-    lng: 1.373291,
-    lat: 47.879513
-  }
-}, {
-  position: {
-    lng: 1.384277,
-    lat: 47.798397
-  }
-}, {
-  position: {
-    lng: 1.329346,
-    lat: 47.754098
-  }
-}, {
-  position: {
-    lng: 1.329346,
-    lat: 47.680183
-  }
-}, {
-  position: {
-    lng: 0.999756,
-    lat: 47.635784
-  }
-}, {
-  position: {
-    lng: 0.86792,
-    lat: 47.820532
-  }
-}, {
-  position: {
-    lng: 0.571289,
-    lat: 47.820532
-  }
-}, {
-  position: {
-    lng: 0.439453,
-    lat: 47.717154
-  }
-}, {
-  position: {
-    lng: 0.439453,
-    lat: 47.61357
-  }
-}, {
-  position: {
-    lng: -0.571289,
-    lat: 47.487513
-  }
-}, {
-  position: {
-    lng: -0.615234,
-    lat: 47.680183
-  }
-}, {
-  position: {
-    lng: -0.812988,
-    lat: 47.724545
-  }
-}, {
-  position: {
-    lng: -1.054688,
-    lat: 47.680183
-  }
-}, {
-  position: {
-    lng: -1.219482,
-    lat: 47.41322
-  }
-}];
-var poly1 = [{
-  lng: -1.219482,
-  lat: 47.41322
-}, {
-  lng: -1.571045,
-  lat: 47.457809
-}, {
-  lng: -1.560059,
-  lat: 47.739323
-}, {
-  lng: -0.922852,
-  lat: 47.886881
-}, {
-  lng: -0.769043,
-  lat: 48.231991
-}, {
-  lng: 0.395508,
-  lat: 48.268569
-}, {
-  lng: 0.604248,
-  lat: 48.026672
-}, {
-  lng: 1.2854,
-  lat: 47.982568
-}, {
-  lng: 1.318359,
-  lat: 47.894248
-}, {
-  lng: 1.373291,
-  lat: 47.879513
-}, {
-  lng: 1.384277,
-  lat: 47.798397
-}, {
-  lng: 1.329346,
-  lat: 47.754098
-}, {
-  lng: 1.329346,
-  lat: 47.680183
-}, {
-  lng: 0.999756,
-  lat: 47.635784
-}, {
-  lng: 0.86792,
-  lat: 47.820532
-}, {
-  lng: 0.571289,
-  lat: 47.820532
-}, {
-  lng: 0.439453,
-  lat: 47.717154
-}, {
-  lng: 0.439453,
-  lat: 47.61357
-}, {
-  lng: -0.571289,
-  lat: 47.487513
-}, {
-  lng: -0.615234,
-  lat: 47.680183
-}, {
-  lng: -0.812988,
-  lat: 47.724545
-}, {
-  lng: -1.054688,
-  lat: 47.680183
-}, {
-  lng: -1.219482,
-  lat: 47.41322
-}];
-var tileProviders = [{
-  name: 'OpenStreetMap',
-  visible: true,
-  attribution: '&copy; <a target="_blank" href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-  url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
-}, {
-  name: 'OpenTopoMap',
-  visible: false,
-  url: 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
-  attribution: 'Map data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
-}];
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'Example',
   components: {
-    LMap: vue2_leaflet__WEBPACK_IMPORTED_MODULE_7__["LMap"],
-    LTileLayer: vue2_leaflet__WEBPACK_IMPORTED_MODULE_7__["LTileLayer"],
-    LMarker: vue2_leaflet__WEBPACK_IMPORTED_MODULE_7__["LMarker"],
-    LPolyline: vue2_leaflet__WEBPACK_IMPORTED_MODULE_7__["LPolyline"],
-    LLayerGroup: vue2_leaflet__WEBPACK_IMPORTED_MODULE_7__["LLayerGroup"],
-    LTooltip: vue2_leaflet__WEBPACK_IMPORTED_MODULE_7__["LTooltip"],
-    LPopup: vue2_leaflet__WEBPACK_IMPORTED_MODULE_7__["LPopup"],
-    LControlZoom: vue2_leaflet__WEBPACK_IMPORTED_MODULE_7__["LControlZoom"],
-    LControlAttribution: vue2_leaflet__WEBPACK_IMPORTED_MODULE_7__["LControlAttribution"],
-    LControlScale: vue2_leaflet__WEBPACK_IMPORTED_MODULE_7__["LControlScale"],
-    LControlLayers: vue2_leaflet__WEBPACK_IMPORTED_MODULE_7__["LControlLayers"],
-    BButton: bootstrap_vue__WEBPACK_IMPORTED_MODULE_6__["BButton"],
-    BFormSelect: bootstrap_vue__WEBPACK_IMPORTED_MODULE_6__["BFormSelect"],
-    BRow: bootstrap_vue__WEBPACK_IMPORTED_MODULE_6__["BRow"],
-    BCol: bootstrap_vue__WEBPACK_IMPORTED_MODULE_6__["BCol"],
-    BFormGroup: bootstrap_vue__WEBPACK_IMPORTED_MODULE_6__["BFormGroup"],
-    BCardCode: _core_components_b_card_code_BCardCode_vue__WEBPACK_IMPORTED_MODULE_5__["default"]
+    BButton: bootstrap_vue__WEBPACK_IMPORTED_MODULE_2__["BButton"],
+    BForm: bootstrap_vue__WEBPACK_IMPORTED_MODULE_2__["BForm"],
+    BFormGroup: bootstrap_vue__WEBPACK_IMPORTED_MODULE_2__["BFormGroup"],
+    BFormInput: bootstrap_vue__WEBPACK_IMPORTED_MODULE_2__["BFormInput"],
+    BRow: bootstrap_vue__WEBPACK_IMPORTED_MODULE_2__["BRow"],
+    BCol: bootstrap_vue__WEBPACK_IMPORTED_MODULE_2__["BCol"],
+    BCard: bootstrap_vue__WEBPACK_IMPORTED_MODULE_2__["BCard"],
+    BInputGroup: bootstrap_vue__WEBPACK_IMPORTED_MODULE_2__["BInputGroup"],
+    BInputGroupAppend: bootstrap_vue__WEBPACK_IMPORTED_MODULE_2__["BInputGroupAppend"],
+    ValidationProvider: vee_validate__WEBPACK_IMPORTED_MODULE_0__["ValidationProvider"],
+    ValidationObserver: vee_validate__WEBPACK_IMPORTED_MODULE_0__["ValidationObserver"]
+  },
+  directives: {
+    Ripple: vue_ripple_directive__WEBPACK_IMPORTED_MODULE_3__["default"]
   },
   data: function data() {
     return {
-      codeLayerGroup: _code__WEBPACK_IMPORTED_MODULE_9__["codeLayerGroup"],
-      center: [51.505, -0.09],
-      opacity: 0.6,
-      token: 'your token if using mapbox',
-      mapOptions: {
-        zoomControl: false,
-        attributionControl: false,
-        zoomSnap: true
-      },
-      zoom: 3,
-      minZoom: 1,
-      maxZoom: 20,
-      zoomPosition: 'topleft',
-      attributionPosition: 'bottomright',
-      layersPosition: 'topright',
-      attributionPrefix: 'Vue2Leaflet',
-      imperial: false,
-      Positions: ['topleft', 'topright', 'bottomleft', 'bottomright'],
-      tileProviders: tileProviders,
-      markers: [{
-        id: 'm1',
-        position: {
-          lat: 51.505,
-          lng: -0.09
-        },
-        tooltip: 'tooltip for marker1',
-        draggable: true,
-        visible: true
-      }, {
-        id: 'm2',
-        position: {
-          lat: 51.8905,
-          lng: -0.09
-        },
-        tooltip: 'tooltip for marker2',
-        draggable: true,
-        visible: false
-      }, {
-        id: 'm3',
-        position: {
-          lat: 51.005,
-          lng: -0.09
-        },
-        tooltip: 'tooltip for marker3',
-        draggable: true,
-        visible: true
-      }, {
-        id: 'm4',
-        position: {
-          lat: 50.7605,
-          lng: -0.09
-        },
-        tooltip: 'tooltip for marker4',
-        draggable: true,
-        visible: false
-      }],
-      polylines: [{
-        id: 'p1',
-        points: [{
-          lat: 37.772,
-          lng: -122.214
-        }, {
-          lat: 21.291,
-          lng: -157.821
-        }, {
-          lat: -18.142,
-          lng: -181.569
-        }, {
-          lat: -27.467,
-          lng: -206.973
-        }],
-        visible: true
-      }, {
-        id: 'p2',
-        points: [[-73.91, 40.78], [-87.62, 41.83], [-96.72, 32.76]],
-        visible: true
-      }],
-      stuff: [{
-        id: 's1',
-        markers: markers1,
-        polyline: {
-          points: poly1,
-          visible: true
-        },
-        visible: true,
-        markersVisible: true
-      }],
-      bounds: Object(leaflet__WEBPACK_IMPORTED_MODULE_8__["latLngBounds"])({
-        lat: 51.476483373501964,
-        lng: -0.14668464136775586
-      }, {
-        lat: 51.52948330894063,
-        lng: -0.019140238291583955
-      })
+      passwordValueOld: '',
+      newPasswordValue: '',
+      retypePassword: '',
+      passwordFieldTypeOld: 'password',
+      passwordFieldTypeNew: 'password',
+      passwordFieldTypeRetype: 'password'
     };
   },
+  computed: {
+    passwordToggleIconOld: function passwordToggleIconOld() {
+      return this.passwordFieldTypeOld === 'password' ? 'EyeIcon' : 'EyeOffIcon';
+    },
+    passwordToggleIconNew: function passwordToggleIconNew() {
+      return this.passwordFieldTypeNew === 'password' ? 'EyeIcon' : 'EyeOffIcon';
+    },
+    passwordToggleIconRetype: function passwordToggleIconRetype() {
+      return this.passwordFieldTypeRetype === 'password' ? 'EyeIcon' : 'EyeOffIcon';
+    }
+  },
   methods: {
-    alert: function (_alert) {
-      function alert(_x) {
-        return _alert.apply(this, arguments);
-      }
-
-      alert.toString = function () {
-        return _alert.toString();
-      };
-
-      return alert;
-    }(function (item) {
-      // eslint-disable-next-line no-alert
-      alert("this is ".concat(JSON.stringify(item)));
-    }),
-    addMarker: function addMarker() {
-      var newMarker = {
-        position: {
-          lat: 50.5505,
-          lng: -0.09
-        },
-        draggable: true,
-        visible: true
-      };
-      this.markers.push(newMarker);
+    togglePasswordOld: function togglePasswordOld() {
+      this.passwordFieldTypeOld = this.passwordFieldTypeOld === 'password' ? 'text' : 'password';
     },
-    removeMarker: function removeMarker(index) {
-      this.markers.splice(index, 1);
+    togglePasswordNew: function togglePasswordNew() {
+      this.passwordFieldTypeNew = this.passwordFieldTypeNew === 'password' ? 'text' : 'password';
     },
-    fitPolyline: function fitPolyline() {
-      var bounds = Object(leaflet__WEBPACK_IMPORTED_MODULE_8__["latLngBounds"])(markers1.map(function (o) {
-        return o.position;
-      }));
-      this.bounds = bounds;
+    togglePasswordRetype: function togglePasswordRetype() {
+      this.passwordFieldTypeRetype = this.passwordFieldTypeRetype === 'password' ? 'text' : 'password';
+    },
+    validationForm: function validationForm() {
+      var _this = this;
+
+      this.$refs.updatePasswordValidate.validate().then(function (success) {
+        if (success) {
+          var info = {
+            "oldPassword": _this.passwordValueOld,
+            "newPassword": _this.newPasswordValue,
+            "confirmPassword": _this.retypePassword
+          };
+          _api_admin__WEBPACK_IMPORTED_MODULE_5__["default"].updatePassword(info, function (data) {
+            if (data.success) {
+              _this.$toast({
+                component: _core_components_toastification_ToastificationContent_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
+                props: {
+                  title: 'Success!',
+                  text: data.message,
+                  icon: 'UserIcon',
+                  variant: 'success'
+                }
+              });
+            } else {
+              _this.$toast({
+                component: _core_components_toastification_ToastificationContent_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
+                props: {
+                  title: 'Error!',
+                  text: data.data,
+                  icon: 'UserIcon',
+                  variant: 'danger'
+                }
+              });
+            }
+          }, function (err) {
+            _this.$toast({
+              component: _core_components_toastification_ToastificationContent_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
+              props: {
+                title: 'Error!',
+                text: err,
+                icon: 'UserIcon',
+                variant: 'danger'
+              }
+            });
+          });
+        }
+      });
     }
   }
 });
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletMarkerCirclePolygon.vue?vue&type=script&lang=js&":
-/*!*****************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletMarkerCirclePolygon.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./node_modules/core-js/internals/does-not-exceed-safe-integer.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/core-js/internals/does-not-exceed-safe-integer.js ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var $TypeError = TypeError;
+var MAX_SAFE_INTEGER = 0x1FFFFFFFFFFFFF; // 2 ** 53 - 1 == 9007199254740991
+
+module.exports = function (it) {
+  if (it > MAX_SAFE_INTEGER) throw $TypeError('Maximum allowed index exceeded');
+  return it;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/es.array.concat.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/core-js/modules/es.array.concat.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _core_components_b_card_code_BCardCode_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @core/components/b-card-code/BCardCode.vue */ "./resources/js/src/@core/components/b-card-code/BCardCode.vue");
-/* harmony import */ var vue2_leaflet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue2-leaflet */ "./node_modules/vue2-leaflet/dist/vue2-leaflet.es.js");
-/* harmony import */ var leaflet__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! leaflet */ "./node_modules/leaflet/dist/leaflet-src.js");
-/* harmony import */ var leaflet__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(leaflet__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var leaflet_dist_leaflet_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! leaflet/dist/leaflet.css */ "./node_modules/leaflet/dist/leaflet.css");
-/* harmony import */ var leaflet_dist_leaflet_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(leaflet_dist_leaflet_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _code__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./code */ "./resources/js/src/views/charts-and-maps/maps/leaflet/code.js");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
-/* eslint-disable global-require */
+var $ = __webpack_require__(/*! ../internals/export */ "./node_modules/core-js/internals/export.js");
+var fails = __webpack_require__(/*! ../internals/fails */ "./node_modules/core-js/internals/fails.js");
+var isArray = __webpack_require__(/*! ../internals/is-array */ "./node_modules/core-js/internals/is-array.js");
+var isObject = __webpack_require__(/*! ../internals/is-object */ "./node_modules/core-js/internals/is-object.js");
+var toObject = __webpack_require__(/*! ../internals/to-object */ "./node_modules/core-js/internals/to-object.js");
+var lengthOfArrayLike = __webpack_require__(/*! ../internals/length-of-array-like */ "./node_modules/core-js/internals/length-of-array-like.js");
+var doesNotExceedSafeInteger = __webpack_require__(/*! ../internals/does-not-exceed-safe-integer */ "./node_modules/core-js/internals/does-not-exceed-safe-integer.js");
+var createProperty = __webpack_require__(/*! ../internals/create-property */ "./node_modules/core-js/internals/create-property.js");
+var arraySpeciesCreate = __webpack_require__(/*! ../internals/array-species-create */ "./node_modules/core-js/internals/array-species-create.js");
+var arrayMethodHasSpeciesSupport = __webpack_require__(/*! ../internals/array-method-has-species-support */ "./node_modules/core-js/internals/array-method-has-species-support.js");
+var wellKnownSymbol = __webpack_require__(/*! ../internals/well-known-symbol */ "./node_modules/core-js/internals/well-known-symbol.js");
+var V8_VERSION = __webpack_require__(/*! ../internals/engine-v8-version */ "./node_modules/core-js/internals/engine-v8-version.js");
 
+var IS_CONCAT_SPREADABLE = wellKnownSymbol('isConcatSpreadable');
 
-
-
- // eslint-disable-next-line no-underscore-dangle
-
-delete leaflet__WEBPACK_IMPORTED_MODULE_2__["Icon"].Default.prototype._getIconUrl;
-leaflet__WEBPACK_IMPORTED_MODULE_2__["Icon"].Default.mergeOptions({
-  iconRetinaUrl: __webpack_require__(/*! leaflet/dist/images/marker-icon-2x.png */ "./node_modules/leaflet/dist/images/marker-icon-2x.png"),
-  iconUrl: __webpack_require__(/*! leaflet/dist/images/marker-icon.png */ "./node_modules/leaflet/dist/images/marker-icon.png"),
-  shadowUrl: __webpack_require__(/*! leaflet/dist/images/marker-shadow.png */ "./node_modules/leaflet/dist/images/marker-shadow.png")
+// We can't use this feature detection in V8 since it causes
+// deoptimization and serious performance degradation
+// https://github.com/zloirock/core-js/issues/679
+var IS_CONCAT_SPREADABLE_SUPPORT = V8_VERSION >= 51 || !fails(function () {
+  var array = [];
+  array[IS_CONCAT_SPREADABLE] = false;
+  return array.concat()[0] !== array;
 });
-/* eslint-disable global-require */
 
-/* harmony default export */ __webpack_exports__["default"] = ({
-  components: {
-    LMap: vue2_leaflet__WEBPACK_IMPORTED_MODULE_1__["LMap"],
-    LTileLayer: vue2_leaflet__WEBPACK_IMPORTED_MODULE_1__["LTileLayer"],
-    LMarker: vue2_leaflet__WEBPACK_IMPORTED_MODULE_1__["LMarker"],
-    BCardCode: _core_components_b_card_code_BCardCode_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
-    LCircle: vue2_leaflet__WEBPACK_IMPORTED_MODULE_1__["LCircle"],
-    LPolygon: vue2_leaflet__WEBPACK_IMPORTED_MODULE_1__["LPolygon"]
-  },
-  data: function data() {
-    return {
-      url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-      zoom: 10,
-      center: [47.313220, -1.319482],
-      markerLatLng: [47.313220, -1.319482],
-      circle: {
-        center: [47.313220, -1.319482],
-        radius: 4500,
-        color: '#EA5455'
-      },
-      polygon: {
-        latlngs: [[47.2263299, -1.6222], [47.21024000000001, -1.6270065], [47.1969447, -1.6136169], [47.18527929999999, -1.6143036], [47.1794457, -1.6098404], [47.1775788, -1.5985107], [47.1676598, -1.5753365], [47.1593731, -1.5521622], [47.1593731, -1.5319061], [47.1722111, -1.5143967], [47.1960115, -1.4841843], [47.2095404, -1.4848709], [47.2291277, -1.4683914], [47.2533687, -1.5116501], [47.2577961, -1.5531921], [47.26828069, -1.5621185], [47.2657179, -1.589241], [47.2589612, -1.6204834], [47.237287, -1.6266632], [47.2263299, -1.6222]],
-        color: '#7367F0'
-      },
-      codeMarkerPolygon: _code__WEBPACK_IMPORTED_MODULE_4__["codeMarkerPolygon"]
-    };
+var SPECIES_SUPPORT = arrayMethodHasSpeciesSupport('concat');
+
+var isConcatSpreadable = function (O) {
+  if (!isObject(O)) return false;
+  var spreadable = O[IS_CONCAT_SPREADABLE];
+  return spreadable !== undefined ? !!spreadable : isArray(O);
+};
+
+var FORCED = !IS_CONCAT_SPREADABLE_SUPPORT || !SPECIES_SUPPORT;
+
+// `Array.prototype.concat` method
+// https://tc39.es/ecma262/#sec-array.prototype.concat
+// with adding support of @@isConcatSpreadable and @@species
+$({ target: 'Array', proto: true, arity: 1, forced: FORCED }, {
+  // eslint-disable-next-line no-unused-vars -- required for `.length`
+  concat: function concat(arg) {
+    var O = toObject(this);
+    var A = arraySpeciesCreate(O, 0);
+    var n = 0;
+    var i, k, length, len, E;
+    for (i = -1, length = arguments.length; i < length; i++) {
+      E = i === -1 ? O : arguments[i];
+      if (isConcatSpreadable(E)) {
+        len = lengthOfArrayLike(E);
+        doesNotExceedSafeInteger(n + len);
+        for (k = 0; k < len; k++, n++) if (k in E) createProperty(A, n, E[k]);
+      } else {
+        doesNotExceedSafeInteger(n + 1);
+        createProperty(A, n++, E);
+      }
+    }
+    A.length = n;
+    return A;
   }
 });
 
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletPopup.vue?vue&type=script&lang=js&":
-/*!***************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletPopup.vue?vue&type=script&lang=js& ***!
-  \***************************************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _core_components_b_card_code_BCardCode_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/@core/components/b-card-code/BCardCode.vue */ "./resources/js/src/@core/components/b-card-code/BCardCode.vue");
-/* harmony import */ var vue2_leaflet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue2-leaflet */ "./node_modules/vue2-leaflet/dist/vue2-leaflet.es.js");
-/* harmony import */ var _code__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./code */ "./resources/js/src/views/charts-and-maps/maps/leaflet/code.js");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  components: {
-    LMap: vue2_leaflet__WEBPACK_IMPORTED_MODULE_1__["LMap"],
-    LTileLayer: vue2_leaflet__WEBPACK_IMPORTED_MODULE_1__["LTileLayer"],
-    LMarker: vue2_leaflet__WEBPACK_IMPORTED_MODULE_1__["LMarker"],
-    LPopup: vue2_leaflet__WEBPACK_IMPORTED_MODULE_1__["LPopup"],
-    BCardCode: _core_components_b_card_code_BCardCode_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
-  },
-  data: function data() {
-    return {
-      url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-      zoom: 8,
-      center: [47.313220, -1.319482],
-      markerLatLng: [47.313220, -1.319482, {
-        draggable: 'true'
-      }],
-      codePopup: _code__WEBPACK_IMPORTED_MODULE_2__["codePopup"]
-    };
-  }
-});
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/Leaflet.vue?vue&type=style&index=0&lang=scss&":
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/sass-loader/dist/cjs.js??ref--11-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/charts-and-maps/maps/leaflet/Leaflet.vue?vue&type=style&index=0&lang=scss& ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.i, ".vue2leaflet-map {\n  height: 400px;\n  z-index: 1;\n}\nhtml[dir=rtl] .leaflet-pane,\nhtml[dir=rtl] .leaflet-tile,\nhtml[dir=rtl] .leaflet-marker-icon,\nhtml[dir=rtl] .leaflet-marker-shadow,\nhtml[dir=rtl] .leaflet-tile-container,\nhtml[dir=rtl] .leaflet-pane > svg,\nhtml[dir=rtl] .leaflet-pane > canvas,\nhtml[dir=rtl] .leaflet-zoom-box,\nhtml[dir=rtl] .leaflet-image-layer,\nhtml[dir=rtl] .leaflet-layer {\n  left: 0;\n  right: unset;\n}", ""]);
-// Exports
-module.exports = exports;
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletBasic.vue?vue&type=style&index=0&lang=scss&":
-/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/sass-loader/dist/cjs.js??ref--11-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletBasic.vue?vue&type=style&index=0&lang=scss& ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.i, ".vue2leaflet-map.leaflet-container {\n  height: 350px;\n}", ""]);
-// Exports
-module.exports = exports;
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletCustomIcon.vue?vue&type=style&index=0&lang=scss&":
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/sass-loader/dist/cjs.js??ref--11-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletCustomIcon.vue?vue&type=style&index=0&lang=scss& ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.i, ".vue2leaflet-map.leaflet-container {\n  height: 350px;\n}", ""]);
-// Exports
-module.exports = exports;
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGeoJSON.vue?vue&type=style&index=0&lang=scss&":
-/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/sass-loader/dist/cjs.js??ref--11-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGeoJSON.vue?vue&type=style&index=0&lang=scss& ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.i, ".vue2leaflet-map.leaflet-container {\n  height: 350px;\n}", ""]);
-// Exports
-module.exports = exports;
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletMarkerCirclePolygon.vue?vue&type=style&index=0&lang=scss&":
-/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/sass-loader/dist/cjs.js??ref--11-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletMarkerCirclePolygon.vue?vue&type=style&index=0&lang=scss& ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.i, ".vue2leaflet-map.leaflet-container {\n  height: 350px;\n}", ""]);
-// Exports
-module.exports = exports;
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletPopup.vue?vue&type=style&index=0&lang=scss&":
-/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/sass-loader/dist/cjs.js??ref--11-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletPopup.vue?vue&type=style&index=0&lang=scss& ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.i, ".vue2leaflet-map.leaflet-container {\n  height: 350px;\n}", ""]);
-// Exports
-module.exports = exports;
-
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/Leaflet.vue?vue&type=style&index=0&lang=scss&":
-/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/sass-loader/dist/cjs.js??ref--11-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/charts-and-maps/maps/leaflet/Leaflet.vue?vue&type=style&index=0&lang=scss& ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../../../../../node_modules/css-loader/dist/cjs.js!../../../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../../node_modules/postcss-loader/src??ref--7-2!../../../../../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../../../../../../node_modules/sass-loader/dist/cjs.js??ref--11-0!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Leaflet.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/Leaflet.vue?vue&type=style&index=0&lang=scss&");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletBasic.vue?vue&type=style&index=0&lang=scss&":
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/sass-loader/dist/cjs.js??ref--11-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletBasic.vue?vue&type=style&index=0&lang=scss& ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../../../../../node_modules/css-loader/dist/cjs.js!../../../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../../node_modules/postcss-loader/src??ref--7-2!../../../../../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../../../../../../node_modules/sass-loader/dist/cjs.js??ref--11-0!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./LeafletBasic.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletBasic.vue?vue&type=style&index=0&lang=scss&");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletCustomIcon.vue?vue&type=style&index=0&lang=scss&":
-/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/sass-loader/dist/cjs.js??ref--11-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletCustomIcon.vue?vue&type=style&index=0&lang=scss& ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../../../../../node_modules/css-loader/dist/cjs.js!../../../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../../node_modules/postcss-loader/src??ref--7-2!../../../../../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../../../../../../node_modules/sass-loader/dist/cjs.js??ref--11-0!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./LeafletCustomIcon.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletCustomIcon.vue?vue&type=style&index=0&lang=scss&");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGeoJSON.vue?vue&type=style&index=0&lang=scss&":
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/sass-loader/dist/cjs.js??ref--11-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGeoJSON.vue?vue&type=style&index=0&lang=scss& ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../../../../../node_modules/css-loader/dist/cjs.js!../../../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../../node_modules/postcss-loader/src??ref--7-2!../../../../../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../../../../../../node_modules/sass-loader/dist/cjs.js??ref--11-0!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./LeafletGeoJSON.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGeoJSON.vue?vue&type=style&index=0&lang=scss&");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletMarkerCirclePolygon.vue?vue&type=style&index=0&lang=scss&":
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/sass-loader/dist/cjs.js??ref--11-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletMarkerCirclePolygon.vue?vue&type=style&index=0&lang=scss& ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../../../../../node_modules/css-loader/dist/cjs.js!../../../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../../node_modules/postcss-loader/src??ref--7-2!../../../../../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../../../../../../node_modules/sass-loader/dist/cjs.js??ref--11-0!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./LeafletMarkerCirclePolygon.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletMarkerCirclePolygon.vue?vue&type=style&index=0&lang=scss&");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletPopup.vue?vue&type=style&index=0&lang=scss&":
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./node_modules/sass-loader/dist/cjs.js??ref--11-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletPopup.vue?vue&type=style&index=0&lang=scss& ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../../../../../node_modules/css-loader/dist/cjs.js!../../../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../../node_modules/postcss-loader/src??ref--7-2!../../../../../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../../../../../../node_modules/sass-loader/dist/cjs.js??ref--11-0!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./LeafletPopup.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletPopup.vue?vue&type=style&index=0&lang=scss&");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/Leaflet.vue?vue&type=template&id=4ebdb332&":
-/*!**************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/charts-and-maps/maps/leaflet/Leaflet.vue?vue&type=template&id=4ebdb332& ***!
-  \**************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/account-setting/AccountSetting.vue?vue&type=template&id=ba1b1568&":
+/*!********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/account-setting/AccountSetting.vue?vue&type=template&id=ba1b1568& ***!
+  \********************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1265,81 +747,67 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "b-row",
-    [
-      _c(
-        "b-col",
-        { attrs: { cols: "12" } },
-        [
-          _c("leaflet-basic"),
-          _vm._v(" "),
-          _c("leaflet-marker-circle-polygon"),
-          _vm._v(" "),
-          _c("leaflet-popup"),
-          _vm._v(" "),
-          _c("leaflet-geo-jSON"),
-          _vm._v(" "),
-          _c("leaflet-group"),
-          _vm._v(" "),
-          _c("leaflet-custom-icon"),
-        ],
-        1
-      ),
-    ],
-    1
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletBasic.vue?vue&type=template&id=c34b1592&":
-/*!*******************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletBasic.vue?vue&type=template&id=c34b1592& ***!
-  \*******************************************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "b-card-code",
+    "b-tabs",
     {
-      attrs: { title: "Basic Map" },
-      scopedSlots: _vm._u([
-        {
-          key: "code",
-          fn: function () {
-            return [_vm._v("\n    " + _vm._s(_vm.codeBasic) + "\n  ")]
-          },
-          proxy: true,
-        },
-      ]),
+      attrs: {
+        vertical: "",
+        "content-class": "col-12 col-md-9 mt-1 mt-md-0",
+        pills: "",
+        "nav-wrapper-class": "col-md-3 col-12",
+        "nav-class": "nav-left",
+      },
     },
     [
       _c(
-        "l-map",
-        { attrs: { zoom: _vm.zoom, center: _vm.center } },
-        [
-          _c("l-tile-layer", { attrs: { url: _vm.url } }),
-          _vm._v(" "),
-          _c("l-circle", {
-            attrs: {
-              "lat-lng": _vm.circle.center,
-              radius: _vm.circle.radius,
-              color: _vm.circle.color,
+        "b-tab",
+        {
+          attrs: { active: "" },
+          scopedSlots: _vm._u([
+            {
+              key: "title",
+              fn: function () {
+                return [
+                  _c("feather-icon", {
+                    staticClass: "mr-50",
+                    attrs: { icon: "UserIcon", size: "18" },
+                  }),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "font-weight-bold" }, [
+                    _vm._v("General"),
+                  ]),
+                ]
+              },
+              proxy: true,
             },
-          }),
-        ],
+          ]),
+        },
+        [_vm._v(" "), _c("account-setting-general")],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "b-tab",
+        {
+          scopedSlots: _vm._u([
+            {
+              key: "title",
+              fn: function () {
+                return [
+                  _c("feather-icon", {
+                    staticClass: "mr-50",
+                    attrs: { icon: "LockIcon", size: "18" },
+                  }),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "font-weight-bold" }, [
+                    _vm._v("Change Password"),
+                  ]),
+                ]
+              },
+              proxy: true,
+            },
+          ]),
+        },
+        [_vm._v(" "), _c("account-setting-password")],
         1
       ),
     ],
@@ -1353,10 +821,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletCustomIcon.vue?vue&type=template&id=45680251&":
-/*!************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletCustomIcon.vue?vue&type=template&id=45680251& ***!
-  \************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/account-setting/AccountSettingGeneral.vue?vue&type=template&id=72578ba8&":
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/account-setting/AccountSettingGeneral.vue?vue&type=template&id=72578ba8& ***!
+  \***************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1369,46 +837,21 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "b-card-code",
-    {
-      attrs: { title: "Custom Icon" },
-      scopedSlots: _vm._u([
-        {
-          key: "code",
-          fn: function () {
-            return [_vm._v("\n    " + _vm._s(_vm.codeCustomIcon) + "\n  ")]
-          },
-          proxy: true,
-        },
-      ]),
-    },
+    "b-card",
     [
       _c(
-        "l-map",
-        { attrs: { zoom: _vm.zoom, center: _vm.center } },
+        "b-media",
+        { attrs: { "no-body": "" } },
         [
-          _c("l-tile-layer", {
-            attrs: { url: _vm.url, attribution: _vm.attribution },
-          }),
-          _vm._v(" "),
-          _c("l-marker", { attrs: { "lat-lng": [47.41322, -1.219482] } }),
-          _vm._v(" "),
-          _c("l-marker", {
-            attrs: { "lat-lng": [47.41322, -1.209482], icon: _vm.icon },
-          }),
-          _vm._v(" "),
           _c(
-            "l-marker",
-            { attrs: { "lat-lng": [47.41322, -1.199482] } },
+            "b-media-aside",
             [
               _c(
-                "l-icon",
+                "b-link",
                 [
                   _c("b-img", {
-                    attrs: {
-                      src: __webpack_require__(/*! @/assets/images/misc/leaf-red.png */ "./resources/js/src/assets/images/misc/leaf-red.png"),
-                      height: "50",
-                    },
+                    ref: "previewEl",
+                    attrs: { rounded: "", height: "80" },
                   }),
                 ],
                 1
@@ -1416,166 +859,61 @@ var render = function () {
             ],
             1
           ),
-        ],
-        1
-      ),
-    ],
-    1
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGeoJSON.vue?vue&type=template&id=2d71af02&":
-/*!*********************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGeoJSON.vue?vue&type=template&id=2d71af02& ***!
-  \*********************************************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "b-card-code",
-    {
-      attrs: { title: "GeoJSON Map" },
-      scopedSlots: _vm._u([
-        {
-          key: "code",
-          fn: function () {
-            return [_vm._v("\n    " + _vm._s(_vm.codeGeoJSON) + "\n  ")]
-          },
-          proxy: true,
-        },
-      ]),
-    },
-    [
-      _c(
-        "l-map",
-        { attrs: { zoom: _vm.zoom, center: _vm.center } },
-        [
-          _c("l-tile-layer", { attrs: { url: _vm.url } }),
-          _vm._v(" "),
-          _c("l-geo-json", { attrs: { geojson: _vm.geojson } }),
-        ],
-        1
-      ),
-    ],
-    1
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGroup.vue?vue&type=template&id=a985f1f0&":
-/*!*******************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGroup.vue?vue&type=template&id=a985f1f0& ***!
-  \*******************************************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "b-card-code",
-    {
-      attrs: { title: "Layer Group" },
-      scopedSlots: _vm._u([
-        {
-          key: "code",
-          fn: function () {
-            return [_vm._v("\n    " + _vm._s(_vm.codeLayerGroup) + "\n  ")]
-          },
-          proxy: true,
-        },
-      ]),
-    },
-    [
-      _c(
-        "div",
-        [
-          _c(
-            "b-button",
-            {
-              attrs: { variant: "outline-primary" },
-              on: { click: _vm.fitPolyline },
-            },
-            [_vm._v("\n      Fit map to polyline\n    ")]
-          ),
           _vm._v(" "),
           _c(
-            "b-row",
-            { staticClass: "mt-2" },
+            "b-media-body",
+            { staticClass: "mt-75 ml-75" },
             [
               _c(
-                "b-col",
-                { attrs: { md: "6" } },
-                [
-                  _c(
-                    "b-form-group",
-                    { attrs: { label: "Contol Layers position: " } },
-                    [
-                      _c("b-form-select", {
-                        attrs: { options: _vm.Positions },
-                        model: {
-                          value: _vm.layersPosition,
-                          callback: function ($$v) {
-                            _vm.layersPosition = $$v
-                          },
-                          expression: "layersPosition",
-                        },
-                      }),
-                    ],
-                    1
-                  ),
-                ],
-                1
+                "b-button",
+                {
+                  directives: [
+                    {
+                      name: "ripple",
+                      rawName: "v-ripple.400",
+                      value: "rgba(255, 255, 255, 0.15)",
+                      expression: "'rgba(255, 255, 255, 0.15)'",
+                      modifiers: { 400: true },
+                    },
+                  ],
+                  staticClass: "mb-75 mr-75",
+                  attrs: { variant: "primary", size: "sm" },
+                  on: {
+                    click: function ($event) {
+                      return _vm.$refs.refInputEl.$el.click()
+                    },
+                  },
+                },
+                [_vm._v("\n        Upload\n      ")]
               ),
               _vm._v(" "),
+              _c("b-form-file", {
+                ref: "refInputEl",
+                attrs: { accept: ".jpg, .png, .gif", hidden: true, plain: "" },
+                on: { input: _vm.inputImageRenderer },
+              }),
+              _vm._v(" "),
               _c(
-                "b-col",
-                { attrs: { md: "6" } },
-                [
-                  _c(
-                    "b-form-group",
-                    { attrs: { label: "Attribution position:" } },
-                    [
-                      _c("b-form-select", {
-                        attrs: { options: _vm.Positions },
-                        model: {
-                          value: _vm.attributionPosition,
-                          callback: function ($$v) {
-                            _vm.attributionPosition = $$v
-                          },
-                          expression: "attributionPosition",
-                        },
-                      }),
-                    ],
-                    1
-                  ),
-                ],
-                1
+                "b-button",
+                {
+                  directives: [
+                    {
+                      name: "ripple",
+                      rawName: "v-ripple.400",
+                      value: "rgba(186, 191, 199, 0.15)",
+                      expression: "'rgba(186, 191, 199, 0.15)'",
+                      modifiers: { 400: true },
+                    },
+                  ],
+                  staticClass: "mb-75 mr-75",
+                  attrs: { variant: "outline-secondary", size: "sm" },
+                },
+                [_vm._v("\n        Reset\n      ")]
               ),
+              _vm._v(" "),
+              _c("b-card-text", [
+                _vm._v("Allowed JPG, GIF or PNG. Max size of 800kB"),
+              ]),
             ],
             1
           ),
@@ -1583,163 +921,290 @@ var render = function () {
         1
       ),
       _vm._v(" "),
-      _c(
-        "l-map",
-        {
-          staticStyle: { height: "500px", width: "100%" },
-          attrs: {
-            zoom: _vm.zoom,
-            options: _vm.mapOptions,
-            center: _vm.center,
-            bounds: _vm.bounds,
-            "min-zoom": _vm.minZoom,
-            "max-zoom": _vm.maxZoom,
-          },
-          on: {
-            "update:zoom": function ($event) {
-              _vm.zoom = $event
-            },
-          },
-        },
-        [
-          _c("l-control-layers", {
-            attrs: {
-              position: _vm.layersPosition,
-              collapsed: false,
-              "sort-layers": true,
-            },
-          }),
-          _vm._v(" "),
-          _vm._l(_vm.tileProviders, function (tileProvider) {
-            return _c("l-tile-layer", {
-              key: tileProvider.name,
-              attrs: {
-                name: tileProvider.name,
-                visible: tileProvider.visible,
-                url: tileProvider.url,
-                attribution: tileProvider.attribution,
-                token: _vm.token,
-                "layer-type": "base",
-              },
-            })
-          }),
-          _vm._v(" "),
-          _c("l-control-zoom", { attrs: { position: _vm.zoomPosition } }),
-          _vm._v(" "),
-          _c("l-control-attribution", {
-            attrs: {
-              position: _vm.attributionPosition,
-              prefix: _vm.attributionPrefix,
-            },
-          }),
-          _vm._v(" "),
-          _c("l-control-scale", { attrs: { imperial: _vm.imperial } }),
-          _vm._v(" "),
-          _vm._l(_vm.markers, function (marker) {
-            return _c(
-              "l-marker",
-              {
-                key: marker.id,
-                attrs: {
-                  visible: marker.visible,
-                  draggable: marker.draggable,
-                  "lat-lng": marker.position,
-                  icon: marker.icon,
-                },
-                on: {
-                  "update:latLng": function ($event) {
-                    return _vm.$set(marker, "position", $event)
-                  },
-                  "update:lat-lng": function ($event) {
-                    return _vm.$set(marker, "position", $event)
-                  },
-                  click: function ($event) {
-                    return _vm.alert(marker)
-                  },
-                },
-              },
-              [
-                _c("l-popup", { attrs: { content: marker.tooltip } }),
-                _vm._v(" "),
-                _c("l-tooltip", { attrs: { content: marker.tooltip } }),
-              ],
-              1
-            )
-          }),
-          _vm._v(" "),
-          _c(
-            "l-layer-group",
-            { attrs: { "layer-type": "overlay", name: "Layer polyline" } },
-            _vm._l(_vm.polylines, function (item) {
-              return _c("l-polyline", {
-                key: item.id,
-                attrs: { "lat-lngs": item.points, visible: item.visible },
-                on: {
-                  click: function ($event) {
-                    return _vm.alert(item)
-                  },
-                },
-              })
-            }),
-            1
-          ),
-          _vm._v(" "),
-          _vm._l(_vm.stuff, function (item) {
-            return _c(
-              "l-layer-group",
-              {
-                key: item.id,
-                attrs: {
-                  visible: item.visible,
-                  "layer-type": "overlay",
-                  name: "Layer 1",
-                },
-                on: {
-                  "update:visible": function ($event) {
-                    return _vm.$set(item, "visible", $event)
-                  },
-                },
-              },
-              [
+      _c("validation-observer", {
+        ref: "updateInfoValidate",
+        scopedSlots: _vm._u([
+          {
+            key: "default",
+            fn: function (ref) {
+              var invalid = ref.invalid
+              return [
                 _c(
-                  "l-layer-group",
-                  { attrs: { visible: item.markersVisible } },
-                  _vm._l(item.markers, function (marker) {
-                    return _c("l-marker", {
-                      key: marker.id,
-                      attrs: {
-                        visible: marker.visible,
-                        draggable: marker.draggable,
-                        "lat-lng": marker.position,
+                  "b-form",
+                  {
+                    staticClass: "mt-2",
+                    on: {
+                      submit: function ($event) {
+                        $event.preventDefault()
                       },
-                      on: {
-                        click: function ($event) {
-                          return _vm.alert(marker)
-                        },
-                      },
-                    })
-                  }),
-                  1
-                ),
-                _vm._v(" "),
-                _c("l-polyline", {
-                  attrs: {
-                    "lat-lngs": item.polyline.points,
-                    visible: item.polyline.visible,
-                  },
-                  on: {
-                    click: function ($event) {
-                      return _vm.alert(item.polyline)
                     },
                   },
-                }),
-              ],
-              1
-            )
-          }),
-        ],
-        2
-      ),
+                  [
+                    _c(
+                      "b-row",
+                      [
+                        _c(
+                          "b-col",
+                          { attrs: { sm: "6" } },
+                          [
+                            _c(
+                              "b-form-group",
+                              {
+                                attrs: {
+                                  label: "Username",
+                                  "label-for": "account-username",
+                                },
+                              },
+                              [
+                                _c("validation-provider", {
+                                  attrs: {
+                                    name: "username",
+                                    rules: "required",
+                                  },
+                                  scopedSlots: _vm._u(
+                                    [
+                                      {
+                                        key: "default",
+                                        fn: function (ref) {
+                                          var errors = ref.errors
+                                          return [
+                                            _c("b-form-input", {
+                                              attrs: {
+                                                placeholder: "Username",
+                                                name: "username",
+                                                state:
+                                                  errors.length > 0
+                                                    ? false
+                                                    : null,
+                                              },
+                                              model: {
+                                                value: _vm.profileInfo.username,
+                                                callback: function ($$v) {
+                                                  _vm.$set(
+                                                    _vm.profileInfo,
+                                                    "username",
+                                                    $$v
+                                                  )
+                                                },
+                                                expression:
+                                                  "profileInfo.username",
+                                              },
+                                            }),
+                                            _vm._v(" "),
+                                            _c(
+                                              "small",
+                                              { staticClass: "text-danger" },
+                                              [_vm._v(_vm._s(errors[0]))]
+                                            ),
+                                          ]
+                                        },
+                                      },
+                                    ],
+                                    null,
+                                    true
+                                  ),
+                                }),
+                              ],
+                              1
+                            ),
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "b-col",
+                          { attrs: { sm: "6" } },
+                          [
+                            _c(
+                              "b-form-group",
+                              {
+                                attrs: {
+                                  label: "Name",
+                                  "label-for": "account-name",
+                                },
+                              },
+                              [
+                                _c("validation-provider", {
+                                  attrs: { name: "name", rules: "required" },
+                                  scopedSlots: _vm._u(
+                                    [
+                                      {
+                                        key: "default",
+                                        fn: function (ref) {
+                                          var errors = ref.errors
+                                          return [
+                                            _c("b-form-input", {
+                                              attrs: {
+                                                name: "name",
+                                                placeholder: "Name",
+                                                state:
+                                                  errors.length > 0
+                                                    ? false
+                                                    : null,
+                                              },
+                                              model: {
+                                                value: _vm.profileInfo.name,
+                                                callback: function ($$v) {
+                                                  _vm.$set(
+                                                    _vm.profileInfo,
+                                                    "name",
+                                                    $$v
+                                                  )
+                                                },
+                                                expression: "profileInfo.name",
+                                              },
+                                            }),
+                                            _vm._v(" "),
+                                            _c(
+                                              "small",
+                                              { staticClass: "text-danger" },
+                                              [_vm._v(_vm._s(errors[0]))]
+                                            ),
+                                          ]
+                                        },
+                                      },
+                                    ],
+                                    null,
+                                    true
+                                  ),
+                                }),
+                              ],
+                              1
+                            ),
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "b-col",
+                          { attrs: { sm: "6" } },
+                          [
+                            _c(
+                              "b-form-group",
+                              {
+                                attrs: {
+                                  label: "E-mail",
+                                  "label-for": "account-e-mail",
+                                },
+                              },
+                              [
+                                _c("validation-provider", {
+                                  attrs: {
+                                    name: "email",
+                                    rules: "required|email",
+                                  },
+                                  scopedSlots: _vm._u(
+                                    [
+                                      {
+                                        key: "default",
+                                        fn: function (ref) {
+                                          var errors = ref.errors
+                                          return [
+                                            _c("b-form-input", {
+                                              attrs: {
+                                                name: "email",
+                                                placeholder: "Email",
+                                                state:
+                                                  errors.length > 0
+                                                    ? false
+                                                    : null,
+                                              },
+                                              model: {
+                                                value: _vm.profileInfo.email,
+                                                callback: function ($$v) {
+                                                  _vm.$set(
+                                                    _vm.profileInfo,
+                                                    "email",
+                                                    $$v
+                                                  )
+                                                },
+                                                expression: "profileInfo.email",
+                                              },
+                                            }),
+                                            _vm._v(" "),
+                                            _c(
+                                              "small",
+                                              { staticClass: "text-danger" },
+                                              [_vm._v(_vm._s(errors[0]))]
+                                            ),
+                                          ]
+                                        },
+                                      },
+                                    ],
+                                    null,
+                                    true
+                                  ),
+                                }),
+                              ],
+                              1
+                            ),
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "b-col",
+                          { attrs: { cols: "12" } },
+                          [
+                            _c(
+                              "b-button",
+                              {
+                                directives: [
+                                  {
+                                    name: "ripple",
+                                    rawName: "v-ripple.400",
+                                    value: "rgba(255, 255, 255, 0.15)",
+                                    expression: "'rgba(255, 255, 255, 0.15)'",
+                                    modifiers: { 400: true },
+                                  },
+                                ],
+                                staticClass: "mt-2 mr-1",
+                                attrs: { variant: "primary" },
+                                on: { click: _vm.validationForm },
+                              },
+                              [_vm._v("\n            Save changes\n          ")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "b-button",
+                              {
+                                directives: [
+                                  {
+                                    name: "ripple",
+                                    rawName: "v-ripple.400",
+                                    value: "rgba(186, 191, 199, 0.15)",
+                                    expression: "'rgba(186, 191, 199, 0.15)'",
+                                    modifiers: { 400: true },
+                                  },
+                                ],
+                                staticClass: "mt-2",
+                                attrs: {
+                                  variant: "outline-secondary",
+                                  type: "reset",
+                                },
+                                on: {
+                                  click: function ($event) {
+                                    $event.preventDefault()
+                                    return _vm.resetForm.apply(null, arguments)
+                                  },
+                                },
+                              },
+                              [_vm._v("\n            Reset\n          ")]
+                            ),
+                          ],
+                          1
+                        ),
+                      ],
+                      1
+                    ),
+                  ],
+                  1
+                ),
+              ]
+            },
+          },
+        ]),
+      }),
     ],
     1
   )
@@ -1751,10 +1216,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletMarkerCirclePolygon.vue?vue&type=template&id=3456330e&":
-/*!*********************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletMarkerCirclePolygon.vue?vue&type=template&id=3456330e& ***!
-  \*********************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/account-setting/AccountSettingPassword.vue?vue&type=template&id=40c26af2&":
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/account-setting/AccountSettingPassword.vue?vue&type=template&id=40c26af2& ***!
+  \****************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1767,45 +1232,365 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "b-card-code",
-    {
-      attrs: { title: "Marker, Circle & Polygon Map" },
-      scopedSlots: _vm._u([
-        {
-          key: "code",
-          fn: function () {
-            return [_vm._v("\n    " + _vm._s(_vm.codeMarkerPolygon) + "\n  ")]
-          },
-          proxy: true,
-        },
-      ]),
-    },
+    "b-card",
     [
-      _c(
-        "l-map",
-        { attrs: { zoom: _vm.zoom, center: _vm.center } },
-        [
-          _c("l-tile-layer", { attrs: { url: _vm.url } }),
-          _vm._v(" "),
-          _c("l-marker", { attrs: { "lat-lng": _vm.markerLatLng } }),
-          _vm._v(" "),
-          _c("l-circle", {
-            attrs: {
-              "lat-lng": _vm.circle.center,
-              radius: _vm.circle.radius,
-              color: _vm.circle.color,
+      _c("validation-observer", {
+        ref: "updatePasswordValidate",
+        scopedSlots: _vm._u([
+          {
+            key: "default",
+            fn: function (ref) {
+              var invalid = ref.invalid
+              return [
+                _c(
+                  "b-form",
+                  {
+                    on: {
+                      submit: function ($event) {
+                        $event.preventDefault()
+                      },
+                    },
+                  },
+                  [
+                    _c(
+                      "b-row",
+                      [
+                        _c(
+                          "b-col",
+                          { attrs: { md: "6" } },
+                          [
+                            _c(
+                              "b-form-group",
+                              {
+                                attrs: {
+                                  label: "Old Password",
+                                  "label-for": "account-old-password",
+                                },
+                              },
+                              [
+                                _c("validation-provider", {
+                                  attrs: {
+                                    name: "old Password",
+                                    rules: "required",
+                                  },
+                                  scopedSlots: _vm._u(
+                                    [
+                                      {
+                                        key: "default",
+                                        fn: function (ref) {
+                                          var errors = ref.errors
+                                          return [
+                                            _c(
+                                              "b-input-group",
+                                              {
+                                                staticClass:
+                                                  "input-group-merge",
+                                              },
+                                              [
+                                                _c("b-form-input", {
+                                                  attrs: {
+                                                    id: "account-old-password",
+                                                    name: "old-password",
+                                                    type: _vm.passwordFieldTypeOld,
+                                                    placeholder: "Old Password",
+                                                  },
+                                                  model: {
+                                                    value: _vm.passwordValueOld,
+                                                    callback: function ($$v) {
+                                                      _vm.passwordValueOld = $$v
+                                                    },
+                                                    expression:
+                                                      "passwordValueOld",
+                                                  },
+                                                }),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "b-input-group-append",
+                                                  { attrs: { "is-text": "" } },
+                                                  [
+                                                    _c("feather-icon", {
+                                                      staticClass:
+                                                        "cursor-pointer",
+                                                      attrs: {
+                                                        icon: _vm.passwordToggleIconOld,
+                                                      },
+                                                      on: {
+                                                        click:
+                                                          _vm.togglePasswordOld,
+                                                      },
+                                                    }),
+                                                  ],
+                                                  1
+                                                ),
+                                              ],
+                                              1
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "small",
+                                              { staticClass: "text-danger" },
+                                              [_vm._v(_vm._s(errors[0]))]
+                                            ),
+                                          ]
+                                        },
+                                      },
+                                    ],
+                                    null,
+                                    true
+                                  ),
+                                }),
+                              ],
+                              1
+                            ),
+                          ],
+                          1
+                        ),
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "b-row",
+                      [
+                        _c(
+                          "b-col",
+                          { attrs: { md: "6" } },
+                          [
+                            _c(
+                              "b-form-group",
+                              {
+                                attrs: {
+                                  "label-for": "account-new-password",
+                                  label: "New Password",
+                                },
+                              },
+                              [
+                                _c("validation-provider", {
+                                  attrs: {
+                                    name: "new password",
+                                    rules: "required",
+                                  },
+                                  scopedSlots: _vm._u(
+                                    [
+                                      {
+                                        key: "default",
+                                        fn: function (ref) {
+                                          var errors = ref.errors
+                                          return [
+                                            _c(
+                                              "b-input-group",
+                                              {
+                                                staticClass:
+                                                  "input-group-merge",
+                                              },
+                                              [
+                                                _c("b-form-input", {
+                                                  attrs: {
+                                                    id: "account-new-password",
+                                                    type: _vm.passwordFieldTypeNew,
+                                                    name: "new-password",
+                                                    placeholder: "New Password",
+                                                  },
+                                                  model: {
+                                                    value: _vm.newPasswordValue,
+                                                    callback: function ($$v) {
+                                                      _vm.newPasswordValue = $$v
+                                                    },
+                                                    expression:
+                                                      "newPasswordValue",
+                                                  },
+                                                }),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "b-input-group-append",
+                                                  { attrs: { "is-text": "" } },
+                                                  [
+                                                    _c("feather-icon", {
+                                                      staticClass:
+                                                        "cursor-pointer",
+                                                      attrs: {
+                                                        icon: _vm.passwordToggleIconNew,
+                                                      },
+                                                      on: {
+                                                        click:
+                                                          _vm.togglePasswordNew,
+                                                      },
+                                                    }),
+                                                  ],
+                                                  1
+                                                ),
+                                              ],
+                                              1
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "small",
+                                              { staticClass: "text-danger" },
+                                              [_vm._v(_vm._s(errors[0]))]
+                                            ),
+                                          ]
+                                        },
+                                      },
+                                    ],
+                                    null,
+                                    true
+                                  ),
+                                }),
+                              ],
+                              1
+                            ),
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "b-col",
+                          { attrs: { md: "6" } },
+                          [
+                            _c(
+                              "b-form-group",
+                              {
+                                attrs: {
+                                  "label-for": "account-retype-new-password",
+                                  label: "Retype New Password",
+                                },
+                              },
+                              [
+                                _c("validation-provider", {
+                                  attrs: {
+                                    name: "retype password",
+                                    rules: "required",
+                                  },
+                                  scopedSlots: _vm._u(
+                                    [
+                                      {
+                                        key: "default",
+                                        fn: function (ref) {
+                                          var errors = ref.errors
+                                          return [
+                                            _c(
+                                              "b-input-group",
+                                              {
+                                                staticClass:
+                                                  "input-group-merge",
+                                              },
+                                              [
+                                                _c("b-form-input", {
+                                                  attrs: {
+                                                    id: "account-retype-new-password",
+                                                    type: _vm.passwordFieldTypeRetype,
+                                                    name: "retype-password",
+                                                    placeholder: "New Password",
+                                                  },
+                                                  model: {
+                                                    value: _vm.retypePassword,
+                                                    callback: function ($$v) {
+                                                      _vm.retypePassword = $$v
+                                                    },
+                                                    expression:
+                                                      "retypePassword",
+                                                  },
+                                                }),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "b-input-group-append",
+                                                  { attrs: { "is-text": "" } },
+                                                  [
+                                                    _c("feather-icon", {
+                                                      staticClass:
+                                                        "cursor-pointer",
+                                                      attrs: {
+                                                        icon: _vm.passwordToggleIconRetype,
+                                                      },
+                                                      on: {
+                                                        click:
+                                                          _vm.togglePasswordRetype,
+                                                      },
+                                                    }),
+                                                  ],
+                                                  1
+                                                ),
+                                              ],
+                                              1
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "small",
+                                              { staticClass: "text-danger" },
+                                              [_vm._v(_vm._s(errors[0]))]
+                                            ),
+                                          ]
+                                        },
+                                      },
+                                    ],
+                                    null,
+                                    true
+                                  ),
+                                }),
+                              ],
+                              1
+                            ),
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "b-col",
+                          { attrs: { cols: "12" } },
+                          [
+                            _c(
+                              "b-button",
+                              {
+                                directives: [
+                                  {
+                                    name: "ripple",
+                                    rawName: "v-ripple.400",
+                                    value: "rgba(255, 255, 255, 0.15)",
+                                    expression: "'rgba(255, 255, 255, 0.15)'",
+                                    modifiers: { 400: true },
+                                  },
+                                ],
+                                staticClass: "mt-1 mr-1",
+                                attrs: { variant: "primary" },
+                                on: { click: _vm.validationForm },
+                              },
+                              [_vm._v("\n            Save changes\n          ")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "b-button",
+                              {
+                                directives: [
+                                  {
+                                    name: "ripple",
+                                    rawName: "v-ripple.400",
+                                    value: "rgba(186, 191, 199, 0.15)",
+                                    expression: "'rgba(186, 191, 199, 0.15)'",
+                                    modifiers: { 400: true },
+                                  },
+                                ],
+                                staticClass: "mt-1",
+                                attrs: {
+                                  type: "reset",
+                                  variant: "outline-secondary",
+                                },
+                              },
+                              [_vm._v("\n            Reset\n          ")]
+                            ),
+                          ],
+                          1
+                        ),
+                      ],
+                      1
+                    ),
+                  ],
+                  1
+                ),
+              ]
             },
-          }),
-          _vm._v(" "),
-          _c("l-polygon", {
-            attrs: {
-              "lat-lngs": _vm.polygon.latlngs,
-              color: _vm.polygon.color,
-            },
-          }),
-        ],
-        1
-      ),
+          },
+        ]),
+      }),
     ],
     1
   )
@@ -1817,444 +1602,211 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletPopup.vue?vue&type=template&id=4230ba96&":
-/*!*******************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletPopup.vue?vue&type=template&id=4230ba96& ***!
-  \*******************************************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
+/***/ "./node_modules/vue-ripple-directive/src/ripple.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/vue-ripple-directive/src/ripple.js ***!
+  \*********************************************************/
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "b-card-code",
-    {
-      attrs: { title: "Popup Map" },
-      scopedSlots: _vm._u([
-        {
-          key: "code",
-          fn: function () {
-            return [_vm._v("\n    " + _vm._s(_vm.codePopup) + "\n  ")]
-          },
-          proxy: true,
-        },
-      ]),
-    },
-    [
-      _c(
-        "l-map",
-        { attrs: { zoom: _vm.zoom, center: _vm.center } },
-        [
-          _c("l-tile-layer", { attrs: { url: _vm.url } }),
-          _vm._v(" "),
-          _c(
-            "l-marker",
-            { attrs: { "lat-lng": _vm.markerLatLng } },
-            [_c("l-popup", [_vm._v("You're here!")])],
-            1
-          ),
-        ],
-        1
-      ),
-    ],
-    1
-  )
+var Ripple = {
+    bind: function(el, binding){
+
+        // Default values.
+        var props = {
+            event: 'mousedown',
+            transition: 600
+        };
+
+        setProps(Object.keys(binding.modifiers),props);
+
+        el.addEventListener(props.event, function(event) {
+            rippler(event, el, binding.value);
+        });
+
+        var bg = binding.value || Ripple.color || 'rgba(0, 0, 0, 0.35)';
+        var zIndex = Ripple.zIndex || '9999';
+
+        function rippler(event, el) {
+            var target = el;
+            // Get border to avoid offsetting on ripple container position
+            var targetBorder = parseInt((getComputedStyle(target).borderWidth).replace('px', ''));
+
+            // Get necessary variables
+            var rect        = target.getBoundingClientRect(),
+                left        = rect.left,
+                top         = rect.top,
+                width       = target.offsetWidth,
+                height      = target.offsetHeight,
+                dx          = event.clientX - left,
+                dy          = event.clientY - top,
+                maxX        = Math.max(dx, width - dx),
+                maxY        = Math.max(dy, height - dy),
+                style       = window.getComputedStyle(target),
+                radius      = Math.sqrt((maxX * maxX) + (maxY * maxY)),
+                border      = (targetBorder > 0 ) ? targetBorder : 0;
+
+            // Create the ripple and its container
+            var ripple = document.createElement("div"),
+                rippleContainer = document.createElement("div");
+                rippleContainer.className = 'ripple-container';
+                ripple.className = 'ripple';
+
+            //Styles for ripple
+            ripple.style.marginTop= '0px';
+            ripple.style.marginLeft= '0px';
+            ripple.style.width= '1px';
+            ripple.style.height= '1px';
+            ripple.style.transition= 'all ' + props.transition + 'ms cubic-bezier(0.4, 0, 0.2, 1)';
+            ripple.style.borderRadius= '50%';
+            ripple.style.pointerEvents= 'none';
+            ripple.style.position= 'relative';
+            ripple.style.zIndex= zIndex;
+            ripple.style.backgroundColor  = bg;
+
+            //Styles for rippleContainer
+            rippleContainer.style.position= 'absolute';
+            rippleContainer.style.left = 0 - border + 'px';
+            rippleContainer.style.top = 0 - border + 'px';
+            rippleContainer.style.height = '0';
+            rippleContainer.style.width = '0';
+            rippleContainer.style.pointerEvents = 'none';
+            rippleContainer.style.overflow = 'hidden';
+
+            // Store target position to change it after
+            var storedTargetPosition =  ((target.style.position).length > 0) ? target.style.position : getComputedStyle(target).position;
+            // Change target position to relative to guarantee ripples correct positioning
+            if (storedTargetPosition !== 'relative') {
+                target.style.position = 'relative';
+            }
+
+            rippleContainer.appendChild(ripple);
+            target.appendChild(rippleContainer);
+
+            ripple.style.marginLeft   = dx + "px";
+            ripple.style.marginTop    = dy + "px";
+
+            // No need to set positioning because ripple should be child of target and to it's relative position.
+            // rippleContainer.style.left    = left + (((window.pageXOffset || document.scrollLeft) - (document.clientLeft || 0)) || 0) + "px";
+            // rippleContainer.style.top     = top + (((window.pageYOffset || document.scrollTop) - (document.clientTop || 0)) || 0) + "px";
+            rippleContainer.style.width   = width + "px";
+            rippleContainer.style.height  = height + "px";
+            rippleContainer.style.borderTopLeftRadius  = style.borderTopLeftRadius;
+            rippleContainer.style.borderTopRightRadius  = style.borderTopRightRadius;
+            rippleContainer.style.borderBottomLeftRadius  = style.borderBottomLeftRadius;
+            rippleContainer.style.borderBottomRightRadius  = style.borderBottomRightRadius;
+
+            rippleContainer.style.direction = 'ltr';
+
+            setTimeout(function() {
+                ripple.style.width  = radius * 2 + "px";
+                ripple.style.height = radius * 2 + "px";
+                ripple.style.marginLeft   = dx - radius + "px";
+                ripple.style.marginTop    = dy - radius + "px";
+            }, 0);
+
+            function clearRipple() {
+                setTimeout(function() {
+                    ripple.style.backgroundColor = "rgba(0, 0, 0, 0)";
+                }, 250);
+
+                // Timeout set to get a smooth removal of the ripple
+                setTimeout(function() {
+                    rippleContainer.parentNode.removeChild(rippleContainer);
+                }, 850);
+
+                el.removeEventListener('mouseup', clearRipple, false);
+
+                // After removing event set position to target to it's original one
+                // Timeout it's needed to avoid jerky effect of ripple jumping out parent target
+                setTimeout(function () {
+
+                    var clearPosition = true;
+                    for(var i = 0; i < target.childNodes.length; i++) {
+                        if(target.childNodes[i].className === 'ripple-container') {
+                            clearPosition = false;
+                        }
+                    }
+
+                    if(clearPosition) {
+                        if(storedTargetPosition !== 'static') {
+                            target.style.position = storedTargetPosition;
+                        } else {
+                            target.style.position = '';
+                        }
+                    }
+
+                }, props.transition + 250)
+            }
+
+            if(event.type === 'mousedown') {
+                el.addEventListener('mouseup', clearRipple, false);
+            } else {
+                clearRipple();
+            }
+        }
+    }
+};
+
+function setProps(modifiers,props) {
+    modifiers.forEach(function(item) {
+        if(isNaN(Number(item)))
+            props.event = item;
+        else
+            props.transition = item;
+    });
 }
-var staticRenderFns = []
-render._withStripped = true
 
-
+/* harmony default export */ __webpack_exports__["default"] = (Ripple);
 
 /***/ }),
 
-/***/ "./resources/js/src/assets/images/misc/leaf-green.png":
-/*!************************************************************!*\
-  !*** ./resources/js/src/assets/images/misc/leaf-green.png ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./resources/js/src/@core/comp-functions/forms/form-utils.js":
+/*!*******************************************************************!*\
+  !*** ./resources/js/src/@core/comp-functions/forms/form-utils.js ***!
+  \*******************************************************************/
+/*! exports provided: useInputImageRenderer, _ */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = "/images/_/_/_/_/enterprice/resources/js/src/assets/images/misc/leaf-green.png";
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useInputImageRenderer", function() { return useInputImageRenderer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_", function() { return _; });
+var useInputImageRenderer = function useInputImageRenderer(inputEl, callback) {
+  var inputImageRenderer = function inputImageRenderer() {
+    var file = inputEl.value.files[0];
+    var reader = new FileReader();
+    reader.addEventListener('load', function () {
+      callback(reader.result);
+    }, false);
+
+    if (file) {
+      reader.readAsDataURL(file);
+    }
+  };
+
+  return {
+    inputImageRenderer: inputImageRenderer
+  };
+};
+var _ = null;
 
 /***/ }),
 
-/***/ "./resources/js/src/assets/images/misc/leaf-red.png":
-/*!**********************************************************!*\
-  !*** ./resources/js/src/assets/images/misc/leaf-red.png ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/_/_/_/_/enterprice/resources/js/src/assets/images/misc/leaf-red.png";
-
-/***/ }),
-
-/***/ "./resources/js/src/views/charts-and-maps/maps/leaflet/Leaflet.vue":
-/*!*************************************************************************!*\
-  !*** ./resources/js/src/views/charts-and-maps/maps/leaflet/Leaflet.vue ***!
-  \*************************************************************************/
+/***/ "./resources/js/src/views/account-setting/AccountSetting.vue":
+/*!*******************************************************************!*\
+  !*** ./resources/js/src/views/account-setting/AccountSetting.vue ***!
+  \*******************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Leaflet_vue_vue_type_template_id_4ebdb332___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Leaflet.vue?vue&type=template&id=4ebdb332& */ "./resources/js/src/views/charts-and-maps/maps/leaflet/Leaflet.vue?vue&type=template&id=4ebdb332&");
-/* harmony import */ var _Leaflet_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Leaflet.vue?vue&type=script&lang=js& */ "./resources/js/src/views/charts-and-maps/maps/leaflet/Leaflet.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _Leaflet_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Leaflet.vue?vue&type=style&index=0&lang=scss& */ "./resources/js/src/views/charts-and-maps/maps/leaflet/Leaflet.vue?vue&type=style&index=0&lang=scss&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
-  _Leaflet_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Leaflet_vue_vue_type_template_id_4ebdb332___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Leaflet_vue_vue_type_template_id_4ebdb332___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/src/views/charts-and-maps/maps/leaflet/Leaflet.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/src/views/charts-and-maps/maps/leaflet/Leaflet.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************************!*\
-  !*** ./resources/js/src/views/charts-and-maps/maps/leaflet/Leaflet.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Leaflet_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Leaflet.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/Leaflet.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Leaflet_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/src/views/charts-and-maps/maps/leaflet/Leaflet.vue?vue&type=style&index=0&lang=scss&":
-/*!***********************************************************************************************************!*\
-  !*** ./resources/js/src/views/charts-and-maps/maps/leaflet/Leaflet.vue?vue&type=style&index=0&lang=scss& ***!
-  \***********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Leaflet_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/style-loader!../../../../../../../node_modules/css-loader/dist/cjs.js!../../../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../../node_modules/postcss-loader/src??ref--7-2!../../../../../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../../../../../../node_modules/sass-loader/dist/cjs.js??ref--11-0!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Leaflet.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/Leaflet.vue?vue&type=style&index=0&lang=scss&");
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Leaflet_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Leaflet_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Leaflet_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Leaflet_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-
-
-/***/ }),
-
-/***/ "./resources/js/src/views/charts-and-maps/maps/leaflet/Leaflet.vue?vue&type=template&id=4ebdb332&":
-/*!********************************************************************************************************!*\
-  !*** ./resources/js/src/views/charts-and-maps/maps/leaflet/Leaflet.vue?vue&type=template&id=4ebdb332& ***!
-  \********************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Leaflet_vue_vue_type_template_id_4ebdb332___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Leaflet.vue?vue&type=template&id=4ebdb332& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/Leaflet.vue?vue&type=template&id=4ebdb332&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Leaflet_vue_vue_type_template_id_4ebdb332___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Leaflet_vue_vue_type_template_id_4ebdb332___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletBasic.vue":
-/*!******************************************************************************!*\
-  !*** ./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletBasic.vue ***!
-  \******************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _LeafletBasic_vue_vue_type_template_id_c34b1592___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LeafletBasic.vue?vue&type=template&id=c34b1592& */ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletBasic.vue?vue&type=template&id=c34b1592&");
-/* harmony import */ var _LeafletBasic_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LeafletBasic.vue?vue&type=script&lang=js& */ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletBasic.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _LeafletBasic_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LeafletBasic.vue?vue&type=style&index=0&lang=scss& */ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletBasic.vue?vue&type=style&index=0&lang=scss&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
-  _LeafletBasic_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _LeafletBasic_vue_vue_type_template_id_c34b1592___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _LeafletBasic_vue_vue_type_template_id_c34b1592___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/src/views/charts-and-maps/maps/leaflet/LeafletBasic.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletBasic.vue?vue&type=script&lang=js&":
-/*!*******************************************************************************************************!*\
-  !*** ./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletBasic.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletBasic_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./LeafletBasic.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletBasic.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletBasic_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletBasic.vue?vue&type=style&index=0&lang=scss&":
-/*!****************************************************************************************************************!*\
-  !*** ./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletBasic.vue?vue&type=style&index=0&lang=scss& ***!
-  \****************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletBasic_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/style-loader!../../../../../../../node_modules/css-loader/dist/cjs.js!../../../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../../node_modules/postcss-loader/src??ref--7-2!../../../../../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../../../../../../node_modules/sass-loader/dist/cjs.js??ref--11-0!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./LeafletBasic.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletBasic.vue?vue&type=style&index=0&lang=scss&");
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletBasic_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletBasic_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletBasic_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletBasic_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-
-
-/***/ }),
-
-/***/ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletBasic.vue?vue&type=template&id=c34b1592&":
-/*!*************************************************************************************************************!*\
-  !*** ./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletBasic.vue?vue&type=template&id=c34b1592& ***!
-  \*************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletBasic_vue_vue_type_template_id_c34b1592___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./LeafletBasic.vue?vue&type=template&id=c34b1592& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletBasic.vue?vue&type=template&id=c34b1592&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletBasic_vue_vue_type_template_id_c34b1592___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletBasic_vue_vue_type_template_id_c34b1592___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletCustomIcon.vue":
-/*!***********************************************************************************!*\
-  !*** ./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletCustomIcon.vue ***!
-  \***********************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _LeafletCustomIcon_vue_vue_type_template_id_45680251___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LeafletCustomIcon.vue?vue&type=template&id=45680251& */ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletCustomIcon.vue?vue&type=template&id=45680251&");
-/* harmony import */ var _LeafletCustomIcon_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LeafletCustomIcon.vue?vue&type=script&lang=js& */ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletCustomIcon.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _LeafletCustomIcon_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LeafletCustomIcon.vue?vue&type=style&index=0&lang=scss& */ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletCustomIcon.vue?vue&type=style&index=0&lang=scss&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
-  _LeafletCustomIcon_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _LeafletCustomIcon_vue_vue_type_template_id_45680251___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _LeafletCustomIcon_vue_vue_type_template_id_45680251___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/src/views/charts-and-maps/maps/leaflet/LeafletCustomIcon.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletCustomIcon.vue?vue&type=script&lang=js&":
-/*!************************************************************************************************************!*\
-  !*** ./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletCustomIcon.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletCustomIcon_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./LeafletCustomIcon.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletCustomIcon.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletCustomIcon_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletCustomIcon.vue?vue&type=style&index=0&lang=scss&":
-/*!*********************************************************************************************************************!*\
-  !*** ./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletCustomIcon.vue?vue&type=style&index=0&lang=scss& ***!
-  \*********************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletCustomIcon_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/style-loader!../../../../../../../node_modules/css-loader/dist/cjs.js!../../../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../../node_modules/postcss-loader/src??ref--7-2!../../../../../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../../../../../../node_modules/sass-loader/dist/cjs.js??ref--11-0!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./LeafletCustomIcon.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletCustomIcon.vue?vue&type=style&index=0&lang=scss&");
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletCustomIcon_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletCustomIcon_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletCustomIcon_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletCustomIcon_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-
-
-/***/ }),
-
-/***/ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletCustomIcon.vue?vue&type=template&id=45680251&":
-/*!******************************************************************************************************************!*\
-  !*** ./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletCustomIcon.vue?vue&type=template&id=45680251& ***!
-  \******************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletCustomIcon_vue_vue_type_template_id_45680251___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./LeafletCustomIcon.vue?vue&type=template&id=45680251& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletCustomIcon.vue?vue&type=template&id=45680251&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletCustomIcon_vue_vue_type_template_id_45680251___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletCustomIcon_vue_vue_type_template_id_45680251___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGeoJSON.vue":
-/*!********************************************************************************!*\
-  !*** ./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGeoJSON.vue ***!
-  \********************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _LeafletGeoJSON_vue_vue_type_template_id_2d71af02___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LeafletGeoJSON.vue?vue&type=template&id=2d71af02& */ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGeoJSON.vue?vue&type=template&id=2d71af02&");
-/* harmony import */ var _LeafletGeoJSON_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LeafletGeoJSON.vue?vue&type=script&lang=js& */ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGeoJSON.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _LeafletGeoJSON_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LeafletGeoJSON.vue?vue&type=style&index=0&lang=scss& */ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGeoJSON.vue?vue&type=style&index=0&lang=scss&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
-  _LeafletGeoJSON_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _LeafletGeoJSON_vue_vue_type_template_id_2d71af02___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _LeafletGeoJSON_vue_vue_type_template_id_2d71af02___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGeoJSON.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGeoJSON.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************************************!*\
-  !*** ./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGeoJSON.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletGeoJSON_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./LeafletGeoJSON.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGeoJSON.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletGeoJSON_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGeoJSON.vue?vue&type=style&index=0&lang=scss&":
-/*!******************************************************************************************************************!*\
-  !*** ./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGeoJSON.vue?vue&type=style&index=0&lang=scss& ***!
-  \******************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletGeoJSON_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/style-loader!../../../../../../../node_modules/css-loader/dist/cjs.js!../../../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../../node_modules/postcss-loader/src??ref--7-2!../../../../../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../../../../../../node_modules/sass-loader/dist/cjs.js??ref--11-0!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./LeafletGeoJSON.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGeoJSON.vue?vue&type=style&index=0&lang=scss&");
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletGeoJSON_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletGeoJSON_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletGeoJSON_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletGeoJSON_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-
-
-/***/ }),
-
-/***/ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGeoJSON.vue?vue&type=template&id=2d71af02&":
-/*!***************************************************************************************************************!*\
-  !*** ./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGeoJSON.vue?vue&type=template&id=2d71af02& ***!
-  \***************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletGeoJSON_vue_vue_type_template_id_2d71af02___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./LeafletGeoJSON.vue?vue&type=template&id=2d71af02& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGeoJSON.vue?vue&type=template&id=2d71af02&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletGeoJSON_vue_vue_type_template_id_2d71af02___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletGeoJSON_vue_vue_type_template_id_2d71af02___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGroup.vue":
-/*!******************************************************************************!*\
-  !*** ./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGroup.vue ***!
-  \******************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _LeafletGroup_vue_vue_type_template_id_a985f1f0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LeafletGroup.vue?vue&type=template&id=a985f1f0& */ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGroup.vue?vue&type=template&id=a985f1f0&");
-/* harmony import */ var _LeafletGroup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LeafletGroup.vue?vue&type=script&lang=js& */ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGroup.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _AccountSetting_vue_vue_type_template_id_ba1b1568___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AccountSetting.vue?vue&type=template&id=ba1b1568& */ "./resources/js/src/views/account-setting/AccountSetting.vue?vue&type=template&id=ba1b1568&");
+/* harmony import */ var _AccountSetting_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AccountSetting.vue?vue&type=script&lang=js& */ "./resources/js/src/views/account-setting/AccountSetting.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -2263,9 +1815,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _LeafletGroup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _LeafletGroup_vue_vue_type_template_id_a985f1f0___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _LeafletGroup_vue_vue_type_template_id_a985f1f0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _AccountSetting_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _AccountSetting_vue_vue_type_template_id_ba1b1568___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _AccountSetting_vue_vue_type_template_id_ba1b1568___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -2275,57 +1827,55 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGroup.vue"
+component.options.__file = "resources/js/src/views/account-setting/AccountSetting.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGroup.vue?vue&type=script&lang=js&":
-/*!*******************************************************************************************************!*\
-  !*** ./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGroup.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletGroup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./LeafletGroup.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGroup.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletGroup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGroup.vue?vue&type=template&id=a985f1f0&":
-/*!*************************************************************************************************************!*\
-  !*** ./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGroup.vue?vue&type=template&id=a985f1f0& ***!
-  \*************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletGroup_vue_vue_type_template_id_a985f1f0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./LeafletGroup.vue?vue&type=template&id=a985f1f0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletGroup.vue?vue&type=template&id=a985f1f0&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletGroup_vue_vue_type_template_id_a985f1f0___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletGroup_vue_vue_type_template_id_a985f1f0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletMarkerCirclePolygon.vue":
+/***/ "./resources/js/src/views/account-setting/AccountSetting.vue?vue&type=script&lang=js&":
 /*!********************************************************************************************!*\
-  !*** ./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletMarkerCirclePolygon.vue ***!
+  !*** ./resources/js/src/views/account-setting/AccountSetting.vue?vue&type=script&lang=js& ***!
   \********************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _LeafletMarkerCirclePolygon_vue_vue_type_template_id_3456330e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LeafletMarkerCirclePolygon.vue?vue&type=template&id=3456330e& */ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletMarkerCirclePolygon.vue?vue&type=template&id=3456330e&");
-/* harmony import */ var _LeafletMarkerCirclePolygon_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LeafletMarkerCirclePolygon.vue?vue&type=script&lang=js& */ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletMarkerCirclePolygon.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _LeafletMarkerCirclePolygon_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LeafletMarkerCirclePolygon.vue?vue&type=style&index=0&lang=scss& */ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletMarkerCirclePolygon.vue?vue&type=style&index=0&lang=scss&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AccountSetting_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./AccountSetting.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/account-setting/AccountSetting.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AccountSetting_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
+/***/ }),
+
+/***/ "./resources/js/src/views/account-setting/AccountSetting.vue?vue&type=template&id=ba1b1568&":
+/*!**************************************************************************************************!*\
+  !*** ./resources/js/src/views/account-setting/AccountSetting.vue?vue&type=template&id=ba1b1568& ***!
+  \**************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AccountSetting_vue_vue_type_template_id_ba1b1568___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./AccountSetting.vue?vue&type=template&id=ba1b1568& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/account-setting/AccountSetting.vue?vue&type=template&id=ba1b1568&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AccountSetting_vue_vue_type_template_id_ba1b1568___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AccountSetting_vue_vue_type_template_id_ba1b1568___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/src/views/account-setting/AccountSettingGeneral.vue":
+/*!**************************************************************************!*\
+  !*** ./resources/js/src/views/account-setting/AccountSettingGeneral.vue ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _AccountSettingGeneral_vue_vue_type_template_id_72578ba8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AccountSettingGeneral.vue?vue&type=template&id=72578ba8& */ "./resources/js/src/views/account-setting/AccountSettingGeneral.vue?vue&type=template&id=72578ba8&");
+/* harmony import */ var _AccountSettingGeneral_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AccountSettingGeneral.vue?vue&type=script&lang=js& */ "./resources/js/src/views/account-setting/AccountSettingGeneral.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -2333,10 +1883,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
-  _LeafletMarkerCirclePolygon_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _LeafletMarkerCirclePolygon_vue_vue_type_template_id_3456330e___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _LeafletMarkerCirclePolygon_vue_vue_type_template_id_3456330e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _AccountSettingGeneral_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _AccountSettingGeneral_vue_vue_type_template_id_72578ba8___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _AccountSettingGeneral_vue_vue_type_template_id_72578ba8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -2346,73 +1896,55 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/src/views/charts-and-maps/maps/leaflet/LeafletMarkerCirclePolygon.vue"
+component.options.__file = "resources/js/src/views/account-setting/AccountSettingGeneral.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletMarkerCirclePolygon.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************************************************!*\
-  !*** ./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletMarkerCirclePolygon.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************************************************/
+/***/ "./resources/js/src/views/account-setting/AccountSettingGeneral.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************!*\
+  !*** ./resources/js/src/views/account-setting/AccountSettingGeneral.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletMarkerCirclePolygon_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./LeafletMarkerCirclePolygon.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletMarkerCirclePolygon.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletMarkerCirclePolygon_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AccountSettingGeneral_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./AccountSettingGeneral.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/account-setting/AccountSettingGeneral.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AccountSettingGeneral_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletMarkerCirclePolygon.vue?vue&type=style&index=0&lang=scss&":
-/*!******************************************************************************************************************************!*\
-  !*** ./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletMarkerCirclePolygon.vue?vue&type=style&index=0&lang=scss& ***!
-  \******************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletMarkerCirclePolygon_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/style-loader!../../../../../../../node_modules/css-loader/dist/cjs.js!../../../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../../node_modules/postcss-loader/src??ref--7-2!../../../../../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../../../../../../node_modules/sass-loader/dist/cjs.js??ref--11-0!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./LeafletMarkerCirclePolygon.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletMarkerCirclePolygon.vue?vue&type=style&index=0&lang=scss&");
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletMarkerCirclePolygon_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletMarkerCirclePolygon_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletMarkerCirclePolygon_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletMarkerCirclePolygon_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-
-
-/***/ }),
-
-/***/ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletMarkerCirclePolygon.vue?vue&type=template&id=3456330e&":
-/*!***************************************************************************************************************************!*\
-  !*** ./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletMarkerCirclePolygon.vue?vue&type=template&id=3456330e& ***!
-  \***************************************************************************************************************************/
+/***/ "./resources/js/src/views/account-setting/AccountSettingGeneral.vue?vue&type=template&id=72578ba8&":
+/*!*********************************************************************************************************!*\
+  !*** ./resources/js/src/views/account-setting/AccountSettingGeneral.vue?vue&type=template&id=72578ba8& ***!
+  \*********************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletMarkerCirclePolygon_vue_vue_type_template_id_3456330e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./LeafletMarkerCirclePolygon.vue?vue&type=template&id=3456330e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletMarkerCirclePolygon.vue?vue&type=template&id=3456330e&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletMarkerCirclePolygon_vue_vue_type_template_id_3456330e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AccountSettingGeneral_vue_vue_type_template_id_72578ba8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./AccountSettingGeneral.vue?vue&type=template&id=72578ba8& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/account-setting/AccountSettingGeneral.vue?vue&type=template&id=72578ba8&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AccountSettingGeneral_vue_vue_type_template_id_72578ba8___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletMarkerCirclePolygon_vue_vue_type_template_id_3456330e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AccountSettingGeneral_vue_vue_type_template_id_72578ba8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
 /***/ }),
 
-/***/ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletPopup.vue":
-/*!******************************************************************************!*\
-  !*** ./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletPopup.vue ***!
-  \******************************************************************************/
+/***/ "./resources/js/src/views/account-setting/AccountSettingPassword.vue":
+/*!***************************************************************************!*\
+  !*** ./resources/js/src/views/account-setting/AccountSettingPassword.vue ***!
+  \***************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _LeafletPopup_vue_vue_type_template_id_4230ba96___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LeafletPopup.vue?vue&type=template&id=4230ba96& */ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletPopup.vue?vue&type=template&id=4230ba96&");
-/* harmony import */ var _LeafletPopup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LeafletPopup.vue?vue&type=script&lang=js& */ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletPopup.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _LeafletPopup_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LeafletPopup.vue?vue&type=style&index=0&lang=scss& */ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletPopup.vue?vue&type=style&index=0&lang=scss&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
+/* harmony import */ var _AccountSettingPassword_vue_vue_type_template_id_40c26af2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AccountSettingPassword.vue?vue&type=template&id=40c26af2& */ "./resources/js/src/views/account-setting/AccountSettingPassword.vue?vue&type=template&id=40c26af2&");
+/* harmony import */ var _AccountSettingPassword_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AccountSettingPassword.vue?vue&type=script&lang=js& */ "./resources/js/src/views/account-setting/AccountSettingPassword.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -2420,10 +1952,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
-  _LeafletPopup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _LeafletPopup_vue_vue_type_template_id_4230ba96___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _LeafletPopup_vue_vue_type_template_id_4230ba96___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _AccountSettingPassword_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _AccountSettingPassword_vue_vue_type_template_id_40c26af2___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _AccountSettingPassword_vue_vue_type_template_id_40c26af2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -2433,80 +1965,40 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/src/views/charts-and-maps/maps/leaflet/LeafletPopup.vue"
+component.options.__file = "resources/js/src/views/account-setting/AccountSettingPassword.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletPopup.vue?vue&type=script&lang=js&":
-/*!*******************************************************************************************************!*\
-  !*** ./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletPopup.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************************************************/
+/***/ "./resources/js/src/views/account-setting/AccountSettingPassword.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************!*\
+  !*** ./resources/js/src/views/account-setting/AccountSettingPassword.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletPopup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./LeafletPopup.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletPopup.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletPopup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AccountSettingPassword_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./AccountSettingPassword.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/account-setting/AccountSettingPassword.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AccountSettingPassword_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletPopup.vue?vue&type=style&index=0&lang=scss&":
-/*!****************************************************************************************************************!*\
-  !*** ./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletPopup.vue?vue&type=style&index=0&lang=scss& ***!
-  \****************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletPopup_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/style-loader!../../../../../../../node_modules/css-loader/dist/cjs.js!../../../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../../../node_modules/postcss-loader/src??ref--7-2!../../../../../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../../../../../../node_modules/sass-loader/dist/cjs.js??ref--11-0!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./LeafletPopup.vue?vue&type=style&index=0&lang=scss& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletPopup.vue?vue&type=style&index=0&lang=scss&");
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletPopup_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletPopup_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletPopup_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_dist_cjs_js_ref_7_3_node_modules_sass_loader_dist_cjs_js_ref_11_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletPopup_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-
-
-/***/ }),
-
-/***/ "./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletPopup.vue?vue&type=template&id=4230ba96&":
-/*!*************************************************************************************************************!*\
-  !*** ./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletPopup.vue?vue&type=template&id=4230ba96& ***!
-  \*************************************************************************************************************/
+/***/ "./resources/js/src/views/account-setting/AccountSettingPassword.vue?vue&type=template&id=40c26af2&":
+/*!**********************************************************************************************************!*\
+  !*** ./resources/js/src/views/account-setting/AccountSettingPassword.vue?vue&type=template&id=40c26af2& ***!
+  \**********************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletPopup_vue_vue_type_template_id_4230ba96___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../../node_modules/vue-loader/lib??vue-loader-options!./LeafletPopup.vue?vue&type=template&id=4230ba96& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/charts-and-maps/maps/leaflet/LeafletPopup.vue?vue&type=template&id=4230ba96&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletPopup_vue_vue_type_template_id_4230ba96___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AccountSettingPassword_vue_vue_type_template_id_40c26af2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./AccountSettingPassword.vue?vue&type=template&id=40c26af2& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/account-setting/AccountSettingPassword.vue?vue&type=template&id=40c26af2&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AccountSettingPassword_vue_vue_type_template_id_40c26af2___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LeafletPopup_vue_vue_type_template_id_4230ba96___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AccountSettingPassword_vue_vue_type_template_id_40c26af2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
-
-/***/ }),
-
-/***/ "./resources/js/src/views/charts-and-maps/maps/leaflet/code.js":
-/*!*********************************************************************!*\
-  !*** ./resources/js/src/views/charts-and-maps/maps/leaflet/code.js ***!
-  \*********************************************************************/
-/*! exports provided: codeBasic, codeMarkerPolygon, codePopup, codeGeoJSON, codeLayerGroup, codeCustomIcon */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "codeBasic", function() { return codeBasic; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "codeMarkerPolygon", function() { return codeMarkerPolygon; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "codePopup", function() { return codePopup; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "codeGeoJSON", function() { return codeGeoJSON; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "codeLayerGroup", function() { return codeLayerGroup; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "codeCustomIcon", function() { return codeCustomIcon; });
-var codeBasic = "\n<template>\n  <div>\n    <l-map\n      :zoom=\"zoom\"\n      :center=\"center\"\n    >\n      <l-tile-layer :url=\"url\" />\n      <l-circle\n        :lat-lng=\"circle.center\"\n        :radius=\"circle.radius\"\n        :color=\"circle.color\"\n      />\n    </l-map>\n  </div>\n</template>\n\n<script>\nimport { LMap, LTileLayer, LCircle } from 'vue2-leaflet'\nimport 'leaflet/dist/leaflet.css'\n\nexport default {\n  components: {\n    LMap,\n    LTileLayer,\n    LCircle,\n  },\n  data() {\n    return {\n      url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',\n      zoom: 8,\n      center: [47.313220, -1.319482],\n      circle: {\n        center: [47.413220, -1.0482],\n        radius: 4500,\n        color: '#EA5455',\n      },\n    }\n  },\n}\n</script>\n\n<style lang=\"scss\">\n.vue2leaflet-map{\n  &.leaflet-container{\n    height: 350px;\n  }\n}\n</style>\n";
-var codeMarkerPolygon = "\n<template>\n  <div>\n    <l-map\n      :zoom=\"zoom\"\n      :center=\"center\"\n    >\n      <l-tile-layer :url=\"url\" />\n      <l-marker :lat-lng=\"markerLatLng\" />\n      <l-circle\n        :lat-lng=\"circle.center\"\n        :radius=\"circle.radius\"\n        :color=\"circle.color\"\n      />\n      <l-polygon\n        :lat-lngs=\"polygon.latlngs\"\n        :color=\"polygon.color\"\n      />\n    </l-map>\n  </div>\n</template>\n\n<script>\n/* eslint-disable global-require */\nimport {\n  LMap, LTileLayer, LMarker, LCircle, LPolygon,\n} from 'vue2-leaflet'\nimport { Icon } from 'leaflet'\nimport 'leaflet/dist/leaflet.css'\n\n// eslint-disable-next-line no-underscore-dangle\ndelete Icon.Default.prototype._getIconUrl\nIcon.Default.mergeOptions({\n  iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),\n  iconUrl: require('leaflet/dist/images/marker-icon.png'),\n  shadowUrl: require('leaflet/dist/images/marker-shadow.png'),\n})\n/* eslint-disable global-require */\n\nexport default {\n  components: {\n    LMap,\n    LTileLayer,\n    LMarker,\n    LCircle,\n    LPolygon,\n  },\n  data() {\n    return {\n      url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',\n      zoom: 10,\n      center: [47.313220, -1.319482],\n      markerLatLng: [47.313220, -1.319482],\n      circle: {\n        center: [47.313220, -1.319482],\n        radius: 4500,\n        color: '#EA5455',\n      },\n      polygon: {\n        latlngs: [[47.2263299, -1.6222], [47.21024000000001, -1.6270065], [47.1969447, -1.6136169], [47.18527929999999, -1.6143036], [47.1794457, -1.6098404], [47.1775788, -1.5985107], [47.1676598, -1.5753365], [47.1593731, -1.5521622], [47.1593731, -1.5319061], [47.1722111, -1.5143967], [47.1960115, -1.4841843], [47.2095404, -1.4848709], [47.2291277, -1.4683914], [47.2533687, -1.5116501], [47.2577961, -1.5531921], [47.26828069, -1.5621185], [47.2657179, -1.589241], [47.2589612, -1.6204834], [47.237287, -1.6266632], [47.2263299, -1.6222]],\n        color: '#7367F0',\n      },\n    }\n  },\n}\n</script>\n\n<style lang=\"scss\">\n.vue2leaflet-map{\n  &.leaflet-container{\n    height: 350px;\n  }\n}\n</style>\n";
-var codePopup = "\n<template>\n  <div>\n    <l-map\n      :zoom=\"zoom\"\n      :center=\"center\"\n    >\n      <l-tile-layer :url=\"url\" />\n      <l-marker :lat-lng=\"markerLatLng\">\n        <l-popup>You're here!</l-popup>\n      </l-marker>\n    </l-map>\n  </div>\n</template>\n\n<script>\nimport {\n  LMap, LTileLayer, LMarker, LPopup,\n} from 'vue2-leaflet'\n\nexport default {\n  components: {\n    LMap,\n    LTileLayer,\n    LMarker,\n    LPopup,\n  },\n  data() {\n    return {\n      url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',\n      zoom: 8,\n      center: [47.313220, -1.319482],\n      markerLatLng: [47.313220, -1.319482, { draggable: 'true' }],\n    }\n  },\n}\n</script>\n\n<style lang=\"scss\">\n.vue2leaflet-map{\n  &.leaflet-container{\n    height: 350px;\n  }\n}\n</style>\n";
-var codeGeoJSON = "\n<template>\n  <div>\n    <l-map\n      :zoom=\"zoom\"\n      :center=\"center\"\n    >\n      <l-tile-layer :url=\"url\" />\n      <l-geo-json :geojson=\"geojson\" />\n    </l-map>\n  </div>\n</template>\n\n<script>\nimport { LMap, LTileLayer, LGeoJson } from 'vue2-leaflet'\n\nexport default {\n  components: {\n    LMap,\n    LTileLayer,\n    LGeoJson,\n  },\n  data() {\n    return {\n      url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',\n      zoom: 8,\n      center: [47.313220, -1.319482],\n      geojson: null,\n    }\n  },\n  async created() {\n    const response = await fetch('https://rawgit.com/gregoiredavid/france-geojson/master/regions/pays-de-la-loire/communes-pays-de-la-loire.geojson')\n    this.geojson = await response.json()\n  },\n}\n</script>\n\n<style lang=\"scss\">\n.vue2leaflet-map{\n  &.leaflet-container{\n    height: 350px;\n  }\n}\n</style>\n";
-var codeLayerGroup = "\n<template>\n  <div>\n     <div>\n      <b-button\n        variant=\"outline-primary\"\n        @click=\"fitPolyline\"\n      >\n        Fit map to polyline\n      </b-button>\n\n      <b-row class=\"mt-2\">\n        <b-col md=\"6\">\n          <b-form-group label=\"Contol Layers position: \">\n            <b-form-select\n              v-model=\"layersPosition\"\n              :options=\"Positions\"\n            />\n          </b-form-group>\n\n        </b-col>\n        <b-col md=\"6\">\n          <b-form-group label=\"Attribution position:\">\n            <b-form-select\n              v-model=\"attributionPosition\"\n              :options=\"Positions\"\n            />\n          </b-form-group>\n        </b-col>\n      </b-row>\n\n    </div>\n\n    <!-- map -->\n    <l-map\n      :zoom.sync=\"zoom\"\n      :options=\"mapOptions\"\n      :center=\"center\"\n      :bounds=\"bounds\"\n      :min-zoom=\"minZoom\"\n      :max-zoom=\"maxZoom\"\n      style=\"height: 500px; width: 100%\"\n    >\n      <l-control-layers\n        :position=\"layersPosition\"\n        :collapsed=\"false\"\n        :sort-layers=\"true\"\n      />\n      <l-tile-layer\n        v-for=\"tileProvider in tileProviders\"\n        :key=\"tileProvider.name\"\n        :name=\"tileProvider.name\"\n        :visible=\"tileProvider.visible\"\n        :url=\"tileProvider.url\"\n        :attribution=\"tileProvider.attribution\"\n        :token=\"token\"\n        layer-type=\"base\"\n      />\n      <l-control-zoom :position=\"zoomPosition\" />\n      <l-control-attribution\n        :position=\"attributionPosition\"\n        :prefix=\"attributionPrefix\"\n      />\n      <l-control-scale :imperial=\"imperial\" />\n      <l-marker\n        v-for=\"marker in markers\"\n        :key=\"marker.id\"\n        :visible=\"marker.visible\"\n        :draggable=\"marker.draggable\"\n        :lat-lng.sync=\"marker.position\"\n        :icon=\"marker.icon\"\n        @click=\"alert(marker)\"\n      >\n        <l-popup :content=\"marker.tooltip\" />\n        <l-tooltip :content=\"marker.tooltip\" />\n      </l-marker>\n      <l-layer-group\n        layer-type=\"overlay\"\n        name=\"Layer polyline\"\n      >\n        <l-polyline\n          v-for=\"item in polylines\"\n          :key=\"item.id\"\n          :lat-lngs=\"item.points\"\n          :visible=\"item.visible\"\n          @click=\"alert(item)\"\n        />\n      </l-layer-group>\n      <l-layer-group\n        v-for=\"item in stuff\"\n        :key=\"item.id\"\n        :visible.sync=\"item.visible\"\n        layer-type=\"overlay\"\n        name=\"Layer 1\"\n      >\n        <l-layer-group :visible=\"item.markersVisible\">\n          <l-marker\n            v-for=\"marker in item.markers\"\n            :key=\"marker.id\"\n            :visible=\"marker.visible\"\n            :draggable=\"marker.draggable\"\n            :lat-lng=\"marker.position\"\n            @click=\"alert(marker)\"\n          />\n        </l-layer-group>\n        <l-polyline\n          :lat-lngs=\"item.polyline.points\"\n          :visible=\"item.polyline.visible\"\n          @click=\"alert(item.polyline)\"\n        />\n      </l-layer-group>\n    </l-map>\n  </div>\n</template>\n\n<script>\n/* eslint-disable global-require */\nimport {\n  BButton, BFormSelect, BRow, BCol, BFormGroup,\n} from 'bootstrap-vue'\nimport {\n  LMap,\n  LTileLayer,\n  LMarker,\n  LPolyline,\n  LLayerGroup,\n  LTooltip,\n  LPopup,\n  LControlZoom,\n  LControlAttribution,\n  LControlScale,\n  LControlLayers,\n} from 'vue2-leaflet'\nimport { latLngBounds, Icon } from 'leaflet'\n\n// eslint-disable-next-line no-underscore-dangle\ndelete Icon.Default.prototype._getIconUrl\nIcon.Default.mergeOptions({\n  iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),\n  iconUrl: require('leaflet/dist/images/marker-icon.png'),\n  shadowUrl: require('leaflet/dist/images/marker-shadow.png'),\n})\n/* eslint-disable global-require */\nconst markers1 = [\n  {\n    position: { lng: -1.219482, lat: 47.41322 },\n    visible: true,\n    draggable: true,\n  },\n  { position: { lng: -1.571045, lat: 47.457809 } },\n  { position: { lng: -1.560059, lat: 47.739323 } },\n  { position: { lng: -0.922852, lat: 47.886881 } },\n  { position: { lng: -0.769043, lat: 48.231991 } },\n  { position: { lng: 0.395508, lat: 48.268569 } },\n  { position: { lng: 0.604248, lat: 48.026672 } },\n  { position: { lng: 1.2854, lat: 47.982568 } },\n  { position: { lng: 1.318359, lat: 47.894248 } },\n  { position: { lng: 1.373291, lat: 47.879513 } },\n  { position: { lng: 1.384277, lat: 47.798397 } },\n  { position: { lng: 1.329346, lat: 47.754098 } },\n  { position: { lng: 1.329346, lat: 47.680183 } },\n  { position: { lng: 0.999756, lat: 47.635784 } },\n  { position: { lng: 0.86792, lat: 47.820532 } },\n  { position: { lng: 0.571289, lat: 47.820532 } },\n  { position: { lng: 0.439453, lat: 47.717154 } },\n  { position: { lng: 0.439453, lat: 47.61357 } },\n  { position: { lng: -0.571289, lat: 47.487513 } },\n  { position: { lng: -0.615234, lat: 47.680183 } },\n  { position: { lng: -0.812988, lat: 47.724545 } },\n  { position: { lng: -1.054688, lat: 47.680183 } },\n  { position: { lng: -1.219482, lat: 47.41322 } },\n]\n\nconst poly1 = [\n  { lng: -1.219482, lat: 47.41322 },\n  { lng: -1.571045, lat: 47.457809 },\n  { lng: -1.560059, lat: 47.739323 },\n  { lng: -0.922852, lat: 47.886881 },\n  { lng: -0.769043, lat: 48.231991 },\n  { lng: 0.395508, lat: 48.268569 },\n  { lng: 0.604248, lat: 48.026672 },\n  { lng: 1.2854, lat: 47.982568 },\n  { lng: 1.318359, lat: 47.894248 },\n  { lng: 1.373291, lat: 47.879513 },\n  { lng: 1.384277, lat: 47.798397 },\n  { lng: 1.329346, lat: 47.754098 },\n  { lng: 1.329346, lat: 47.680183 },\n  { lng: 0.999756, lat: 47.635784 },\n  { lng: 0.86792, lat: 47.820532 },\n  { lng: 0.571289, lat: 47.820532 },\n  { lng: 0.439453, lat: 47.717154 },\n  { lng: 0.439453, lat: 47.61357 },\n  { lng: -0.571289, lat: 47.487513 },\n  { lng: -0.615234, lat: 47.680183 },\n  { lng: -0.812988, lat: 47.724545 },\n  { lng: -1.054688, lat: 47.680183 },\n  { lng: -1.219482, lat: 47.41322 },\n]\n\nconst tileProviders = [\n  {\n    name: 'OpenStreetMap',\n    visible: true,\n    attribution:\n      '&copy; <a target=\"_blank\" href=\"http://osm.org/copyright\">OpenStreetMap</a> contributors',\n    url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',\n  },\n  {\n    name: 'OpenTopoMap',\n    visible: false,\n    url: 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',\n    attribution:\n      'Map data: &copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a>, <a href=\"http://viewfinderpanoramas.org\">SRTM</a> | Map style: &copy; <a href=\"https://opentopomap.org\">OpenTopoMap</a> (<a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">CC-BY-SA</a>)',\n  },\n]\n\nexport default {\n  name: 'Example',\n  components: {\n    LMap,\n    LTileLayer,\n    LMarker,\n    LPolyline,\n    LLayerGroup,\n    LTooltip,\n    LPopup,\n    LControlZoom,\n    LControlAttribution,\n    LControlScale,\n    LControlLayers,\n    BButton,\n    BFormSelect,\n    BRow,\n    BCol,\n    BFormGroup,\n  },\n  data() {\n    return {\n      center: [51.505, -0.09],\n      opacity: 0.6,\n      token: 'your token if using mapbox',\n      mapOptions: {\n        zoomControl: false,\n        attributionControl: false,\n        zoomSnap: true,\n      },\n      zoom: 3,\n      minZoom: 1,\n      maxZoom: 20,\n      zoomPosition: 'topleft',\n      attributionPosition: 'bottomright',\n      layersPosition: 'topright',\n      attributionPrefix: 'Vue2Leaflet',\n      imperial: false,\n      Positions: ['topleft', 'topright', 'bottomleft', 'bottomright'],\n      tileProviders,\n      markers: [\n        {\n          id: 'm1',\n          position: { lat: 51.505, lng: -0.09 },\n          tooltip: 'tooltip for marker1',\n          draggable: true,\n          visible: true,\n        },\n        {\n          id: 'm2',\n          position: { lat: 51.8905, lng: -0.09 },\n          tooltip: 'tooltip for marker2',\n          draggable: true,\n          visible: false,\n        },\n        {\n          id: 'm3',\n          position: { lat: 51.005, lng: -0.09 },\n          tooltip: 'tooltip for marker3',\n          draggable: true,\n          visible: true,\n        },\n        {\n          id: 'm4',\n          position: { lat: 50.7605, lng: -0.09 },\n          tooltip: 'tooltip for marker4',\n          draggable: true,\n          visible: false,\n        },\n      ],\n      polylines: [\n        {\n          id: 'p1',\n          points: [\n            { lat: 37.772, lng: -122.214 },\n            { lat: 21.291, lng: -157.821 },\n            { lat: -18.142, lng: -181.569 },\n            { lat: -27.467, lng: -206.973 },\n          ],\n          visible: true,\n        },\n        {\n          id: 'p2',\n          points: [\n            [-73.91, 40.78],\n            [-87.62, 41.83],\n            [-96.72, 32.76],\n          ],\n          visible: true,\n        },\n      ],\n      stuff: [\n        {\n          id: 's1',\n          markers: markers1,\n          polyline: { points: poly1, visible: true },\n          visible: true,\n          markersVisible: true,\n        },\n      ],\n      bounds: latLngBounds(\n        { lat: 51.476483373501964, lng: -0.14668464136775586 },\n        { lat: 51.52948330894063, lng: -0.019140238291583955 },\n      ),\n    }\n  },\n  methods: {\n    alert(item) {\n      // eslint-disable-next-line no-alert\n      alert(`this is ${JSON.stringify(item)}`)\n    },\n    addMarker() {\n      const newMarker = {\n        position: { lat: 50.5505, lng: -0.09 },\n        draggable: true,\n        visible: true,\n      }\n      this.markers.push(newMarker)\n    },\n    removeMarker(index) {\n      this.markers.splice(index, 1)\n    },\n    fitPolyline() {\n      const bounds = latLngBounds(markers1.map(o => o.position))\n      this.bounds = bounds\n    },\n  },\n}\n</script>\n";
-var codeCustomIcon = "\n<template>\n  <div>\n    <l-map\n      :zoom=\"zoom\"\n      :center=\"center\"\n    >\n      <l-tile-layer\n        :url=\"url\"\n        :attribution=\"attribution\"\n      />\n\n      <!-- Use default icon -->\n      <l-marker :lat-lng=\"[47.41322, -1.219482]\" />\n\n      <!-- Use icon given in icon property -->\n      <l-marker\n        :lat-lng=\"[47.41322, -1.209482]\"\n        :icon=\"icon\"\n      />\n\n      <!-- Create image icon (icon) from l-icon tag -->\n      <l-marker :lat-lng=\"[47.41322, -1.199482]\">\n        <l-icon>\n          <b-img\n            :src=\"require('@/assets/images/misc/leaf-red.png')\"\n            height=\"50\"\n          />\n        </l-icon>\n      </l-marker>\n    </l-map>\n  </div>\n</template>\n\n<script>\n\n/* eslint-disable global-require */\nimport { BImg } from 'bootstrap-vue'\nimport {\n  LMap, LTileLayer, LMarker, LIcon,\n} from 'vue2-leaflet'\nimport { latLng, icon, Icon } from 'leaflet'\n\n// eslint-disable-next-line no-underscore-dangle\ndelete Icon.Default.prototype._getIconUrl\nIcon.Default.mergeOptions({\n  iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),\n  iconUrl: require('leaflet/dist/images/marker-icon.png'),\n  shadowUrl: require('leaflet/dist/images/marker-shadow.png'),\n})\n\nexport default {\n  name: 'Icon',\n  components: {\n    BImg,\n    LMap,\n    LTileLayer,\n    LMarker,\n    LIcon,\n  },\n  data() {\n    return {\n      zoom: 13,\n      center: latLng(47.41322, -1.219482),\n      url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',\n      attribution: '&copy; <a href=\"http://osm.org/copyright\">OpenStreetMap</a> contributors',\n      icon: icon({\n        iconUrl: require('@/assets/images/misc/leaf-green.png'),\n        iconSize: [50, 50],\n        iconAnchor: [16, 37],\n      }),\n    }\n  },\n}\n/* eslint-disable global-require */\n</script>\n\n<style lang=\"scss\">\n.vue2leaflet-map{\n  &.leaflet-container{\n    height: 350px;\n  }\n}\n</style>\n";
 
 /***/ })
 

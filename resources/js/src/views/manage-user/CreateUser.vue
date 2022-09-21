@@ -8,7 +8,7 @@
           </ul>
         </div>
         <validation-observer ref="simpleRules">
-          <b-form>
+          <b-form ref="form">
             <b-row>
               <b-col md="6">
                 <b-form-group>
@@ -224,13 +224,13 @@
               <b-col md="6">
                 <b-form-group>
                   <validation-provider #default="{ errors }" name="User Level" rules="required">
+                    <!-- <b-form-select -->
                     <v-select
                       v-model="userLevel"
                       :dir="$store.state.appConfig.isRTL ? 'rtl' : 'ltr'"
                       multiple
                       label="text"
                       :options="user_level"
-                      v-on:input="myFunction($event)"
                       placeholder="Select User Role(s)"
                     />
                     <small class="text-danger">{{ errors[0] }}</small>
@@ -417,6 +417,7 @@
 <script>
 import BCardCode from "@core/components/b-card-code";
 import { ValidationProvider, ValidationObserver } from "vee-validate";
+import AllUsers from "./AllUsers.vue";
 import {
   BFormInput,
   BFormGroup,
@@ -433,6 +434,8 @@ import AdminApi from "../../../api/admin";
 import ToastificationContent from "@core/components/toastification/ToastificationContent.vue";
 import router from "@/router";
 
+import InvoiceList from '@/views/apps/invoice/invoice-list/InvoiceList.vue'
+
 export default {
   components: {
     BCardCode,
@@ -446,7 +449,8 @@ export default {
     BButton,
     BFormSelect,
     BFormCheckbox,
-    vSelect
+    vSelect,
+    InvoiceList,
   },
   data() {
     return {
@@ -499,12 +503,6 @@ export default {
     this.getAllUserLevels();
   },
   methods: {
-      myFunction(e)
-      {
-          //alert('ok');
-          console.log('the event is ',e);
-          console.log('the user level are ',this.userLevel);
-      },
     getAllCurrencies() {
       AdminApi.getData(
         "getAllCurrencies",
@@ -578,6 +576,7 @@ export default {
             }),
             data => {
               if (data.success) {
+                this.$emit('event-triggered')
                 this.$toast({
                   component: ToastificationContent,
                   props: {
@@ -587,7 +586,7 @@ export default {
                     variant: "success"
                   }
                 });
-                //router.push({ name: "manage-users" });
+                // router.push({ name: "manage-user" });
               } else {
                 if (data.status == 422) {
                   this.validationErrors = data.message;

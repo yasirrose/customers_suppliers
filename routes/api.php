@@ -70,6 +70,9 @@ Route::group(['prefix' => 'admin',  'middleware' => 'token'], function(){
     Route::post('updateProductType', [API\AdminController::class, 'updateProductType']);
     Route::post('uploadFile', [API\AdminController::class, 'uploadFile']);
 
+    Route::post('deleteUser', [API\AdminController::class, 'deleteUser']);
+    Route::post('actionProducts', [API\AdminController::class, 'actionProducts']);
+
     });
     
     Route::get('getAllRoles', [API\AdminController::class, 'getAllRoles']);

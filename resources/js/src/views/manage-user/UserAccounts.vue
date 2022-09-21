@@ -107,7 +107,7 @@
               >Enabled</b-badge>
             </span>
             <span v-else-if="props.column.field === 'created_at'">
-              <span>{{ new Date(props.row.created_at).toUTCString() }}</span>
+              <span>{{ props.row.created_at | formatDate }}</span>
             </span>
             <!-- Column: Action -->
             <span v-else-if="props.column.field === 'action' && props.row.is_admin != 1">

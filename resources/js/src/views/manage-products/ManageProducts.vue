@@ -1,9 +1,9 @@
 <template>
   <b-tabs
     vertical
-    content-class="col-12 col-md-9 mt-1 mt-md-0"
+    content-class="col-12 col-md-10 mt-1 mt-md-0"
     pills
-    nav-wrapper-class="col-md-3 col-12"
+    nav-wrapper-class="col-md-2 col-12"
     nav-class="nav-left"
   >
 
@@ -12,7 +12,7 @@
     <!-- View Products -->
     <b-tab>
       <template #title>
-        <feather-icon icon="LockIcon" size="18" class="mr-50"/>
+        <feather-icon icon="ShoppingBagIcon" size="18" class="mr-50"/>
         <span class="font-weight-bold">View Products</span>
       </template>
       <AllProducts/>
@@ -21,7 +21,7 @@
     <!-- Create Products -->
     <b-tab v-if="user.user_level_id==1">
       <template #title>
-        <feather-icon icon="LockIcon" size="18" class="mr-50"/>
+        <feather-icon icon="ShoppingBagIcon" size="18" class="mr-50"/>
         <span class="font-weight-bold">Create Products</span>
       </template>
       <CreateProducts/>
@@ -30,7 +30,7 @@
     <!-- Create Product Types -->
     <b-tab v-if="user.user_level_id==1">
       <template #title>
-        <feather-icon icon="LockIcon" size="18" class="mr-50"/>
+        <feather-icon icon="TypeIcon" size="18" class="mr-50"/>
         <span class="font-weight-bold">Create Product Types</span>
       </template>
       <CreateProductTypes/>
@@ -39,7 +39,7 @@
     <!-- View Product Types -->
     <b-tab v-if="user.user_level_id==1">
       <template #title>
-        <feather-icon icon="LockIcon" size="18" class="mr-50"/>
+        <feather-icon icon="TypeIcon" size="18" class="mr-50"/>
         <span class="font-weight-bold">View Product Types</span>
       </template>
       <AllProductTypes/>
@@ -99,14 +99,9 @@ export default {
   // },
 
   created() {
-     this.user = JSON.parse(localStorage.getItem("userData"));
-     this.userLevel =  this.user.user_level;
-      this.userId =  this.user.id;
-     console.log('the user level' ,this.userLevel);
-
-   
-
-    
+    this.user = JSON.parse(localStorage.getItem("userData"));
+    this.userLevel =  this.user.user_level;
+    this.userId =  this.user.id;
   }
 };
 

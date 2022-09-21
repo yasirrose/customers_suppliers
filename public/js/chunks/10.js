@@ -205,7 +205,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 
 
@@ -649,55 +648,7 @@ var render = function () {
                       _vm._v(
                         "\n        Delete " +
                           _vm._s(_vm.idArray.length) +
-                          " Record\n        "
-                      ),
-                      _vm.idArray.length > 1
-                        ? _c("span", [_vm._v("s")])
-                        : _vm._e(),
-                    ]
-                  )
-                : _vm._e(),
-              _vm._v(" "),
-              _vm.isSelected
-                ? _c(
-                    "b-button",
-                    {
-                      staticClass: "custom-danger-btn",
-                      on: {
-                        click: function ($event) {
-                          return _vm.actionRecords("enable")
-                        },
-                      },
-                    },
-                    [
-                      _vm._v(
-                        "\n        Enable " +
-                          _vm._s(_vm.idArray.length) +
-                          " Record\n        "
-                      ),
-                      _vm.idArray.length > 1
-                        ? _c("span", [_vm._v("s")])
-                        : _vm._e(),
-                    ]
-                  )
-                : _vm._e(),
-              _vm._v(" "),
-              _vm.isSelected
-                ? _c(
-                    "b-button",
-                    {
-                      staticClass: "custom-danger-btn",
-                      on: {
-                        click: function ($event) {
-                          return _vm.actionRecords("disable")
-                        },
-                      },
-                    },
-                    [
-                      _vm._v(
-                        "\n        Dieable " +
-                          _vm._s(_vm.idArray.length) +
-                          " Record\n        "
+                          " Record"
                       ),
                       _vm.idArray.length > 1
                         ? _c("span", [_vm._v("s")])
@@ -870,7 +821,7 @@ var render = function () {
                               _c("span", [
                                 _vm._v(
                                   _vm._s(
-                                    new Date(props.row.created_at).toUTCString()
+                                    _vm._f("formatDate")(props.row.created_at)
                                   )
                                 ),
                               ]),
@@ -912,7 +863,7 @@ var render = function () {
                               _c("span", [
                                 _vm._v(
                                   _vm._s(
-                                    new Date(props.row.created_at).toUTCString()
+                                    _vm._f("formatDate")(props.row.created_at)
                                   )
                                 ),
                               ]),

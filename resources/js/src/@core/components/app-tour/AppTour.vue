@@ -9,7 +9,7 @@
 
 <template>
   <v-tour
-    name="ELASTIC-CSSO"
+    name="CUSTOMERS-SUPPLIERS"
     :steps="steps"
   >
     <template slot-scope="tour">

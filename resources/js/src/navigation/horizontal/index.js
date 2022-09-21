@@ -13,7 +13,7 @@ export default [{
     },
     {
         header: 'My Account',
-        icon: 'SettingsIcon',
+        icon: 'UserIcon',
 
         children: [{
                 title: 'Update Password',
@@ -49,7 +49,7 @@ export default [{
 
     {
         header: 'Manage Users',
-        icon: 'UserIcon',
+        icon: 'UsersIcon',
         gate: 'manage_users_access',
         children: [{
             title: 'All Users',
@@ -59,48 +59,48 @@ export default [{
     },
     {
         header: 'Manage Products',
-        icon: 'UserIcon',
+        icon: 'ShoppingBagIcon',
         gate: 'manage_products_access',
         children: [{
             title: 'All Products',
             route: 'manage-products',
-            icon: 'UserIcon',
+            icon: 'ShoppingBagIcon',
         }, ]
     },
     {
         header: 'Manage Orders',
-        icon: 'UserIcon',
+        icon: 'PackageIcon',
         gate: 'manage_orders_access',
         children: [{
             title: 'All Orders',
             route: 'manage-orders',
-            icon: 'UserIcon',
+            icon: 'PackageIcon',
         }, ]
     },
 
     // for supplier
     {
         header: 'Orders',
-        icon: 'UserIcon',
+        icon: 'PackageIcon',
         gate: 'orders_access',
 
         children: [{
 
             title: 'View Orders',
             route: 'orders',
-            icon: 'UserIcon',
+            icon: 'PackageIcon',
         }, ]
     },
     // for customer
     {
         header: 'My Orders',
-        icon: 'UserIcon',
+        icon: 'PackageIcon',
         gate: 'my_orders_access',
         children: [{
 
                 title: 'View Orders',
                 route: 'orders',
-                icon: 'UserIcon',
+                icon: 'PackageIcon',
             },
 
         ]

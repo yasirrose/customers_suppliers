@@ -24,15 +24,15 @@
               class="navbar-brand"
               to="/"
             >
-              <span class="brand-logo">
+              <!-- <span class="brand-logo">
                 <b-img
                   :src="appLogoImage"
                   alt="logo"
                 />
-              </span>
-              <h2 class="brand-text">
+              </span> -->
+              <!-- <h2 class="brand-text">
                 {{ appName }}
-              </h2>
+              </h2> -->
             </b-link>
           </li>
 

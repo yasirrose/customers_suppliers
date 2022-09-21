@@ -7,53 +7,7 @@
             <li v-for="(value, key, index) in validationErrors">{{ value }}</li>
           </ul>
         </div>
-        <!-- media -->
-        <b-media no-body>
-          <b-media-aside>
-            <b-link>
-              <b-img ref="" rounded height="80"/>
-            </b-link>
-            <!--/ avatar -->
-          </b-media-aside>
-
-          <b-media-body class="mt-75 ml-75">
-            <!-- upload button -->
-            <b-button
-              background="'rgba(255, 255, 255, 0.15)'"
-              variant="primary"
-              size="sm"
-              class="mb-75 mr-75"
-              @click="$refs.refInputEl.$el.click()"
-            >Upload</b-button>
-            <b-form-file
-              ref="refInputEl"
-              accept=".jpg, .png, .gif"
-              :hidden="true"
-              plain
-              v-on:change="selectFile($event)"
-            />
-            <!--/ upload button -->
-
-            <!-- reset -->
-            <!-- <b-button
-              v-ripple.400="'rgba(186, 191, 199, 0.15)'"
-              variant="outline-secondary"
-              size="sm"
-              class="mb-75 mr-75"
-            >Reset</b-button> -->
-            <!--/ reset -->
-            <b-button
-              background="'rgba(186, 191, 199, 0.15)'"
-              variant="outline-secondary"
-              size="sm"
-              class="mb-75 mr-75"
-              v-on:click="uploadFile"
-            >upload</b-button>
-            <b-card-text>Allowed JPG, GIF or PNG. Max size of 800kB</b-card-text>
-          </b-media-body>
-        </b-media>
-        <!--/ media -->
-     
+   
         <validation-observer ref="simpleRules">
           <b-form>
             <b-row>
@@ -195,7 +149,18 @@
                   </validation-provider>
                 </b-form-group>
               </b-col>
-
+              <b-col md="6">
+                <b-form-group>
+                  <b-form-file
+                    v-model="file"
+                    ref="refInputEl"
+                    accept=".jpg, .png, .gif"
+                    placeholder="Choose a file.."
+                    drop-placeholder="Drop file here..."
+                    v-on:change="selectFile($event)"
+                  />
+                </b-form-group>
+              </b-col>
               <!-- submit button -->
               <b-col md="12">
                 <b-button variant="primary" :disabled="isDisabled" type="submit" @click.prevent="validationForm">Submit</b-button>
@@ -304,6 +269,7 @@ export default {
       codeMessage: false,
       image:null,
       isDisabled: false,
+      file: null,
     };
   },
 
@@ -314,7 +280,6 @@ export default {
   methods: {
     selectFile(e)
     {
-      console.log(e);
       this.image = e.target.files[0];
     },
     uploadFile()
@@ -467,6 +432,7 @@ export default {
             fd
             ,
             data => {
+              this.isDisabled = false;
               if (data.success) {
                 this.$toast({
                   component: ToastificationContent,
@@ -478,9 +444,7 @@ export default {
                   }
                 });
                 router.push({ name: "user-accounts" });
-                this.isDisabled = false;
               } else {
-                this.isDisabled = false;
                 if (data.status == 422) {
                   // this.validationErrors = data.message;
                 } else {

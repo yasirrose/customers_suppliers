@@ -247,6 +247,19 @@ const admin = {
                 errorCB(err.response.data)
             })
     },
+    actionProducts(data, cb, errorCB) {
+        axios
+            .post(window.API_URL + 'admin/actionProducts', data)
+            .then(resp => {
+
+                if (resp.status == 200) {
+                    cb(resp.data)
+                }
+            })
+            .catch(err => {
+                errorCB(err.response.data)
+            })
+    },
     deleteUser(data, cb, errorCB) {
         axios
             .post(window.API_URL + 'admin/deleteUser', data)

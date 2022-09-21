@@ -63,7 +63,7 @@
 
             <!-- Column: Action -->
             <span v-else-if="props.column.field === 'created_at'">
-              <span>{{ new Date(props.row.created_at).toUTCString() }}</span>
+              <span>{{ props.row.created_at | formatDate }}</span>
             </span>
             <span v-else-if="props.column.field === 'action'">
               <span>

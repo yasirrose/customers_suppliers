@@ -5,3 +5,96 @@
 .vgt-inner-wrap{
     box-shadow: none !important;
 }
+.vgt-inner-wrap span {
+    color: #000 !important;
+}
+.dropdown-item {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    /* color: #6e6b7b; */
+    color: #000 !important;
+    white-space: nowrap;
+}
+.dropdown-item-text {
+    display: block;
+    /* color: #6e6b7b; */
+    color: #000 !important;
+}
+[dir] .custom-select {
+    border: 1px solid #d8d6de;
+    border-radius: 0.357rem;
+    color: #000 !important;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff !important;
+}
+.breadcrumb-item.active {
+    /* color: #6e6b7b; */
+    color: #000 !important;
+}
+[dir=ltr] .btn-group > .btn:not([class*=btn-outline-]):not([class*=btn-flat-]):not([class*=btn-gradient-]):not([class*=btn-relief-]):last-child, [dir=ltr] .btn-group > .btn:not([class*=btn-outline-]):not([class*=btn-flat-]):not([class*=btn-gradient-]):not([class*=btn-relief-]):last-of-type {
+    border-right-color: transparent !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    padding-right: 0px !important;
+}
+  
+.vgt-table th.sortable button:before {
+    margin-bottom: -7px;
+    border-top: 5px solid #000 !important;
+}
+
+.vgt-table th.sortable button:after {
+    margin-top: -7px;
+    border-bottom: 5px solid #000 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #000 !important;
+}
+label {
+    color: #000 !important;
+}
+
+.header-navbar .navbar-container ul.navbar-nav li.active > a.nav-link {
+    color: #fff !important;
+}
+.header-navbar .navbar-container ul.navbar-nav li > a.nav-link {
+    /* color: #6e6b7b; */
+    color: #000 !important;
+    position: relative;
+}
+label {
+    color: #000 !important;
+}
+
+.header-navbar .navbar-container ul.navbar-nav li.active > a.nav-link {
+    color: #fff !important;
+}
+.nav-pills .nav-link {
+    font-size: 1rem;
+    line-height: 1rem;
+    /* color: #5e5873; */
+    color: #000 !important;
+}
+table.vgt-table td {
+    color: #000 !important;
+}  
+.vgt-table thead th {
+    color: #000 !important;
+}
+html body p {
+    line-height: 1.5rem;
+    color: #000 !important;
+}
+
+.media .media-body .btn-outline-secondary {
+    color: #000 !important;
+}
+html .content .content-wrapper .content-header-title {
+    font-weight: 500;
+    /* color: #636363; */
+    color: #000 !important;
+}

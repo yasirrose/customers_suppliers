@@ -282,21 +282,9 @@ class AdminController extends BaseController
 	}
 	public function updateProfileInfo(Request $request){
 		try {
-			// if($request->hasFile('image'))
-			// {
-			// 	$file = $request->file('image');
-			// 	$image = time().'.'.$file->getClientOriginalName();
-			// 	$file->move(public_path('image'),$image);
-
-			// 	return response()->json(['status'=>422,'message' =>$request->file('image')]);
-			// }
-			// else{
-			// 	return response()->json(['status'=>422,'message' =>$request->get('fields')]);
-			// }
 			$validator = Validator::make($request->all(), [
 				'email' => 'required|email',
 					'name' => 'required',
-					// 'last_name' => 'required',
 					'country' => 'required',
 					'province' => 'required',
 					'city' => 'required',
@@ -311,7 +299,6 @@ class AdminController extends BaseController
 			}
 		$user = User::find(Auth::guard('api')->user()->id);
 		$user->name = $request->name;
-		//$user->last_name = $request->last_name;
 		$user->email = $request->email;
 		$user->country = $request->country;
 		$user->province = $request->province;
@@ -322,6 +309,15 @@ class AdminController extends BaseController
 		$user->contact = $request->contact;
 		$user->currency_id = $request->currency_id;
 		
+		if($request->hasFile('image')){
+			$file = $request->file('image');
+			$image = time().'.'.$file->getClientOriginalName();
+			$file->move(public_path('image'),$image);
+			$user->picture = 'image/'.$image;
+		} else {
+			unset($user->picture);
+		}
+
 		if($user->save()){
 			
 			return $this->sendResponse($user,'Data has been updted');
@@ -440,7 +436,6 @@ class AdminController extends BaseController
 
 	public function UpdateUserInfo(Request $request){
 		try{
-			
 			$user_level = $request->user_level;
 			$request->request->remove('user_level');
 			$user = User::find($request->id);
@@ -820,6 +815,40 @@ class AdminController extends BaseController
 			}
 		} catch (\Exception $e) {
 			return $e->getMessage();
+		}
+	}
+	public function deleteUser(Request $request){
+		$param = $request->param;
+		$id = [];
+		foreach($request->id as $group){
+			array_push($id,$group['id']);
+		}
+		if($param == 'delete'){
+			User::whereIn('id', $id)->delete();
+			return $this->sendResponse(true,'Selected records has been deleted');
+		} else if($param == 'enable'){
+			User::whereIn('id', $id)->update(['status' => 1]);
+			return $this->sendResponse(true,'Selected records has been enabled');
+		} else if($param == 'disable'){
+			User::whereIn('id', $id)->update(['status' => 0]);
+			return $this->sendResponse(true,'Selected records has been disabled');
+		}
+	}
+	public function actionProducts(Request $request){
+		$param = $request->param;
+		$id = [];
+		foreach($request->id as $group){
+			array_push($id,$group['id']);
+		}
+		if($param == 'delete'){
+			Product::whereIn('id', $id)->delete();
+			return $this->sendResponse(true,'Selected records has been deleted');
+		} else if($param == 'enable'){
+			Product::whereIn('id', $id)->update(['is_active' => 1]);
+			return $this->sendResponse(true,'Selected records has been enabled');
+		} else if($param == 'disable'){
+			Product::whereIn('id', $id)->update(['is_active' => 0]);
+			return $this->sendResponse(true,'Selected records has been disabled');
 		}
 	}
 }

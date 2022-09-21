@@ -201,6 +201,7 @@ import vSelect from "vue-select";
 import ToastificationContent from "@core/components/toastification/ToastificationContent.vue";
 import router from "@/router";
 import Admin from "../../../api/admin";
+import InvoiceList from '@/views/apps/invoice/invoice-list/InvoiceList.vue'
 
 export default {
   components: {
@@ -215,7 +216,8 @@ export default {
     BButton,
     BFormSelect,
     BFormCheckbox,
-    vSelect
+    vSelect,
+    InvoiceList,
   },
   data() {
     return {

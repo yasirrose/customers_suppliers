@@ -25,7 +25,7 @@ class LoginController extends BaseController
             return $this->sendError('Validation Error.', $validator->errors());       
         }
 
-        if(Auth::attempt(['email' => $request->email, 'password' => $request->password])){ 
+        if(Auth::attempt(['email' => $request->email, 'password' => $request->password, 'status' => 1])){ 
             
             $user = Auth::user();
             $user_account = UserAccount::where('user_id',$user->id)->where('user_level_id',$request->user_level)->get();

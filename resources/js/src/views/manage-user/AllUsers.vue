@@ -6,16 +6,13 @@
         <b-link :to="{ path: 'create-user' }" class="custom-btn">Start User Import Wizard</b-link>
         <b-button class="custom-btn" v-b-toggle.sidebar-border>View Summary</b-button> -->
         <b-button v-if="isSelected" class="custom-danger-btn" @click="actionRecords('delete')">
-          Delete {{ idArray.length }} Record
-          <span v-if="idArray.length > 1">s</span>
+          Delete {{ idArray.length }} Record<span v-if="idArray.length > 1">s</span>
         </b-button>
         <b-button v-if="isSelected" class="custom-danger-btn" @click="actionRecords('enable')">
-          Enable {{ idArray.length }} Record
-          <span v-if="idArray.length > 1">s</span>
+          Enable {{ idArray.length }} Record<span v-if="idArray.length > 1">s</span>
         </b-button>
         <b-button v-if="isSelected" class="custom-danger-btn" @click="actionRecords('disable')">
-          Dieable {{ idArray.length }} Record
-          <span v-if="idArray.length > 1">s</span>
+          Disable {{ idArray.length }} Record<span v-if="idArray.length > 1">s</span>
         </b-button>
         <b-sidebar id="sidebar-border" sidebar-class="border-right border-primary">
           <div class="px-3 py-2">
@@ -107,25 +104,15 @@
               >Enabled</b-badge>
             </span>
             <span v-else-if="props.column.field === 'created_at'">
-              <span>{{ new Date(props.row.created_at).toUTCString() }}</span>
+              <span>{{ props.row.created_at | formatDate }}</span>
             </span>
             <!-- Column: Action -->
             <span v-else-if="props.column.field === 'action' && props.row.is_admin != 1">
               <span>
-                <b-dropdown variant="link" toggle-class="text-decoration-none" no-caret>
-                  <template v-slot:button-content>
-                    <feather-icon
-                      icon="MoreVerticalIcon"
-                      size="16"
-                      class="text-body align-middle mr-25"
-                    />
-                  </template>
-                  <b-dropdown-item>
-                    <feather-icon icon="Edit2Icon" class="mr-50"/>
-                    <b-link :to="{ path: 'update-user/' + props.row.id}">Edit</b-link>
-                  </b-dropdown-item>
-                  
-                </b-dropdown>
+                  <b-link :to="{ path: 'update-user/' + props.row.id}" title="Edit User"><feather-icon icon="Edit2Icon"/></b-link>
+                  <b-link @click="deleleRecord(props.row.id, 'delete')" title="Delete User"><feather-icon icon="DeleteIcon" class="text-danger"/></b-link>
+                  <b-link v-if="props.row.status == 0" @click="deleleRecord(props.row.id, 'enable')" title="Enable User"><feather-icon icon="ToggleLeftIcon" class="text-info"/></b-link>
+                  <b-link v-if="props.row.status == 1" @click="deleleRecord(props.row.id, 'disable')" title="Disable User"><feather-icon icon="ToggleRightIcon" class="text-danger"/></b-link>
               </span>
             </span>
 
@@ -318,6 +305,11 @@ export default {
           console.log(err);
         }
       );
+    },
+    deleleRecord(id, param){
+      this.idArray = [];
+      this.idArray.push({'id' : id});
+      this.actionRecords(param);
     },
     actionRecords(param) {
       if (param == "delete") {

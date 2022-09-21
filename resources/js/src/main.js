@@ -20,6 +20,7 @@ import './global-components'
 // 3rd party plugins
 import '@/libs/portal-vue'
 import '@/libs/toastification'
+import '@/libs/sweet-alerts'
 
 // import casl
 import '@/libs/acl'
@@ -27,7 +28,7 @@ import '@/libs/acl'
 //use date format
 Vue.filter('formatDate', function(value) {
     if (value) {
-        return moment(String(value)).format('MM/DD/YYYY hh:mm')
+        return moment(String(value)).format("ddd, MMMM Do YY")
     }
 });
 

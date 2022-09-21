@@ -85,14 +85,8 @@
           
             <!-- Column: Created At -->
             <span v-if="props.column.field === 'created_at'">
-              <span>{{ new Date(props.row.created_at).toUTCString() }}</span>
+              <span>{{ props.row.created_at | formatDate }}</span>
             </span>
-    
-            <!-- Column: Updated At -->
-            <span v-if="props.column.field === 'updated_at'">
-              <span>{{ new Date(props.row.updated_at).toUTCString() }}</span>
-            </span>
-        
             <!-- Column: Action -->
             <span v-else-if="props.column.field === 'action'">
               <span>
@@ -211,10 +205,6 @@ export default {
         {
           label: "Created At",
           field: "created_at"
-        },
-        {
-          label: "Updated At",
-          field: "updated_at"
         },
         {
           label: "Action",

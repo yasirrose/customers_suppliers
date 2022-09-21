@@ -6,17 +6,16 @@
         <b-link :to="{ path: 'create-user' }" class="custom-btn">Start User Import Wizard</b-link>
         <b-button class="custom-btn" v-b-toggle.sidebar-border>View Summary</b-button> -->
         <b-button v-if="isSelected" class="custom-danger-btn" @click="actionRecords('delete')">
-          Delete {{ idArray.length }} Record
-          <span v-if="idArray.length > 1">s</span>
+          Delete {{ idArray.length }} Record<span v-if="idArray.length > 1">s</span>
         </b-button>
-        <b-button v-if="isSelected" class="custom-danger-btn" @click="actionRecords('enable')">
+        <!-- <b-button v-if="isSelected" class="custom-danger-btn" @click="actionRecords('enable')">
           Enable {{ idArray.length }} Record
           <span v-if="idArray.length > 1">s</span>
         </b-button>
         <b-button v-if="isSelected" class="custom-danger-btn" @click="actionRecords('disable')">
           Dieable {{ idArray.length }} Record
           <span v-if="idArray.length > 1">s</span>
-        </b-button>
+        </b-button> -->
         <b-sidebar id="sidebar-border" sidebar-class="border-right border-primary">
           <div class="px-3 py-2">
             <div class="mt-md-0 mt-2">
@@ -99,7 +98,7 @@
             </span>
             <!-- Column: Created At -->
             <span v-else-if="props.column.field === 'created_at'">
-              <span>{{ new Date(props.row.created_at).toUTCString() }}</span>
+              <span>{{ props.row.created_at | formatDate }}</span>
             </span>
             <!-- Column: Status -->
             <span v-else-if="props.column.field === 'status'">
@@ -113,7 +112,7 @@
               >Enabled</b-badge>
             </span>
             <span v-else-if="props.column.field === 'created_at'">
-              <span>{{ new Date(props.row.created_at).toUTCString() }}</span>
+              <span>{{ props.row.created_at | formatDate }}</span>
             </span>
             <!-- Column: Action -->
             <span v-else-if="props.column.field === 'action' && $can('manage_orders_access','all')">

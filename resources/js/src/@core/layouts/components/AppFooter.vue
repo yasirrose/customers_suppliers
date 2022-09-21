@@ -1,7 +1,7 @@
 <template>
   <p class="clearfix mb-0">
     <span class="float-md-left d-block d-md-inline-block mt-25">
-     ELASTIC-CSSO & Company, Inc
+      <!-- CUSTOMERS-SUPPLIERS & Company, Inc -->
       <b-link
         class="ml-25"
         href=""
@@ -10,7 +10,7 @@
       <!-- <span class="d-none d-sm-inline-block">, All rights Reserved</span> -->
     </span>
 
-    <span class="float-md-right d-none d-md-block">ELASTIC-CSSO
+    <span class="float-md-right d-none d-md-block">CUSTOMERS-SUPPLIERS
       <feather-icon
         icon=""
         size="21"

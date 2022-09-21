@@ -266,7 +266,7 @@ const router = new VueRouter({
             meta: {
                 pageTitle: 'My Accounts',
                 breadcrumb: [{
-                    text: 'Update Email',
+                    text: 'Update Profile',
                     active: true,
                 }, ],
             },

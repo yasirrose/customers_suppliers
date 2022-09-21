@@ -1,7 +1,7 @@
 <template>
   <b-row>
     <b-col cols="12">
-      <b-card-code title="Create orders">
+      <b-card-code title="Create Order">
         <div v-if="validationErrors">
           <ul class="alert alert-danger">
             <li v-for="(value, key, index) in validationErrors">{{ value }}</li>

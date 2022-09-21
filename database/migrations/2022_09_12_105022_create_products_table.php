@@ -20,7 +20,9 @@ class CreateProductsTable extends Migration
             $table->string('width');
             $table->string('length');
             $table->string('weight');
+            $table->integer('is_active')->default(1);
             $table->string('description');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

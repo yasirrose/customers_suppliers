@@ -1207,38 +1207,27 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    {
-      staticClass:
-        "bookmark-wrapper align-items-center flex-grow-1 d-none d-lg-flex",
-    },
-    [
-      _c("ul", { staticClass: "nav navbar-nav" }, [
-        _c(
-          "li",
-          { staticClass: "nav-item" },
-          [
-            _c("b-link", { staticClass: "navbar-brand", attrs: { to: "/" } }, [
-              _c(
-                "span",
-                { staticClass: "brand-logo" },
-                [
-                  _c("b-img", {
-                    attrs: { src: _vm.appLogoImage, alt: "logo" },
-                  }),
-                ],
-                1
-              ),
-            ]),
-          ],
-          1
-        ),
-      ]),
-    ]
-  )
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "bookmark-wrapper align-items-center flex-grow-1 d-none d-lg-flex",
+      },
+      [
+        _c("ul", { staticClass: "nav navbar-nav" }, [
+          _c("li", { staticClass: "nav-item" }),
+        ]),
+      ]
+    )
+  },
+]
 render._withStripped = true
 
 
@@ -2942,7 +2931,7 @@ __webpack_require__.r(__webpack_exports__);
 }, // for Company
 {
   header: 'Manage Users',
-  icon: 'UserIcon',
+  icon: 'UsersIcon',
   gate: 'manage_users_access',
   children: [{
     title: 'All Users',

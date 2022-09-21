@@ -83,27 +83,21 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/manage-user/UpdateUser.vue?vue&type=script&lang=js&":
-/*!********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/manage-user/UpdateUser.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/user/ChangeEmail.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/user/ChangeEmail.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.function.name.js */ "./node_modules/core-js/modules/es.function.name.js");
-/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _core_components_b_card_code__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @core/components/b-card-code */ "./resources/js/src/@core/components/b-card-code/index.js");
-/* harmony import */ var vee_validate__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vee-validate */ "./node_modules/vee-validate/dist/vee-validate.esm.js");
-/* harmony import */ var bootstrap_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! bootstrap-vue */ "./node_modules/bootstrap-vue/esm/index.js");
-/* harmony import */ var _validations__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @validations */ "./resources/js/src/@core/utils/validations/validations.js");
-/* harmony import */ var _api_admin__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../api/admin */ "./resources/js/api/admin.js");
-/* harmony import */ var vue_select__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vue-select */ "./node_modules/vue-select/dist/vue-select.js");
-/* harmony import */ var vue_select__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(vue_select__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _core_components_toastification_ToastificationContent_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @core/components/toastification/ToastificationContent.vue */ "./resources/js/src/@core/components/toastification/ToastificationContent.vue");
-/* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @/router */ "./resources/js/src/router/index.js");
-
+/* harmony import */ var _core_components_b_card_code__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @core/components/b-card-code */ "./resources/js/src/@core/components/b-card-code/index.js");
+/* harmony import */ var vee_validate__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vee-validate */ "./node_modules/vee-validate/dist/vee-validate.esm.js");
+/* harmony import */ var bootstrap_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap-vue */ "./node_modules/bootstrap-vue/esm/index.js");
+/* harmony import */ var _validations__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @validations */ "./resources/js/src/@core/utils/validations/validations.js");
+/* harmony import */ var _api_admin__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../api/admin */ "./resources/js/api/admin.js");
+/* harmony import */ var _core_components_toastification_ToastificationContent_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @core/components/toastification/ToastificationContent.vue */ "./resources/js/src/@core/components/toastification/ToastificationContent.vue");
 //
 //
 //
@@ -168,129 +162,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
 
 
 
@@ -299,58 +170,25 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    BCardCode: _core_components_b_card_code__WEBPACK_IMPORTED_MODULE_1__["default"],
-    ValidationProvider: vee_validate__WEBPACK_IMPORTED_MODULE_2__["ValidationProvider"],
-    ValidationObserver: vee_validate__WEBPACK_IMPORTED_MODULE_2__["ValidationObserver"],
-    BFormInput: bootstrap_vue__WEBPACK_IMPORTED_MODULE_3__["BFormInput"],
-    BFormGroup: bootstrap_vue__WEBPACK_IMPORTED_MODULE_3__["BFormGroup"],
-    BForm: bootstrap_vue__WEBPACK_IMPORTED_MODULE_3__["BForm"],
-    BRow: bootstrap_vue__WEBPACK_IMPORTED_MODULE_3__["BRow"],
-    BCol: bootstrap_vue__WEBPACK_IMPORTED_MODULE_3__["BCol"],
-    BButton: bootstrap_vue__WEBPACK_IMPORTED_MODULE_3__["BButton"],
-    BFormSelect: bootstrap_vue__WEBPACK_IMPORTED_MODULE_3__["BFormSelect"],
-    BFormCheckbox: bootstrap_vue__WEBPACK_IMPORTED_MODULE_3__["BFormCheckbox"],
-    vSelect: vue_select__WEBPACK_IMPORTED_MODULE_6___default.a
+    BCardCode: _core_components_b_card_code__WEBPACK_IMPORTED_MODULE_0__["default"],
+    ValidationProvider: vee_validate__WEBPACK_IMPORTED_MODULE_1__["ValidationProvider"],
+    ValidationObserver: vee_validate__WEBPACK_IMPORTED_MODULE_1__["ValidationObserver"],
+    BFormInput: bootstrap_vue__WEBPACK_IMPORTED_MODULE_2__["BFormInput"],
+    BFormGroup: bootstrap_vue__WEBPACK_IMPORTED_MODULE_2__["BFormGroup"],
+    BForm: bootstrap_vue__WEBPACK_IMPORTED_MODULE_2__["BForm"],
+    BRow: bootstrap_vue__WEBPACK_IMPORTED_MODULE_2__["BRow"],
+    BCol: bootstrap_vue__WEBPACK_IMPORTED_MODULE_2__["BCol"],
+    BButton: bootstrap_vue__WEBPACK_IMPORTED_MODULE_2__["BButton"]
   },
   data: function data() {
     return {
-      email: "",
-      name: "",
-      //last_name: "",
-      country: "",
-      province: "",
-      city: "",
-      address: "",
-      postcode: "",
-      phone: "",
-      contact: "",
-      currencyId: null,
-      currency: [{
-        value: null,
-        text: "Please select a currency"
-      }],
-      user_level: [],
-      userLevel: [],
-      options: [{
-        value: null,
-        text: "Please select an option"
-      }, {
-        value: 1,
-        text: "Enabled"
-      }, {
-        value: 0,
-        text: "Disabled"
-      }],
-      status: null,
-      validationErrors: "",
-      id: this.$route.params.id
+      required: _validations__WEBPACK_IMPORTED_MODULE_3__["required"],
+      repeatEmail: '',
+      email: '',
+      confirmed: _validations__WEBPACK_IMPORTED_MODULE_3__["confirmed"],
+      validationErrors: '',
+      info: ''
     };
-  },
-  created: function created() {
-    this.getAllCurrencies();
-    this.getUserDetail();
-    this.getUserLevels();
-    this.getAllUserLevels();
   },
   methods: {
     validationForm: function validationForm() {
@@ -358,44 +196,42 @@ __webpack_require__.r(__webpack_exports__);
 
       this.$refs.simpleRules.validate().then(function (success) {
         if (success) {
-          _this.validationErrors = "";
-          _api_admin__WEBPACK_IMPORTED_MODULE_5__["default"].UpdateUserInfo(_this.info = {
-            name: _this.name,
-            country: _this.country,
-            province: _this.province,
-            city: _this.city,
-            address: _this.address,
-            postcode: _this.postcode,
-            currency_id: _this.currencyId,
-            phone: _this.phone,
-            contact: _this.contact,
-            email: _this.email,
-            user_level: _this.userLevel,
-            status: _this.status,
-            id: _this.id
+          _api_admin__WEBPACK_IMPORTED_MODULE_4__["default"].updateEmail(_this.info = {
+            "email": _this.email,
+            "repeat_email": _this.repeatEmail
           }, function (data) {
             if (data.success) {
               _this.$toast({
-                component: _core_components_toastification_ToastificationContent_vue__WEBPACK_IMPORTED_MODULE_7__["default"],
+                component: _core_components_toastification_ToastificationContent_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
                 props: {
-                  title: "Success!",
+                  title: 'Success!',
                   text: data.message,
-                  icon: "UserIcon",
-                  variant: "success"
+                  icon: 'UserIcon',
+                  variant: 'success'
                 }
-              }); // router.push({ name: "manage-users" });
+              }); //   this.form.email='';
+              //   this.form.repeat_email='';
+              //   this.$nextTick(() => {
+              //     this.errors.clear();
+              //     this.$nextTick(() => {
+              //       this.$validator.reset();
+              //     });
+              // });
+              // this.email='';
+              //   this.repeatEmail='';
+              //   this.$validator.clean();
 
             } else {
               if (data.status == 422) {
                 _this.validationErrors = data.message;
               } else {
                 _this.$toast({
-                  component: _core_components_toastification_ToastificationContent_vue__WEBPACK_IMPORTED_MODULE_7__["default"],
+                  component: _core_components_toastification_ToastificationContent_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
                   props: {
-                    title: "Failed",
+                    title: 'Failed',
                     text: data.message,
-                    icon: "errorIcon",
-                    variant: "outline-danger"
+                    icon: 'errorIcon',
+                    variant: 'outline-danger'
                   }
                 });
               }
@@ -404,72 +240,6 @@ __webpack_require__.r(__webpack_exports__);
             console.log(err);
           });
         }
-      });
-    },
-    getUserDetail: function getUserDetail() {
-      var _this2 = this;
-
-      _api_admin__WEBPACK_IMPORTED_MODULE_5__["default"].getUserDetail(this.id, function (res) {
-        _this2.name = res.data.name; //this.last_name = res.data.last_name;
-
-        _this2.email = res.data.email;
-        _this2.country = res.data.country;
-        _this2.province = res.data.province;
-        _this2.city = res.data.city;
-        _this2.address = res.data.address;
-        _this2.postcode = res.data.postcode;
-        _this2.phone = res.data.phone;
-        _this2.contact = res.data.contact;
-        _this2.currencyId = res.data.currency_id;
-        _this2.status = res.data.status;
-      }, function (err) {
-        console.log(err);
-      });
-    },
-    getAllCurrencies: function getAllCurrencies() {
-      var _this3 = this;
-
-      _api_admin__WEBPACK_IMPORTED_MODULE_5__["default"].getData('getAllCurrencies', function (res) {
-        for (var i = 0; i < res.data.length; i++) {
-          _this3.currency.push({
-            value: res.data[i].id,
-            text: res.data[i].currency
-          });
-        } //console.log('the get currency response is',res.data);
-
-      }, function (err) {
-        console.log(err);
-      });
-    },
-    getAllUserLevels: function getAllUserLevels() {
-      var _this4 = this;
-
-      _api_admin__WEBPACK_IMPORTED_MODULE_5__["default"].getData("getAllUserLevels", function (res) {
-        for (var i = 0; i < res.data.length; i++) {
-          _this4.user_level.push({
-            value: res.data[i].id,
-            text: res.data[i].user_level
-          });
-        } //console.log('the get currency response is',res.data);
-
-      }, function (err) {
-        console.log(err);
-      });
-    },
-    getUserLevels: function getUserLevels() {
-      var _this5 = this;
-
-      _api_admin__WEBPACK_IMPORTED_MODULE_5__["default"].getRow('getUserLevels', this.id, function (res) {
-        for (var i = 0; i < res.data.length; i++) {
-          _this5.userLevel.push({
-            value: res.data[i].id,
-            text: res.data[i].user_level
-          });
-        }
-
-        console.log('the getUserLevels response is', res.data);
-      }, function (err) {
-        console.log(err);
       });
     }
   }
@@ -696,10 +466,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/manage-user/UpdateUser.vue?vue&type=template&id=cf57678c&":
-/*!************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/manage-user/UpdateUser.vue?vue&type=template&id=cf57678c& ***!
-  \************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/user/ChangeEmail.vue?vue&type=template&id=0b28931c&":
+/*!******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/user/ChangeEmail.vue?vue&type=template&id=0b28931c& ***!
+  \******************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -720,7 +490,7 @@ var render = function () {
         [
           _c(
             "b-card-code",
-            { attrs: { title: "Update User" } },
+            { attrs: { title: "Update Email Address" } },
             [
               _vm.validationErrors
                 ? _c("div", [
@@ -757,7 +527,7 @@ var render = function () {
                                 [
                                   _c("validation-provider", {
                                     attrs: {
-                                      name: "User Name",
+                                      name: "email,",
                                       rules: "required",
                                     },
                                     scopedSlots: _vm._u([
@@ -772,60 +542,8 @@ var render = function () {
                                                   errors.length > 0
                                                     ? false
                                                     : null,
-                                                type: "text",
-                                                placeholder:
-                                                  "Please Enter First Name",
-                                              },
-                                              model: {
-                                                value: _vm.name,
-                                                callback: function ($$v) {
-                                                  _vm.name = $$v
-                                                },
-                                                expression: "name",
-                                              },
-                                            }),
-                                            _vm._v(" "),
-                                            _c(
-                                              "small",
-                                              { staticClass: "text-danger" },
-                                              [_vm._v(_vm._s(errors[0]))]
-                                            ),
-                                          ]
-                                        },
-                                      },
-                                    ]),
-                                  }),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-col",
-                            { attrs: { md: "6" } },
-                            [
-                              _c(
-                                "b-form-group",
-                                [
-                                  _c("validation-provider", {
-                                    attrs: { name: "email", rules: "required" },
-                                    scopedSlots: _vm._u([
-                                      {
-                                        key: "default",
-                                        fn: function (ref) {
-                                          var errors = ref.errors
-                                          return [
-                                            _c("b-form-input", {
-                                              attrs: {
-                                                state:
-                                                  errors.length > 0
-                                                    ? false
-                                                    : null,
                                                 type: "email",
-                                                placeholder:
-                                                  "Please Enter Email",
+                                                placeholder: "Your Email",
                                               },
                                               model: {
                                                 value: _vm.email,
@@ -862,7 +580,7 @@ var render = function () {
                                 [
                                   _c("validation-provider", {
                                     attrs: {
-                                      name: "Country",
+                                      name: "repeatEmail",
                                       rules: "required",
                                     },
                                     scopedSlots: _vm._u([
@@ -873,20 +591,19 @@ var render = function () {
                                           return [
                                             _c("b-form-input", {
                                               attrs: {
+                                                type: "email",
                                                 state:
                                                   errors.length > 0
                                                     ? false
                                                     : null,
-                                                type: "text",
-                                                placeholder:
-                                                  "Please Enter Country Name",
+                                                placeholder: "Repeat email",
                                               },
                                               model: {
-                                                value: _vm.country,
+                                                value: _vm.repeatEmail,
                                                 callback: function ($$v) {
-                                                  _vm.country = $$v
+                                                  _vm.repeatEmail = $$v
                                                 },
-                                                expression: "country",
+                                                expression: "repeatEmail",
                                               },
                                             }),
                                             _vm._v(" "),
@@ -909,473 +626,6 @@ var render = function () {
                           _vm._v(" "),
                           _c(
                             "b-col",
-                            { attrs: { md: "6" } },
-                            [
-                              _c(
-                                "b-form-group",
-                                [
-                                  _c("validation-provider", {
-                                    attrs: {
-                                      name: "Province",
-                                      rules: "required",
-                                    },
-                                    scopedSlots: _vm._u([
-                                      {
-                                        key: "default",
-                                        fn: function (ref) {
-                                          var errors = ref.errors
-                                          return [
-                                            _c("b-form-input", {
-                                              attrs: {
-                                                state:
-                                                  errors.length > 0
-                                                    ? false
-                                                    : null,
-                                                type: "text",
-                                                placeholder:
-                                                  "Please Enter Province Name",
-                                              },
-                                              model: {
-                                                value: _vm.province,
-                                                callback: function ($$v) {
-                                                  _vm.province = $$v
-                                                },
-                                                expression: "province",
-                                              },
-                                            }),
-                                            _vm._v(" "),
-                                            _c(
-                                              "small",
-                                              { staticClass: "text-danger" },
-                                              [_vm._v(_vm._s(errors[0]))]
-                                            ),
-                                          ]
-                                        },
-                                      },
-                                    ]),
-                                  }),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-col",
-                            { attrs: { md: "6" } },
-                            [
-                              _c(
-                                "b-form-group",
-                                [
-                                  _c("validation-provider", {
-                                    attrs: { name: "City", rules: "required" },
-                                    scopedSlots: _vm._u([
-                                      {
-                                        key: "default",
-                                        fn: function (ref) {
-                                          var errors = ref.errors
-                                          return [
-                                            _c("b-form-input", {
-                                              attrs: {
-                                                state:
-                                                  errors.length > 0
-                                                    ? false
-                                                    : null,
-                                                type: "text",
-                                                placeholder:
-                                                  "Please Enter City Name",
-                                              },
-                                              model: {
-                                                value: _vm.city,
-                                                callback: function ($$v) {
-                                                  _vm.city = $$v
-                                                },
-                                                expression: "city",
-                                              },
-                                            }),
-                                            _vm._v(" "),
-                                            _c(
-                                              "small",
-                                              { staticClass: "text-danger" },
-                                              [_vm._v(_vm._s(errors[0]))]
-                                            ),
-                                          ]
-                                        },
-                                      },
-                                    ]),
-                                  }),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-col",
-                            { attrs: { md: "6" } },
-                            [
-                              _c(
-                                "b-form-group",
-                                [
-                                  _c("validation-provider", {
-                                    attrs: {
-                                      name: "Address",
-                                      rules: "required",
-                                    },
-                                    scopedSlots: _vm._u([
-                                      {
-                                        key: "default",
-                                        fn: function (ref) {
-                                          var errors = ref.errors
-                                          return [
-                                            _c("b-form-input", {
-                                              attrs: {
-                                                state:
-                                                  errors.length > 0
-                                                    ? false
-                                                    : null,
-                                                type: "text",
-                                                placeholder:
-                                                  "Please Enter Address",
-                                              },
-                                              model: {
-                                                value: _vm.address,
-                                                callback: function ($$v) {
-                                                  _vm.address = $$v
-                                                },
-                                                expression: "address",
-                                              },
-                                            }),
-                                            _vm._v(" "),
-                                            _c(
-                                              "small",
-                                              { staticClass: "text-danger" },
-                                              [_vm._v(_vm._s(errors[0]))]
-                                            ),
-                                          ]
-                                        },
-                                      },
-                                    ]),
-                                  }),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-col",
-                            { attrs: { md: "6" } },
-                            [
-                              _c(
-                                "b-form-group",
-                                [
-                                  _c("validation-provider", {
-                                    attrs: {
-                                      name: "Postcode",
-                                      rules: "required",
-                                    },
-                                    scopedSlots: _vm._u([
-                                      {
-                                        key: "default",
-                                        fn: function (ref) {
-                                          var errors = ref.errors
-                                          return [
-                                            _c("b-form-input", {
-                                              attrs: {
-                                                state:
-                                                  errors.length > 0
-                                                    ? false
-                                                    : null,
-                                                type: "text",
-                                                placeholder:
-                                                  "Please Enter Postcode",
-                                              },
-                                              model: {
-                                                value: _vm.postcode,
-                                                callback: function ($$v) {
-                                                  _vm.postcode = $$v
-                                                },
-                                                expression: "postcode",
-                                              },
-                                            }),
-                                            _vm._v(" "),
-                                            _c(
-                                              "small",
-                                              { staticClass: "text-danger" },
-                                              [_vm._v(_vm._s(errors[0]))]
-                                            ),
-                                          ]
-                                        },
-                                      },
-                                    ]),
-                                  }),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-col",
-                            { attrs: { md: "6" } },
-                            [
-                              _c(
-                                "b-form-group",
-                                [
-                                  _c("validation-provider", {
-                                    attrs: { name: "Phone", rules: "required" },
-                                    scopedSlots: _vm._u([
-                                      {
-                                        key: "default",
-                                        fn: function (ref) {
-                                          var errors = ref.errors
-                                          return [
-                                            _c("b-form-input", {
-                                              attrs: {
-                                                state:
-                                                  errors.length > 0
-                                                    ? false
-                                                    : null,
-                                                type: "text",
-                                                placeholder:
-                                                  "Please Enter Phone Number",
-                                              },
-                                              model: {
-                                                value: _vm.phone,
-                                                callback: function ($$v) {
-                                                  _vm.phone = $$v
-                                                },
-                                                expression: "phone",
-                                              },
-                                            }),
-                                            _vm._v(" "),
-                                            _c(
-                                              "small",
-                                              { staticClass: "text-danger" },
-                                              [_vm._v(_vm._s(errors[0]))]
-                                            ),
-                                          ]
-                                        },
-                                      },
-                                    ]),
-                                  }),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-col",
-                            { attrs: { md: "6" } },
-                            [
-                              _c(
-                                "b-form-group",
-                                [
-                                  _c("validation-provider", {
-                                    attrs: {
-                                      name: "Contact Number",
-                                      rules: "required",
-                                    },
-                                    scopedSlots: _vm._u([
-                                      {
-                                        key: "default",
-                                        fn: function (ref) {
-                                          var errors = ref.errors
-                                          return [
-                                            _c("b-form-input", {
-                                              attrs: {
-                                                state:
-                                                  errors.length > 0
-                                                    ? false
-                                                    : null,
-                                                type: "text",
-                                                placeholder:
-                                                  "Please Enter Contact Number",
-                                              },
-                                              model: {
-                                                value: _vm.contact,
-                                                callback: function ($$v) {
-                                                  _vm.contact = $$v
-                                                },
-                                                expression: "contact",
-                                              },
-                                            }),
-                                            _vm._v(" "),
-                                            _c(
-                                              "small",
-                                              { staticClass: "text-danger" },
-                                              [_vm._v(_vm._s(errors[0]))]
-                                            ),
-                                          ]
-                                        },
-                                      },
-                                    ]),
-                                  }),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-col",
-                            { attrs: { md: "6" } },
-                            [
-                              _c(
-                                "b-form-group",
-                                [
-                                  _c("validation-provider", {
-                                    attrs: {
-                                      name: "Currency",
-                                      rules: "required",
-                                    },
-                                    scopedSlots: _vm._u([
-                                      {
-                                        key: "default",
-                                        fn: function (ref) {
-                                          var errors = ref.errors
-                                          return [
-                                            _c("b-form-select", {
-                                              attrs: { options: _vm.currency },
-                                              model: {
-                                                value: _vm.currencyId,
-                                                callback: function ($$v) {
-                                                  _vm.currencyId = $$v
-                                                },
-                                                expression: "currencyId",
-                                              },
-                                            }),
-                                            _vm._v(" "),
-                                            _c(
-                                              "small",
-                                              { staticClass: "text-danger" },
-                                              [_vm._v(_vm._s(errors[0]))]
-                                            ),
-                                          ]
-                                        },
-                                      },
-                                    ]),
-                                  }),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-col",
-                            { attrs: { md: "6" } },
-                            [
-                              _c(
-                                "b-form-group",
-                                [
-                                  _c("validation-provider", {
-                                    attrs: {
-                                      name: "User Level",
-                                      rules: "required",
-                                    },
-                                    scopedSlots: _vm._u([
-                                      {
-                                        key: "default",
-                                        fn: function (ref) {
-                                          var errors = ref.errors
-                                          return [
-                                            _c("v-select", {
-                                              attrs: {
-                                                dir: _vm.$store.state.appConfig
-                                                  .isRTL
-                                                  ? "rtl"
-                                                  : "ltr",
-                                                multiple: "",
-                                                label: "text",
-                                                options: _vm.user_level,
-                                                placeholder:
-                                                  "Select User Role(s)",
-                                              },
-                                              model: {
-                                                value: _vm.userLevel,
-                                                callback: function ($$v) {
-                                                  _vm.userLevel = $$v
-                                                },
-                                                expression: "userLevel",
-                                              },
-                                            }),
-                                            _vm._v(" "),
-                                            _c(
-                                              "small",
-                                              { staticClass: "text-danger" },
-                                              [_vm._v(_vm._s(errors[0]))]
-                                            ),
-                                          ]
-                                        },
-                                      },
-                                    ]),
-                                  }),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-col",
-                            { attrs: { md: "6" } },
-                            [
-                              _c(
-                                "b-form-group",
-                                [
-                                  _c("validation-provider", {
-                                    attrs: {
-                                      name: "Status",
-                                      rules: "required",
-                                    },
-                                    scopedSlots: _vm._u([
-                                      {
-                                        key: "default",
-                                        fn: function (ref) {
-                                          var errors = ref.errors
-                                          return [
-                                            _c("b-form-select", {
-                                              attrs: { options: _vm.options },
-                                              model: {
-                                                value: _vm.status,
-                                                callback: function ($$v) {
-                                                  _vm.status = $$v
-                                                },
-                                                expression: "status",
-                                              },
-                                            }),
-                                            _vm._v(" "),
-                                            _c(
-                                              "small",
-                                              { staticClass: "text-danger" },
-                                              [_vm._v(_vm._s(errors[0]))]
-                                            ),
-                                          ]
-                                        },
-                                      },
-                                    ]),
-                                  }),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-col",
-                            { attrs: { md: "12" } },
                             [
                               _c(
                                 "b-button",
@@ -1391,7 +641,11 @@ var render = function () {
                                     },
                                   },
                                 },
-                                [_vm._v("Submit")]
+                                [
+                                  _vm._v(
+                                    "\n              Submit\n              "
+                                  ),
+                                ]
                               ),
                             ],
                             1
@@ -1736,17 +990,17 @@ var validatorUrlValidator = function validatorUrlValidator(val) {
 
 /***/ }),
 
-/***/ "./resources/js/src/views/manage-user/UpdateUser.vue":
-/*!***********************************************************!*\
-  !*** ./resources/js/src/views/manage-user/UpdateUser.vue ***!
-  \***********************************************************/
+/***/ "./resources/js/src/views/user/ChangeEmail.vue":
+/*!*****************************************************!*\
+  !*** ./resources/js/src/views/user/ChangeEmail.vue ***!
+  \*****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _UpdateUser_vue_vue_type_template_id_cf57678c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./UpdateUser.vue?vue&type=template&id=cf57678c& */ "./resources/js/src/views/manage-user/UpdateUser.vue?vue&type=template&id=cf57678c&");
-/* harmony import */ var _UpdateUser_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./UpdateUser.vue?vue&type=script&lang=js& */ "./resources/js/src/views/manage-user/UpdateUser.vue?vue&type=script&lang=js&");
+/* harmony import */ var _ChangeEmail_vue_vue_type_template_id_0b28931c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ChangeEmail.vue?vue&type=template&id=0b28931c& */ "./resources/js/src/views/user/ChangeEmail.vue?vue&type=template&id=0b28931c&");
+/* harmony import */ var _ChangeEmail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ChangeEmail.vue?vue&type=script&lang=js& */ "./resources/js/src/views/user/ChangeEmail.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -1756,9 +1010,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _UpdateUser_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _UpdateUser_vue_vue_type_template_id_cf57678c___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _UpdateUser_vue_vue_type_template_id_cf57678c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _ChangeEmail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ChangeEmail_vue_vue_type_template_id_0b28931c___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ChangeEmail_vue_vue_type_template_id_0b28931c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -1768,38 +1022,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/src/views/manage-user/UpdateUser.vue"
+component.options.__file = "resources/js/src/views/user/ChangeEmail.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/src/views/manage-user/UpdateUser.vue?vue&type=script&lang=js&":
-/*!************************************************************************************!*\
-  !*** ./resources/js/src/views/manage-user/UpdateUser.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************/
+/***/ "./resources/js/src/views/user/ChangeEmail.vue?vue&type=script&lang=js&":
+/*!******************************************************************************!*\
+  !*** ./resources/js/src/views/user/ChangeEmail.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_UpdateUser_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./UpdateUser.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/manage-user/UpdateUser.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_UpdateUser_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ChangeEmail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./ChangeEmail.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/user/ChangeEmail.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ChangeEmail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/src/views/manage-user/UpdateUser.vue?vue&type=template&id=cf57678c&":
-/*!******************************************************************************************!*\
-  !*** ./resources/js/src/views/manage-user/UpdateUser.vue?vue&type=template&id=cf57678c& ***!
-  \******************************************************************************************/
+/***/ "./resources/js/src/views/user/ChangeEmail.vue?vue&type=template&id=0b28931c&":
+/*!************************************************************************************!*\
+  !*** ./resources/js/src/views/user/ChangeEmail.vue?vue&type=template&id=0b28931c& ***!
+  \************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UpdateUser_vue_vue_type_template_id_cf57678c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./UpdateUser.vue?vue&type=template&id=cf57678c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/manage-user/UpdateUser.vue?vue&type=template&id=cf57678c&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UpdateUser_vue_vue_type_template_id_cf57678c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ChangeEmail_vue_vue_type_template_id_0b28931c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./ChangeEmail.vue?vue&type=template&id=0b28931c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/user/ChangeEmail.vue?vue&type=template&id=0b28931c&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ChangeEmail_vue_vue_type_template_id_0b28931c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UpdateUser_vue_vue_type_template_id_cf57678c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ChangeEmail_vue_vue_type_template_id_0b28931c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

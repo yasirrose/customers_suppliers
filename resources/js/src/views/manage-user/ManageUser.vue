@@ -1,9 +1,9 @@
 <template>
   <b-tabs
     vertical
-    content-class="col-12 col-md-9 mt-1 mt-md-0"
+    content-class="col-12 col-md-10 mt-1 mt-md-0"
     pills
-    nav-wrapper-class="col-md-3 col-12"
+    nav-wrapper-class="col-md-2 col-12"
     nav-class="nav-left"
   >
 
@@ -12,19 +12,19 @@
     <!-- Add to groups -->
     <b-tab>
       <template #title>
-        <feather-icon icon="LockIcon" size="18" class="mr-50"/>
+        <feather-icon icon="UsersIcon" size="18" class="mr-50"/>
         <span class="font-weight-bold">All Users</span>
       </template>
-      <AllUsers/>
+      <AllUsers ref="AllUsersComponent"/>
     </b-tab>
 
     <!-- Manage MFA -->
     <b-tab>
       <template #title>
-        <feather-icon icon="LockIcon" size="18" class="mr-50"/>
+        <feather-icon icon="UserPlusIcon" size="18" class="mr-50"/>
         <span class="font-weight-bold">Add User</span>
       </template>
-      <CreateUser/>
+      <CreateUser @event-triggered="getAllUsers"/>
     </b-tab>
 
     <!-- notification -->
@@ -45,7 +45,6 @@ import {
 } from "bootstrap-vue";
 import AllUsers from "./AllUsers.vue";
 import CreateUser from "./CreateUser.vue";
-// import AddToGroups from "./AddToGroups.vue";
 
 
 export default {
@@ -65,9 +64,11 @@ export default {
   },
   data() {
     return {};
+  },
+  methods: {
+    getAllUsers () {
+      this.$refs.AllUsersComponent.getUsers()
+    }
   }
-  // beforeCreate() {
-  //   this.$http.get('/data').then(res => { this.options = res.data })
-  // },
 };
 </script>
