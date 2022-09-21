@@ -98,3 +98,97 @@ html .content .content-wrapper .content-header-title {
     /* color: #636363; */
     color: #000 !important;
 }
+html body.dark-layout p {
+    color: #fff !important;
+}
+
+body.dark-layout .vgt-inner-wrap span {
+    color: #fff !important;
+}
+
+.btn-outline-secondary {
+    color: #fff !important;
+}
+  
+  [dir] .btn-outline-secondary {
+    border-color: #fff !important;
+  }
+  
+  .btn-outline-secondary:hover {
+    color: #fff !important;
+  }
+  
+  [dir] .btn-outline-secondary:hover {
+    background-color: #82868b !important;
+    border-color: #82868b !important;
+  }
+
+  .btn-outline-secondary:not(:disabled):not(.disabled):active,
+.btn-outline-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-outline-secondary.dropdown-toggle {
+  color: #fff !important;
+}
+
+body.dark-layout .vgt-table th.sortable button:before {
+    margin-bottom: -7px;
+    border-top: 5px solid #fff !important;
+  }
+  
+  body.dark-layout .vgt-table th.sortable button:after {
+    margin-top: -7px;
+    border-bottom: 5px solid #fff !important;
+  }
+
+  body.dark-layout h1, h2, h3, h4, h5, h6 {
+    color: #fff !important;
+  }
+
+  .dark-layout .media .media-body .btn-outline-secondary {
+    color: #fff !important;
+  }
+
+  body.dark-layout {
+    color: #fff !important;
+  }
+
+  .dark-layout body {
+    color: #fff !important;
+  }
+  .dark-layout a:hover {
+    color: #7367f0 !important;
+  }
+
+  .dark-layout label {
+    color: #fff !important;
+  }
+
+  .dark-layout .header-navbar .navbar-container .nav .nav-item .nav-link {
+    color: #fff !important;
+  }
+
+  .dark-layout .content-header-left .breadcrumbs-top .content-header-title {
+    color: #fff !important;
+  }
+
+  .dark-layout .breadcrumb .breadcrumb-item {
+    color: #fff !important;
+  }
+
+  .dark-layout .dropdown-menu .dropdown-item {
+    color: #fff !important;
+  }
+
+  .dark-layout .nav-tabs .nav-item .nav-link,
+.dark-layout .nav-pills .nav-item .nav-link,
+.dark-layout .nav-tabs.nav-justified .nav-item .nav-link {
+  color: #fff !important;
+}
+
+.dark-layout select.form-control,
+.dark-layout .custom-select {
+  color: #fff !important;
+}
+
+body.dark-layout .b-avatar .b-avatar-text span {
+    color: #fff !important;
+}
