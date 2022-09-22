@@ -109,6 +109,7 @@ export default {
             }),
             data => {
               if (data.success) {
+                this.$emit('event-triggered1');
                 this.$toast({
                   component: ToastificationContent,
                   props: {
@@ -118,7 +119,7 @@ export default {
                     variant: "success"
                   }
                 });
-                 this.$router.push({ name: "manage-products" });
+                 //this.$router.push({ name: "manage-products" });
                 //this.$router.go()
                 
               } else {

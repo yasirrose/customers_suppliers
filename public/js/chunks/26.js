@@ -83,31 +83,21 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/manage-products/UpdateProducts.vue?vue&type=script&lang=js&":
-/*!****************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/manage-products/UpdateProducts.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/user/ChangePassword.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/user/ChangePassword.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
-/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
-/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.function.name.js */ "./node_modules/core-js/modules/es.function.name.js");
-/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _core_components_b_card_code__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @core/components/b-card-code */ "./resources/js/src/@core/components/b-card-code/index.js");
-/* harmony import */ var vee_validate__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vee-validate */ "./node_modules/vee-validate/dist/vee-validate.esm.js");
-/* harmony import */ var bootstrap_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! bootstrap-vue */ "./node_modules/bootstrap-vue/esm/index.js");
-/* harmony import */ var _validations__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @validations */ "./resources/js/src/@core/utils/validations/validations.js");
-/* harmony import */ var _api_admin__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../api/admin */ "./resources/js/api/admin.js");
-/* harmony import */ var _core_components_toastification_ToastificationContent_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @core/components/toastification/ToastificationContent.vue */ "./resources/js/src/@core/components/toastification/ToastificationContent.vue");
-/* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @/router */ "./resources/js/src/router/index.js");
-
-
-
+/* harmony import */ var _core_components_b_card_code__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @core/components/b-card-code */ "./resources/js/src/@core/components/b-card-code/index.js");
+/* harmony import */ var vee_validate__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vee-validate */ "./node_modules/vee-validate/dist/vee-validate.esm.js");
+/* harmony import */ var bootstrap_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap-vue */ "./node_modules/bootstrap-vue/esm/index.js");
+/* harmony import */ var _validations__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @validations */ "./resources/js/src/@core/utils/validations/validations.js");
+/* harmony import */ var _api_admin__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../api/admin */ "./resources/js/api/admin.js");
+/* harmony import */ var _core_components_toastification_ToastificationContent_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @core/components/toastification/ToastificationContent.vue */ "./resources/js/src/@core/components/toastification/ToastificationContent.vue");
 //
 //
 //
@@ -190,25 +180,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
 
 
 
@@ -217,39 +188,28 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    BCardCode: _core_components_b_card_code__WEBPACK_IMPORTED_MODULE_3__["default"],
-    ValidationProvider: vee_validate__WEBPACK_IMPORTED_MODULE_4__["ValidationProvider"],
-    ValidationObserver: vee_validate__WEBPACK_IMPORTED_MODULE_4__["ValidationObserver"],
-    BFormInput: bootstrap_vue__WEBPACK_IMPORTED_MODULE_5__["BFormInput"],
-    BFormGroup: bootstrap_vue__WEBPACK_IMPORTED_MODULE_5__["BFormGroup"],
-    BForm: bootstrap_vue__WEBPACK_IMPORTED_MODULE_5__["BForm"],
-    BRow: bootstrap_vue__WEBPACK_IMPORTED_MODULE_5__["BRow"],
-    BCol: bootstrap_vue__WEBPACK_IMPORTED_MODULE_5__["BCol"],
-    BButton: bootstrap_vue__WEBPACK_IMPORTED_MODULE_5__["BButton"],
-    BFormSelect: bootstrap_vue__WEBPACK_IMPORTED_MODULE_5__["BFormSelect"],
-    BFormCheckbox: bootstrap_vue__WEBPACK_IMPORTED_MODULE_5__["BFormCheckbox"],
-    BFormTextarea: bootstrap_vue__WEBPACK_IMPORTED_MODULE_5__["BFormTextarea"]
+    BCardCode: _core_components_b_card_code__WEBPACK_IMPORTED_MODULE_0__["default"],
+    ValidationProvider: vee_validate__WEBPACK_IMPORTED_MODULE_1__["ValidationProvider"],
+    ValidationObserver: vee_validate__WEBPACK_IMPORTED_MODULE_1__["ValidationObserver"],
+    BFormInput: bootstrap_vue__WEBPACK_IMPORTED_MODULE_2__["BFormInput"],
+    BFormGroup: bootstrap_vue__WEBPACK_IMPORTED_MODULE_2__["BFormGroup"],
+    BForm: bootstrap_vue__WEBPACK_IMPORTED_MODULE_2__["BForm"],
+    BRow: bootstrap_vue__WEBPACK_IMPORTED_MODULE_2__["BRow"],
+    BCol: bootstrap_vue__WEBPACK_IMPORTED_MODULE_2__["BCol"],
+    BButton: bootstrap_vue__WEBPACK_IMPORTED_MODULE_2__["BButton"]
   },
   data: function data() {
     return {
-      required: _validations__WEBPACK_IMPORTED_MODULE_6__["required"],
-      validationErrors: "",
-      productName: "",
-      length: "",
-      width: "",
-      weight: "",
-      description: "",
-      productType: null,
-      product_type: [{
-        value: null,
-        text: "Select a type"
-      }],
-      productId: this.$route.params.id
+      emailValue: '',
+      old_password: '',
+      passwordConfirm: '',
+      required: _validations__WEBPACK_IMPORTED_MODULE_3__["required"],
+      password: '',
+      email: _validations__WEBPACK_IMPORTED_MODULE_3__["email"],
+      confirmed: _validations__WEBPACK_IMPORTED_MODULE_3__["confirmed"],
+      info: '',
+      validationErrors: ''
     };
-  },
-  created: function created() {
-    this.getProductTypes();
-    this.getSingleProduct(this.productId);
   },
   methods: {
     validationForm: function validationForm() {
@@ -257,38 +217,35 @@ __webpack_require__.r(__webpack_exports__);
 
       this.$refs.simpleRules.validate().then(function (success) {
         if (success) {
-          _this.validationErrors = "";
-          _api_admin__WEBPACK_IMPORTED_MODULE_7__["default"].updateProduct(_this.info = {
-            name: _this.productName,
-            length: _this.length,
-            width: _this.width,
-            weight: _this.weight,
-            description: _this.description,
-            type_id: _this.productType,
-            id: _this.productId
+          _api_admin__WEBPACK_IMPORTED_MODULE_4__["default"].updatePassword(_this.info = {
+            "old_password": _this.old_password,
+            "password": _this.password,
+            "confirm_password": _this.passwordConfirm
           }, function (data) {
             if (data.success) {
               _this.$toast({
-                component: _core_components_toastification_ToastificationContent_vue__WEBPACK_IMPORTED_MODULE_8__["default"],
+                component: _core_components_toastification_ToastificationContent_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
                 props: {
-                  title: "Success!",
+                  title: 'Success!',
                   text: data.message,
-                  icon: "UserIcon",
-                  variant: "success"
+                  icon: 'UserIcon',
+                  variant: 'success'
                 }
-              }); //router.push({ name: "manage-users" });
+              }); // this.password='';
+              // this.old_password='';
+              // this.passwordConfirm='';
 
             } else {
               if (data.status == 422) {
                 _this.validationErrors = data.message;
               } else {
                 _this.$toast({
-                  component: _core_components_toastification_ToastificationContent_vue__WEBPACK_IMPORTED_MODULE_8__["default"],
+                  component: _core_components_toastification_ToastificationContent_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
                   props: {
-                    title: "Failed",
+                    title: 'Failed',
                     text: data.message,
-                    icon: "errorIcon",
-                    variant: "outline-danger"
+                    icon: 'errorIcon',
+                    variant: 'outline-danger'
                   }
                 });
               }
@@ -298,35 +255,99 @@ __webpack_require__.r(__webpack_exports__);
           });
         }
       });
-    },
-    getProductTypes: function getProductTypes() {
-      var _this2 = this;
-
-      _api_admin__WEBPACK_IMPORTED_MODULE_7__["default"].getData('getProductTypes', function (res) {
-        console.log("the getProductTypes response is ", res.data);
-
-        for (var i = 0; i < res.data.length; i++) {
-          _this2.product_type.push({
-            value: res.data[i].id,
-            text: res.data[i].type
-          });
-        }
-      }, function (err) {
-        console.log(err);
-      });
-    },
-    getSingleProduct: function getSingleProduct(productId) {
-      var _this3 = this;
-
-      _api_admin__WEBPACK_IMPORTED_MODULE_7__["default"].getRow('getSingleProduct', productId, function (res) {
-        console.log('the getsingle product response is', res.data);
-        _this3.productName = res.data.name, _this3.length = res.data.length, _this3.width = res.data.width, _this3.weight = res.data.weight, _this3.description = res.data.description, _this3.productType = res.data.type_id;
-      }, function (err) {
-        console.log(err);
-      });
     }
   }
 });
+
+/***/ }),
+
+/***/ "./node_modules/core-js/internals/does-not-exceed-safe-integer.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/core-js/internals/does-not-exceed-safe-integer.js ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var $TypeError = TypeError;
+var MAX_SAFE_INTEGER = 0x1FFFFFFFFFFFFF; // 2 ** 53 - 1 == 9007199254740991
+
+module.exports = function (it) {
+  if (it > MAX_SAFE_INTEGER) throw $TypeError('Maximum allowed index exceeded');
+  return it;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/es.array.concat.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/core-js/modules/es.array.concat.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var $ = __webpack_require__(/*! ../internals/export */ "./node_modules/core-js/internals/export.js");
+var fails = __webpack_require__(/*! ../internals/fails */ "./node_modules/core-js/internals/fails.js");
+var isArray = __webpack_require__(/*! ../internals/is-array */ "./node_modules/core-js/internals/is-array.js");
+var isObject = __webpack_require__(/*! ../internals/is-object */ "./node_modules/core-js/internals/is-object.js");
+var toObject = __webpack_require__(/*! ../internals/to-object */ "./node_modules/core-js/internals/to-object.js");
+var lengthOfArrayLike = __webpack_require__(/*! ../internals/length-of-array-like */ "./node_modules/core-js/internals/length-of-array-like.js");
+var doesNotExceedSafeInteger = __webpack_require__(/*! ../internals/does-not-exceed-safe-integer */ "./node_modules/core-js/internals/does-not-exceed-safe-integer.js");
+var createProperty = __webpack_require__(/*! ../internals/create-property */ "./node_modules/core-js/internals/create-property.js");
+var arraySpeciesCreate = __webpack_require__(/*! ../internals/array-species-create */ "./node_modules/core-js/internals/array-species-create.js");
+var arrayMethodHasSpeciesSupport = __webpack_require__(/*! ../internals/array-method-has-species-support */ "./node_modules/core-js/internals/array-method-has-species-support.js");
+var wellKnownSymbol = __webpack_require__(/*! ../internals/well-known-symbol */ "./node_modules/core-js/internals/well-known-symbol.js");
+var V8_VERSION = __webpack_require__(/*! ../internals/engine-v8-version */ "./node_modules/core-js/internals/engine-v8-version.js");
+
+var IS_CONCAT_SPREADABLE = wellKnownSymbol('isConcatSpreadable');
+
+// We can't use this feature detection in V8 since it causes
+// deoptimization and serious performance degradation
+// https://github.com/zloirock/core-js/issues/679
+var IS_CONCAT_SPREADABLE_SUPPORT = V8_VERSION >= 51 || !fails(function () {
+  var array = [];
+  array[IS_CONCAT_SPREADABLE] = false;
+  return array.concat()[0] !== array;
+});
+
+var SPECIES_SUPPORT = arrayMethodHasSpeciesSupport('concat');
+
+var isConcatSpreadable = function (O) {
+  if (!isObject(O)) return false;
+  var spreadable = O[IS_CONCAT_SPREADABLE];
+  return spreadable !== undefined ? !!spreadable : isArray(O);
+};
+
+var FORCED = !IS_CONCAT_SPREADABLE_SUPPORT || !SPECIES_SUPPORT;
+
+// `Array.prototype.concat` method
+// https://tc39.es/ecma262/#sec-array.prototype.concat
+// with adding support of @@isConcatSpreadable and @@species
+$({ target: 'Array', proto: true, arity: 1, forced: FORCED }, {
+  // eslint-disable-next-line no-unused-vars -- required for `.length`
+  concat: function concat(arg) {
+    var O = toObject(this);
+    var A = arraySpeciesCreate(O, 0);
+    var n = 0;
+    var i, k, length, len, E;
+    for (i = -1, length = arguments.length; i < length; i++) {
+      E = i === -1 ? O : arguments[i];
+      if (isConcatSpreadable(E)) {
+        len = lengthOfArrayLike(E);
+        doesNotExceedSafeInteger(n + len);
+        for (k = 0; k < len; k++, n++) if (k in E) createProperty(A, n, E[k]);
+      } else {
+        doesNotExceedSafeInteger(n + 1);
+        createProperty(A, n++, E);
+      }
+    }
+    A.length = n;
+    return A;
+  }
+});
+
 
 /***/ }),
 
@@ -459,10 +480,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/manage-products/UpdateProducts.vue?vue&type=template&id=3b107e9a&":
-/*!********************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/manage-products/UpdateProducts.vue?vue&type=template&id=3b107e9a& ***!
-  \********************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/user/ChangePassword.vue?vue&type=template&id=28a79e96&":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/src/views/user/ChangePassword.vue?vue&type=template&id=28a79e96& ***!
+  \*********************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -483,7 +504,7 @@ var render = function () {
         [
           _c(
             "b-card-code",
-            { attrs: { title: "Update Product" } },
+            { attrs: { title: "Update Password" } },
             [
               _vm.validationErrors
                 ? _c("div", [
@@ -520,7 +541,7 @@ var render = function () {
                                 [
                                   _c("validation-provider", {
                                     attrs: {
-                                      name: "Product Type",
+                                      name: "Old Password",
                                       rules: "required",
                                     },
                                     scopedSlots: _vm._u([
@@ -529,16 +550,21 @@ var render = function () {
                                         fn: function (ref) {
                                           var errors = ref.errors
                                           return [
-                                            _c("b-form-select", {
+                                            _c("b-form-input", {
                                               attrs: {
-                                                options: _vm.product_type,
+                                                type: "password",
+                                                state:
+                                                  errors.length > 0
+                                                    ? false
+                                                    : null,
+                                                placeholder: "Old Password",
                                               },
                                               model: {
-                                                value: _vm.productType,
+                                                value: _vm.old_password,
                                                 callback: function ($$v) {
-                                                  _vm.productType = $$v
+                                                  _vm.old_password = $$v
                                                 },
-                                                expression: "productType",
+                                                expression: "old_password",
                                               },
                                             }),
                                             _vm._v(" "),
@@ -568,8 +594,9 @@ var render = function () {
                                 [
                                   _c("validation-provider", {
                                     attrs: {
-                                      name: "Product Name",
-                                      rules: "required",
+                                      name: "password",
+                                      vid: "password",
+                                      rules: "required|password",
                                     },
                                     scopedSlots: _vm._u([
                                       {
@@ -579,69 +606,19 @@ var render = function () {
                                           return [
                                             _c("b-form-input", {
                                               attrs: {
+                                                type: "password",
                                                 state:
                                                   errors.length > 0
                                                     ? false
                                                     : null,
-                                                type: "text",
-                                                placeholder: "Product Name",
+                                                placeholder: "Your Password",
                                               },
                                               model: {
-                                                value: _vm.productName,
+                                                value: _vm.password,
                                                 callback: function ($$v) {
-                                                  _vm.productName = $$v
+                                                  _vm.password = $$v
                                                 },
-                                                expression: "productName",
-                                              },
-                                            }),
-                                            _vm._v(" "),
-                                            _c(
-                                              "small",
-                                              { staticClass: "text-danger" },
-                                              [_vm._v(_vm._s(errors[0]))]
-                                            ),
-                                          ]
-                                        },
-                                      },
-                                    ]),
-                                  }),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-col",
-                            { attrs: { md: "6" } },
-                            [
-                              _c(
-                                "b-form-group",
-                                [
-                                  _c("validation-provider", {
-                                    attrs: { name: "Width", rules: "required" },
-                                    scopedSlots: _vm._u([
-                                      {
-                                        key: "default",
-                                        fn: function (ref) {
-                                          var errors = ref.errors
-                                          return [
-                                            _c("b-form-input", {
-                                              attrs: {
-                                                type: "text",
-                                                state:
-                                                  errors.length > 0
-                                                    ? false
-                                                    : null,
-                                                placeholder: "Product Width",
-                                              },
-                                              model: {
-                                                value: _vm.width,
-                                                callback: function ($$v) {
-                                                  _vm.width = $$v
-                                                },
-                                                expression: "width",
+                                                expression: "password",
                                               },
                                             }),
                                             _vm._v(" "),
@@ -671,8 +648,8 @@ var render = function () {
                                 [
                                   _c("validation-provider", {
                                     attrs: {
-                                      name: "Length",
-                                      rules: "required",
+                                      name: "passwordConfirm",
+                                      rules: "required|confirmed:password",
                                     },
                                     scopedSlots: _vm._u([
                                       {
@@ -682,19 +659,19 @@ var render = function () {
                                           return [
                                             _c("b-form-input", {
                                               attrs: {
-                                                type: "text",
                                                 state:
                                                   errors.length > 0
                                                     ? false
                                                     : null,
-                                                placeholder: "Product Length",
+                                                type: "password",
+                                                placeholder: "Confirm Password",
                                               },
                                               model: {
-                                                value: _vm.length,
+                                                value: _vm.passwordConfirm,
                                                 callback: function ($$v) {
-                                                  _vm.length = $$v
+                                                  _vm.passwordConfirm = $$v
                                                 },
-                                                expression: "length",
+                                                expression: "passwordConfirm",
                                               },
                                             }),
                                             _vm._v(" "),
@@ -717,112 +694,6 @@ var render = function () {
                           _vm._v(" "),
                           _c(
                             "b-col",
-                            { attrs: { md: "6" } },
-                            [
-                              _c(
-                                "b-form-group",
-                                [
-                                  _c("validation-provider", {
-                                    attrs: {
-                                      name: "Weight",
-                                      rules: "required",
-                                    },
-                                    scopedSlots: _vm._u([
-                                      {
-                                        key: "default",
-                                        fn: function (ref) {
-                                          var errors = ref.errors
-                                          return [
-                                            _c("b-form-input", {
-                                              attrs: {
-                                                type: "text",
-                                                state:
-                                                  errors.length > 0
-                                                    ? false
-                                                    : null,
-                                                placeholder: "Product Weight",
-                                              },
-                                              model: {
-                                                value: _vm.weight,
-                                                callback: function ($$v) {
-                                                  _vm.weight = $$v
-                                                },
-                                                expression: "weight",
-                                              },
-                                            }),
-                                            _vm._v(" "),
-                                            _c(
-                                              "small",
-                                              { staticClass: "text-danger" },
-                                              [_vm._v(_vm._s(errors[0]))]
-                                            ),
-                                          ]
-                                        },
-                                      },
-                                    ]),
-                                  }),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-col",
-                            { attrs: { md: "6" } },
-                            [
-                              _c(
-                                "b-form-group",
-                                [
-                                  _c("validation-provider", {
-                                    attrs: {
-                                      name: "description",
-                                      rules: "required",
-                                    },
-                                    scopedSlots: _vm._u([
-                                      {
-                                        key: "default",
-                                        fn: function (ref) {
-                                          var errors = ref.errors
-                                          return [
-                                            _c("b-form-textarea", {
-                                              attrs: {
-                                                id: "textarea",
-                                                placeholder:
-                                                  "Add Description...",
-                                                rows: "2",
-                                                "max-rows": "6",
-                                              },
-                                              model: {
-                                                value: _vm.description,
-                                                callback: function ($$v) {
-                                                  _vm.description = $$v
-                                                },
-                                                expression: "description",
-                                              },
-                                            }),
-                                            _vm._v(" "),
-                                            _c(
-                                              "small",
-                                              { staticClass: "text-danger" },
-                                              [_vm._v(_vm._s(errors[0]))]
-                                            ),
-                                          ]
-                                        },
-                                      },
-                                    ]),
-                                  }),
-                                ],
-                                1
-                              ),
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "b-col",
-                            { attrs: { md: "12" } },
                             [
                               _c(
                                 "b-button",
@@ -838,7 +709,11 @@ var render = function () {
                                     },
                                   },
                                 },
-                                [_vm._v("Submit")]
+                                [
+                                  _vm._v(
+                                    "\n              Submit\n              "
+                                  ),
+                                ]
                               ),
                             ],
                             1
@@ -1183,17 +1058,17 @@ var validatorUrlValidator = function validatorUrlValidator(val) {
 
 /***/ }),
 
-/***/ "./resources/js/src/views/manage-products/UpdateProducts.vue":
-/*!*******************************************************************!*\
-  !*** ./resources/js/src/views/manage-products/UpdateProducts.vue ***!
-  \*******************************************************************/
+/***/ "./resources/js/src/views/user/ChangePassword.vue":
+/*!********************************************************!*\
+  !*** ./resources/js/src/views/user/ChangePassword.vue ***!
+  \********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _UpdateProducts_vue_vue_type_template_id_3b107e9a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./UpdateProducts.vue?vue&type=template&id=3b107e9a& */ "./resources/js/src/views/manage-products/UpdateProducts.vue?vue&type=template&id=3b107e9a&");
-/* harmony import */ var _UpdateProducts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./UpdateProducts.vue?vue&type=script&lang=js& */ "./resources/js/src/views/manage-products/UpdateProducts.vue?vue&type=script&lang=js&");
+/* harmony import */ var _ChangePassword_vue_vue_type_template_id_28a79e96___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ChangePassword.vue?vue&type=template&id=28a79e96& */ "./resources/js/src/views/user/ChangePassword.vue?vue&type=template&id=28a79e96&");
+/* harmony import */ var _ChangePassword_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ChangePassword.vue?vue&type=script&lang=js& */ "./resources/js/src/views/user/ChangePassword.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -1203,9 +1078,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _UpdateProducts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _UpdateProducts_vue_vue_type_template_id_3b107e9a___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _UpdateProducts_vue_vue_type_template_id_3b107e9a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _ChangePassword_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ChangePassword_vue_vue_type_template_id_28a79e96___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ChangePassword_vue_vue_type_template_id_28a79e96___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -1215,38 +1090,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/src/views/manage-products/UpdateProducts.vue"
+component.options.__file = "resources/js/src/views/user/ChangePassword.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/src/views/manage-products/UpdateProducts.vue?vue&type=script&lang=js&":
-/*!********************************************************************************************!*\
-  !*** ./resources/js/src/views/manage-products/UpdateProducts.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************************/
+/***/ "./resources/js/src/views/user/ChangePassword.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/src/views/user/ChangePassword.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_UpdateProducts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./UpdateProducts.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/manage-products/UpdateProducts.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_UpdateProducts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ChangePassword_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./ChangePassword.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/user/ChangePassword.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ChangePassword_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/src/views/manage-products/UpdateProducts.vue?vue&type=template&id=3b107e9a&":
-/*!**************************************************************************************************!*\
-  !*** ./resources/js/src/views/manage-products/UpdateProducts.vue?vue&type=template&id=3b107e9a& ***!
-  \**************************************************************************************************/
+/***/ "./resources/js/src/views/user/ChangePassword.vue?vue&type=template&id=28a79e96&":
+/*!***************************************************************************************!*\
+  !*** ./resources/js/src/views/user/ChangePassword.vue?vue&type=template&id=28a79e96& ***!
+  \***************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UpdateProducts_vue_vue_type_template_id_3b107e9a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./UpdateProducts.vue?vue&type=template&id=3b107e9a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/manage-products/UpdateProducts.vue?vue&type=template&id=3b107e9a&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UpdateProducts_vue_vue_type_template_id_3b107e9a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ChangePassword_vue_vue_type_template_id_28a79e96___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./ChangePassword.vue?vue&type=template&id=28a79e96& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/src/views/user/ChangePassword.vue?vue&type=template&id=28a79e96&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ChangePassword_vue_vue_type_template_id_28a79e96___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UpdateProducts_vue_vue_type_template_id_3b107e9a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ChangePassword_vue_vue_type_template_id_28a79e96___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

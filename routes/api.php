@@ -72,6 +72,9 @@ Route::group(['prefix' => 'admin',  'middleware' => 'token'], function(){
 
     Route::post('deleteUser', [API\AdminController::class, 'deleteUser']);
     Route::post('actionProducts', [API\AdminController::class, 'actionProducts']);
+    Route::post('actionProductTypes', [API\AdminController::class, 'actionProductTypes']);
+    Route::post('actionOrders', [API\AdminController::class, 'actionOrders']);
+    Route::post('actionWarehoue', [API\AdminController::class, 'actionWarehoue']);
 
     });
     

@@ -26,6 +26,7 @@ Route::get('/clear', function() {
  });
  
 Route::get('/login', [ApplicationController::class, 'index'])->name('login');
+Route::get('/company-login', [ApplicationController::class, 'index'])->name('company-login');
 
 Route::middleware('token')->group(function () {
     Route::get('/{any}', [ApplicationController::class, 'index'])->where('any', '.*');

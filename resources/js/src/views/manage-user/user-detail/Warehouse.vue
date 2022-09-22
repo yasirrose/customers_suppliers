@@ -9,14 +9,14 @@
           Delete {{ idArray.length }} Record
           <span v-if="idArray.length > 1">s</span>
         </b-button>
-        <b-button v-if="isSelected" class="custom-danger-btn" @click="actionRecords('enable')">
+        <!-- <b-button v-if="isSelected" class="custom-danger-btn" @click="actionRecords('enable')">
           Enable {{ idArray.length }} Record
           <span v-if="idArray.length > 1">s</span>
         </b-button>
         <b-button v-if="isSelected" class="custom-danger-btn" @click="actionRecords('disable')">
           Dieable {{ idArray.length }} Record
           <span v-if="idArray.length > 1">s</span>
-        </b-button>
+        </b-button> -->
         <b-sidebar id="sidebar-border" sidebar-class="border-right border-primary">
           <div class="px-3 py-2">
             <div class="mt-md-0 mt-2">
@@ -95,22 +95,12 @@
             </span>
             <!-- Column: Action -->
             <span v-else-if="props.column.field === 'action' && props.row.is_admin != 1">
-              <span>
-                <b-dropdown variant="link" toggle-class="text-decoration-none" no-caret>
-                  <template v-slot:button-content>
-                    <feather-icon
-                      icon="MoreVerticalIcon"
-                      size="16"
-                      class="text-body align-middle mr-25"
-                    />
-                  </template>
-                  <b-dropdown-item>
-                    <feather-icon icon="Edit2Icon" class="mr-50"/>
-                    <b-link :to="{ path: '/update-warehouse/'+ props.row.id}">Edit</b-link>
-                  </b-dropdown-item>
+              
+              <center>
+                  <b-link :to="{ path: '/update-warehouse/'+ props.row.id}" title="Edit Product"><feather-icon icon="Edit2Icon"/></b-link>
+                  <b-link @click="deleleRecord(props.row.id, 'delete')" title="Delete Product"><feather-icon icon="DeleteIcon" class="text-danger"/></b-link>
                   
-                </b-dropdown>
-              </span>
+              </center>
             </span>
 
             <!-- Column: Common -->
@@ -289,6 +279,11 @@ export default {
         }
       );
     },
+    deleleRecord(id,param){
+      this.idArray = [];
+      this.idArray.push({'id' : id});
+      this.actionRecords(param);
+    },
     actionRecords(param) {
       if (param == "delete") {
         var text = "You won't be able to revert this!";
@@ -319,14 +314,15 @@ export default {
         buttonsStyling: false
       }).then(result => {
         if (result.value) {
-          Admin.deleteUser(
+          Admin.actionData(
+            'actionWarehoue',
             (this.info = {
               id: this.idArray,
               param: param
             }),
             data => {
               if (data.success) {
-                this.getUsers();
+               this.getWarehouseDetail(this.id);
                 this.$swal({
                   icon: "success",
                   title: responseTitle,

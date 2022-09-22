@@ -196,7 +196,7 @@ export default {
   },
   data() {
     return {
-      pageLength: 3,
+      pageLength: 10,
       dir: false,
       columns: [
         {
@@ -346,7 +346,8 @@ export default {
         buttonsStyling: false
       }).then(result => {
         if (result.value) {
-          Admin.actionProducts(
+          Admin.actionData(
+            'actionProducts',
             (this.info = {
               id: this.idArray,
               param: param

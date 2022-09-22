@@ -350,7 +350,9 @@ class AdminController extends BaseController
 	public function getRelUsers($user_level){
 		try {
 			 
-			$data = User::where('user_level_id', $user_level)->where('status',1)->get()->toArray();
+			$data = User::select('users.*')->
+			join('user_accounts','users.id','=','user_accounts.user_id')->
+			where('user_accounts.user_level_id', $user_level)->where('users.status',1)->get()->toArray();
 
 			return $this->sendResponse($data,true);
 		} catch (\Exception $e) {
@@ -406,13 +408,13 @@ class AdminController extends BaseController
 				$data = Orders::select('orders.*','order_products.quantity','order_products.product_id','users.name')->
 			join('order_products', 'order_products.order_id','=','orders.id')->
 			join('users','orders.created_for', '=', 'users.id' )->
-			where('created_for', $user_id)->orderBy('id','desc')->get();
+			where('created_for', $user_id)->where('is_deleted',0)->orderBy('id','desc')->get();
 			}
 			else{
 				//$data = Orders::orderBy('id','desc')->get();
 				$data = Orders::select('orders.*','order_products.quantity','order_products.product_id','users.name')->
 			join('order_products', 'order_products.order_id','=','orders.id')->
-			join('users','orders.created_for', '=', 'users.id' )->
+			join('users','orders.created_for', '=', 'users.id' )->where('is_deleted',0)->
 			orderBy('id','desc')->get();
 				
 			}
@@ -468,7 +470,7 @@ class AdminController extends BaseController
 	public function getWarehouseDetail($user_id){
 		try {
 			
-				$data = WarehouseDetail::where('user_id', $user_id)->orderBy('id','desc')->get();
+				$data = WarehouseDetail::where('user_id', $user_id)->where('is_deleted',0)->orderBy('id','desc')->get();
 			
 			
 			return $this->sendResponse($data,true);
@@ -479,7 +481,7 @@ class AdminController extends BaseController
 	public function getWarehouse($warehouse_id){
 		try {
 			
-				$data = WarehouseDetail::where('id', $warehouse_id)->first();
+				$data = WarehouseDetail::where('id', $warehouse_id)->where('is_deleted',0)->first();
 			
 			
 			return $this->sendResponse($data,true);
@@ -626,7 +628,7 @@ class AdminController extends BaseController
 			
 			$data = Orders::select('orders.*','order_products.quantity','order_products.product_id','users.name')->
 			join('order_products', 'order_products.order_id','=','orders.id')->
-			join('users','orders.created_for', '=', 'users.id' )->
+			join('users','orders.created_for', '=', 'users.id' )->where('is_deleted',0)->
 			where('orders.id',$order_id)->first();
 			return $this->sendResponse($data,true);
 		} catch (\Exception $e) {
@@ -657,7 +659,7 @@ class AdminController extends BaseController
 	public function getAllRoles(){
 		try {
 			
-			$data = UserLevel::get();
+			$data = UserLevel::where('id','!=',1)->get();
 			return $this->sendResponse($data,true);
 		} catch (\Exception $e) {
 			return $e->getMessage();
@@ -741,7 +743,7 @@ class AdminController extends BaseController
 	public function updateProductType(Request $request){
 		try{
 			$validator = Validator::make($request->all(), [
-				'typeName' => 'required',
+				'type' => 'required',
 			]);
 			if($validator->fails()){
 				return response()->json(['status'=>422,'message' => $validator->errors()]);
@@ -849,6 +851,39 @@ class AdminController extends BaseController
 		} else if($param == 'disable'){
 			Product::whereIn('id', $id)->update(['is_active' => 0]);
 			return $this->sendResponse(true,'Selected records has been disabled');
+		}
+	}
+	public function actionProductTypes(Request $request){
+		$param = $request->param;
+		$id = [];
+		foreach($request->id as $group){
+			array_push($id,$group['id']);
+		}
+		if($param == 'delete'){
+			ProductType::whereIn('id', $id)->delete();
+			return $this->sendResponse(true,'Selected records has been deleted');
+		}
+	}
+	public function actionOrders(Request $request){
+		$param = $request->param;
+		$id = [];
+		foreach($request->id as $group){
+			array_push($id,$group['id']);
+		}
+		if($param == 'delete'){
+			Orders::whereIn('id', $id)->update(['is_deleted'=>1]);
+			return $this->sendResponse(true,'Selected records has been deleted');
+		}
+	}
+	public function actionWarehoue(Request $request){
+		$param = $request->param;
+		$id = [];
+		foreach($request->id as $group){
+			array_push($id,$group['id']);
+		}
+		if($param == 'delete'){
+			WarehouseDetail::whereIn('id', $id)->update(['is_deleted'=>1]);
+			return $this->sendResponse(true,'Selected records has been deleted');
 		}
 	}
 }

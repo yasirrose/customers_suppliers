@@ -181,6 +181,7 @@ export default {
             }),
             data => {
               if (data.success) {
+                this.$emit('event-triggered');
                 this.$toast({
                   component: ToastificationContent,
                   props: {

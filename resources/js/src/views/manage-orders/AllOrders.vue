@@ -116,21 +116,12 @@
             </span>
             <!-- Column: Action -->
             <span v-else-if="props.column.field === 'action' && $can('manage_orders_access','all')">
-              <span>
-                <b-dropdown variant="link" toggle-class="text-decoration-none" no-caret>
-                  <template v-slot:button-content>
-                    <feather-icon
-                      icon="MoreVerticalIcon"
-                      size="16"
-                      class="text-body align-middle mr-25"
-                    />
-                  </template>
-                  <b-dropdown-item>
-                    <feather-icon icon="Edit2Icon" class="mr-50"/>
-                    <b-link :to="{ path: 'update-order/' + props.row.id}">Edit</b-link>
-                  </b-dropdown-item>
-                </b-dropdown>
-              </span>
+              
+              <center>
+                  <b-link :to="{ path: 'update-order/' + props.row.id}" title="Edit Product"><feather-icon icon="Edit2Icon"/></b-link>
+                  <b-link @click="deleleRecord(props.row.id, 'delete')" title="Delete Product"><feather-icon icon="DeleteIcon" class="text-danger"/></b-link>
+                  
+              </center>
             </span>
 
             <!-- Column: Common -->
@@ -222,7 +213,7 @@ export default {
   },
   data() {
     return {
-      pageLength: 3,
+      pageLength: 10,
       dir: false,
       columns: [
         {
@@ -328,6 +319,11 @@ export default {
         }
       );
     },
+    deleleRecord(id,param){
+      this.idArray = [];
+      this.idArray.push({'id' : id});
+      this.actionRecords(param);
+    },
     actionRecords(param) {
       if (param == "delete") {
         var text = "You won't be able to revert this!";
@@ -358,14 +354,15 @@ export default {
         buttonsStyling: false
       }).then(result => {
         if (result.value) {
-          Admin.deleteUser(
+          Admin.actionData(
+            'actionOrders',
             (this.info = {
               id: this.idArray,
               param: param
             }),
             data => {
               if (data.success) {
-                this.getOrders();
+               this.getOrders(this.userId, this.userLevel);
                 this.$swal({
                   icon: "success",
                   title: responseTitle,

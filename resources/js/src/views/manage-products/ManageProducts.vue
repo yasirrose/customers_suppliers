@@ -15,7 +15,7 @@
         <feather-icon icon="ShoppingBagIcon" size="18" class="mr-50"/>
         <span class="font-weight-bold">View Products</span>
       </template>
-      <AllProducts/>
+      <AllProducts ref="AllProductsComponent"/>
     </b-tab>
 
     <!-- Create Products -->
@@ -24,7 +24,7 @@
         <feather-icon icon="ShoppingBagIcon" size="18" class="mr-50"/>
         <span class="font-weight-bold">Create Products</span>
       </template>
-      <CreateProducts/>
+      <CreateProducts  @event-triggered="getAllProducts"/>
     </b-tab>
 
     <!-- Create Product Types -->
@@ -33,7 +33,7 @@
         <feather-icon icon="TypeIcon" size="18" class="mr-50"/>
         <span class="font-weight-bold">Create Product Types</span>
       </template>
-      <CreateProductTypes/>
+      <CreateProductTypes  @event-triggered1="getProductTypes"/>
     </b-tab>
 
     <!-- View Product Types -->
@@ -42,7 +42,7 @@
         <feather-icon icon="TypeIcon" size="18" class="mr-50"/>
         <span class="font-weight-bold">View Product Types</span>
       </template>
-      <AllProductTypes/>
+      <AllProductTypes ref="AllProductTypesComponent"/>
     </b-tab>
     
 
@@ -102,8 +102,17 @@ export default {
     this.user = JSON.parse(localStorage.getItem("userData"));
     this.userLevel =  this.user.user_level;
     this.userId =  this.user.id;
+  },
+  methods: {
+    getAllProducts () {
+      this.$refs.AllProductsComponent.getAllProducts();
+    },
+     getProductTypes () {
+      this.$refs.AllProductTypesComponent.getProductTypes();
+    }
   }
 };
+
 
 
 </script>

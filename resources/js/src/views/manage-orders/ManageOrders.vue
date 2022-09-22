@@ -15,7 +15,7 @@
         <feather-icon icon="LockIcon" size="18" class="mr-50"/>
         <span class="font-weight-bold">View Orders</span>
       </template>
-      <AllOrders :userLevel="userLevel" :userId="userId"/>
+      <AllOrders ref="AllOrdersComponent" :userLevel="userLevel" :userId="userId"/>
     </b-tab>
 
     <!-- Create Orders -->
@@ -24,7 +24,7 @@
         <feather-icon icon="LockIcon" size="18" class="mr-50"/>
         <span class="font-weight-bold">Create Orders</span>
       </template>
-      <CreateOrders/>
+      <CreateOrders @event-triggered="getAllOrders"/>
     </b-tab>
 
     <!-- notification -->
@@ -79,11 +79,15 @@ export default {
      this.userLevel =  this.user.user_level_id;
       this.userId =  this.user.id;
      console.log('the user level' ,this.userLevel);
-
-   
-
-    
+ 
+  },
+  methods: {
+    getAllOrders () {
+      this.$refs.AllOrdersComponent.getOrders(this.userId, this.userLevel);
+      
+    }
   }
+
 };
 
 

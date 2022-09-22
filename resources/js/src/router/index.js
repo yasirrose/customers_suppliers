@@ -223,6 +223,15 @@ const router = new VueRouter({
             },
         },
         {
+            path: '/company-login',
+            name: 'company-login',
+            component: () =>
+                import ('@/views/Login.vue'),
+            meta: {
+                layout: 'full',
+            },
+        },
+        {
             path: '/forgot-password',
             name: 'forgot-password',
             component: () =>

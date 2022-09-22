@@ -34,7 +34,7 @@
           <b-avatar
             size="40"
             variant="light-primary"
-            badge
+           
             :src="require('@/assets/images/avatars/13-small.png')"
             class="badge-minimal"
             badge-variant="success"
@@ -50,7 +50,7 @@
           <span>Profile</span>
         </b-dropdown-item> -->
 
-        <b-dropdown-item
+        <!-- <b-dropdown-item
           :to="{ name: 'account-setting' }"
           link-class="d-flex align-items-center"
         >
@@ -89,7 +89,7 @@
           <span>Chat</span>
         </b-dropdown-item>
 
-        <b-dropdown-divider />
+        <b-dropdown-divider /> -->
 
         <b-dropdown-item link-class="d-flex align-items-center" @click="logout"> 
           <feather-icon
@@ -146,9 +146,9 @@ export default {
       ValidateUser.logout(
         data=>{
           // console.log(response);
-          if(data.success){
-            this.$router.push({ name: 'login'});
-          }
+          // if(data.success){
+          //   this.$router.push({ name: 'login'});
+          // }
         },
         err=>{
           console.log(err);
